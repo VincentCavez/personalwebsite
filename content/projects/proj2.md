@@ -1,9 +1,9 @@
 ---
-title: "Vestibulum: Olive Tadpole Pit Bull Terrier"
+title: "Cryptics : R library for real-time cryptocurrency analysis"
 
-date: "2019-03-30"
+date: "2021-03-01"
 
 links:
-    website: 'https://github.com/hadisinaee/avicenna'
+    website: 'https://github.com/VincentKV/Cryptics'
 ---
 
