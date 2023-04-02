@@ -1,10 +1,12 @@
+theme = 'github.com/spf13/hyde'
+
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Vincent Cavez'
 
 
 
-theme = "hyde"
+
 
 [Menus]
   main = [
