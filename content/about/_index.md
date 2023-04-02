@@ -8,15 +8,12 @@ full_name: "Vincent CAVEZ"
 profile_picture: "profile.png"
 cv: "cv.pdf"
 # set to false if you don't want to show your blog
-blog: true
+blog: false
 
 socials:
-    twitter: "YOUR_NAME"
-    github: "YOUR_NAME"
-    facebook: "YOUR_NAME"
-    linkedin: "YOUR_NAME"
-    twitch: "YOUR_NAME"
-    google_scholar: "YOUR_NAME"
+    twitter: "Vincent_Cavez"
+    linkedin: "vincentcavez"
+    instagram: "vincentkv_"
 
 interests:
     - Data Intensive Systems
@@ -26,13 +23,10 @@ interests:
 
 affiliations:
     - affiliation:
-        title: "Ph.D."
-        name: "Stanford University"
-        email: "email@cs.stanford.edu"
-    - affiliation:
-        title: "CEO & Co-Founder"
-        name: "The Coolest Startup In the World"
-        email: "email@mycoolstartup.ai"
+        title: "Ph.D. Student"
+        name: "Paris-Saclay University"
+        email: "vincent.cavez@lisn.fr"
+   
 
 academia:
     - course:
