@@ -1,6 +1,9 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Vincent Cavez'
+
+
+
 theme = "hyde"
 
 [Menus]
@@ -11,3 +14,4 @@ theme = "hyde"
 
 [params]
   themeColor = "theme-base-0a"
+
