@@ -203,6 +203,32 @@ h2 code {
 }
 
 
+
+.teachings .teaching {
+    margin-top: 1.5%;
+}
+
+.teaching .section-2 a {
+    padding: .8%;
+    margin-left: -.1%;
+}
+
+.teachings .teaching a{
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+}
+.teachings .teaching .section-2 a:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+
+    border-radius: 50%;
+    background-color: #d64933;
+    color: white;
+}
+
+
+
 .section-title {
     margin-top: 2.5%;
 }

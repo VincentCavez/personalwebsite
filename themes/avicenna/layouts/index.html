@@ -12,7 +12,7 @@ NO CONTENT TYPE FOUND. Set content_type = "{{.Params.title | lower }}"
 {{ $title := .Params.title }}
 {{ if .Params.section_settings.title }}
 {{ $title = .Params.section_settings.title }}
-{{ end }}
+{{ end }} 
 
 {{ $subtitle := "" }}
 {{ if .Params.section_settings.subtitle }}
