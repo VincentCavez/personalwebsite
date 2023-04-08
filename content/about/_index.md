@@ -16,10 +16,12 @@ socials:
     instagram: "vincentkv_"
 
 interests:
-    - Data Intensive Systems
-    - Distributed Systems
-    - Data Streaming Platforms
-    - Large-Scale Data Processing Platforms
+    - Touch Screens
+    - Gesture-based Interaction
+    - Large and Heterogenous Datasets
+    - Multi-Layer and Multi-Scale Navigation
+    - Data Visualization
+    - Machine Learning
 
 affiliations:
     - affiliation:
@@ -59,10 +61,15 @@ academia:
 
 
 
-**Donec** sollicitudin, [ante][1] pulvinar tincidunt luctus, dolor mauris lobortis ex, id tincidunt metus risus nec ex. Curabitur magna mauris, facilisis vitae porttitor vitae, tincidunt sed mi. In at dui lectus. Integer ante arcu, vestibulum fermentum ante eu, maximus maximus quam. Curabitur placerat cursus posuere. Phasellus dui lorem, varius a augue non, eleifend accumsan mauris. Aenean varius posuere feugiat. In hac habitasse platea dictumst. Aenean quis ex quis nisl consequat fermentum in vitae nunc. Proin consectetur ac nulla in tempus. Maecenas enim nisi, pulvinar sit amet fermentum eget, ultrices vitae enim. Etiam vel sollicitudin felis.
+I'm a french PhD student at [Inria][1] Saclay, France. I work within the [ILDA team][2], which is part of the [Laboratoire Interdisplinaire des Sciences du Numérique, LISN][3] (Université Paris-Saclay, CNRS & Inria, a lab created by teams from [LIMSI][4] and [LRI][5]).
 
+My thesis subject is ["Post-WIMP Interactive Data Manipulation"][6], and I work under the supervision of [Emmanuel Pietriga][7] and [Caroline Appert][8].
 
-Donec sollicitudin, ante pulvinar tincidunt luctus, dolor mauris lobortis ex, id tincidunt metus risus nec ex. Curabitur magna mauris, facilisis vitae porttitor vitae, 
-
-
-[1]: ahadsfsa.com
+[1]: https://www.inria.fr/fr
+[2]: https://ilda.saclay.inria.fr/
+[3]: https://www.lisn.upsaclay.fr/
+[4]: https://www.limsi.fr/en/
+[5]: https://www.lri.fr/
+[6]: https://www.theses.fr/s297907
+[7]: https://pages.saclay.inria.fr/emmanuel.pietriga/
+[8]: https://www.lri.fr/~appert/
