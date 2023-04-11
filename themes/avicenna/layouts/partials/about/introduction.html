@@ -44,6 +44,7 @@
         {{ $twitch := index $aboutPage.Params.socials "twitch"}}
         {{ $github := index $aboutPage.Params.socials "github"}}
         {{ $linkedin := index $aboutPage.Params.socials "linkedin"}}
+        {{ $instagram := index $aboutPage.Params.socials "instagram"}}
         {{ $cv := $aboutPage.Params.cv }}
         {{ $blog := $aboutPage.Params.blog}}
 
@@ -81,6 +82,12 @@
         {{ if $twitch }}
         <a class="main_color" rel="me" href='https://twitch.com/{{$twitch}}' target="_blank">
             <i data-feather="twitch"></i>
+        </a>
+        {{end}}
+
+        {{ if $instagram }}
+        <a class="main_color" rel="me" href='https://instagram.com/{{$instagram}}' target="_blank">
+            <i data-feather="instagram"></i>
         </a>
         {{end}}
 

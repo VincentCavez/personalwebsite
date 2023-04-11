@@ -18,6 +18,7 @@ socials:
 interests:
     - Touch Screens
     - Gesture-based Interaction
+    - Social Computing
     - Large and Heterogenous Datasets
     - Multi-Layer and Multi-Scale Navigation
     - Data Visualization
