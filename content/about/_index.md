@@ -16,8 +16,7 @@ socials:
     instagram: "vincentkv_"
 
 interests:
-    - Touch Screens
-    - Gesture-based Interaction
+    - Interaction with Touchscreens
     - Social Computing
     - Large and Heterogenous Datasets
     - Multi-Layer and Multi-Scale Navigation
