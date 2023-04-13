@@ -20,8 +20,9 @@ interests:
     - Social Computing
     - Large and Heterogenous Datasets
     - Multi-Layer and Multi-Scale Navigation
-    - Data Visualization
+    - Data Visualization for Teaching and Learning
     - Machine Learning
+    - Computer Vision
 
 affiliations:
     - affiliation:
