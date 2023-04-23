@@ -28,7 +28,7 @@ affiliations:
     - affiliation:
         title: "Ph.D. Student"
         name: "Paris-Saclay University"
-        email: "vincent.cavez@lisn.fr"
+        email: "contact@vincentcavez.com"
    
 
 academia:
