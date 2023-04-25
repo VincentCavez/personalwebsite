@@ -5,4 +5,4 @@ draft: false
 headless: true
 ---
 
-helllo  content/teaching/index.md
+content/teaching/index.md

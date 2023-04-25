@@ -4,12 +4,12 @@
 {{ $rscPages := $t.Resources.ByType "page"}}
 
 {{if gt (len $rscPages) 0}}
-<div class="teachings row w-100">
+<div class="projects row w-100">
     <div class="col w-100">
         {{range $page := sort $rscPages "Params.date" "desc"}}
-        <div class="teaching row w-100">
+        <div class="project row w-100">
             <div class="section-1 w-100">
-                <span class="teaching-title">
+                <span class="project-title">
                     {{$page.Params.title}}
                 </span>
             </div>
