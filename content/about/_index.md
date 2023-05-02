@@ -16,10 +16,9 @@ socials:
     instagram: "vincentkv_"
 
 interests:
-    - Interaction with Touchscreens
-    - Social Computing
+    - Interactive Surfaces
     - Large and Heterogenous Datasets
-    - Multi-Layer and Multi-Scale Navigation
+    - Multi-Layer and Multi-Scale Contexts
     - Data Visualization for Teaching and Learning
     - Machine Learning
     - Computer Vision
