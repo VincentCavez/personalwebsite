@@ -1,17 +1,16 @@
 ---
-title: "Egon"
+title: "Spreadsheets on Interactive Surfaces: Breaking through the Grid with the Pen"
 authors:
 - Vincent Cavez
-- Gustave Cortal
-- Corentin Loubet
-- Vénissia Kay
-- Ignacio Baltazar Pérez Messina
-date: "2022-07-15"
+- Caroline Appert
+- Emmanuel Pietriga
 
-publication: "Université Paris-Saclay"
+date: "2023-10"
+
+publication: "ACM Transactions on Computer-Human Interaction"
 
 links:
-    pdf: 'https://repositum.tuwien.at/bitstream/20.500.12708/153390/1/other-146671.pdf'
-    website: http://hdl.handle.net/20.500.12708/153390
-    video: https://youtu.be/2eCg7FHQp2I
+    pdf: 'https://dl.acm.org/doi/pdf/10.1145/3630097'
+    acm: https://dl.acm.org/doi/10.1145/3630097
+    
 ---
