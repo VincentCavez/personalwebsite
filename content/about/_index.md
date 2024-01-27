@@ -63,7 +63,7 @@ academia:
 
 I'm a french PhD student at [Inria][1] Saclay, France. I work within the [ILDA team][2], which is part of the [Laboratoire Interdisplinaire des Sciences du Numérique, LISN][3] (Université Paris-Saclay, CNRS & Inria, a lab created by teams from [LIMSI][4] and [LRI][5]).
 
-My thesis subject is ["Post-WIMP Interactive Data Manipulation"][6], and I work under the supervision of [Emmanuel Pietriga][7] and [Caroline Appert][8].
+My thesis subject is ["Post-WIMP Interactive Data Manipulation"][6], and I develop pen+touch interaction techniques under the supervision of [Emmanuel Pietriga][7] and [Caroline Appert][8].
 
 [1]: https://www.inria.fr/fr
 [2]: https://ilda.saclay.inria.fr/
