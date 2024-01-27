@@ -6,7 +6,7 @@ authors:
 - Emmanuel Pietriga
 - Caroline Appert
 
-date: "2024-05"
+date: "2024-05-01"
 
 publication: "Proceedings of the CHI Conference on Human Factors in Computing Systems"
 

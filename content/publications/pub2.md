@@ -5,7 +5,7 @@ authors:
 - Caroline Appert
 - Emmanuel Pietriga
 
-date: "2023-10"
+date: "2023-10-01"
 
 publication: "ACM Transactions on Computer-Human Interaction"
 
