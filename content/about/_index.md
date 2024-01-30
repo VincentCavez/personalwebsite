@@ -61,9 +61,9 @@ academia:
 
 
 
-I'm a french PhD student at [Inria][1] Saclay, France. I work within the [ILDA team][2], which is part of the [Laboratoire Interdisplinaire des Sciences du Numérique, LISN][3] (Université Paris-Saclay, CNRS & Inria, a lab created by teams from [LIMSI][4] and [LRI][5]).
+I am a PhD student at [Inria][1] Saclay, France, and I have the chance to work under the supervision of [Emmanuel Pietriga][7] and [Caroline Appert][8] within the [ILDA team][2].
 
-My thesis subject is ["Post-WIMP Interactive Data Manipulation"][6], and I develop pen+touch interaction techniques under the supervision of [Emmanuel Pietriga][7] and [Caroline Appert][8].
+My thesis subject is ["Post-WIMP Interactive Data Manipulation"][6] but I prefer to call it by its core concept: "Structure versus freedom". On the one hand, computers are known for their structured software that you can master using mouse and keyboard, and on the other hand, tablets offer a greater freedom of action thanks to the pen and touch inputs. If not designed carefully, tablets software fail to benefit from this structure and from their own flexibility potential. Recently, I focused on people who use spreadsheets, music scores and maps and proposed interactive techniques to improve their tablet use.
 
 [1]: https://www.inria.fr/fr
 [2]: https://ilda.saclay.inria.fr/
