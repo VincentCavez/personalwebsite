@@ -2,7 +2,8 @@
 body {
     font-family: 'Inter', sans-serif;
     color: #071013;
-    
+    background-image: "test1.png";
+    background-repeat: repeat;
 }
 
 a {
@@ -38,8 +39,7 @@ h2 code {
 
 .body {
     margin: auto;
-    background-image: "test1.png";
-    background-repeat: repeat;
+    
 }
 
 .h-100 {
