@@ -194,7 +194,7 @@ h2 code {
     padding: .15%;
 }
 .projects .project .section-2 a:hover {
-    transition-property: background-color;
+    transition-property: #8C1515;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
 
