@@ -47,29 +47,29 @@
             {{ if $links }}
             <div class="section-3  w-100">
                 {{range $link_name, $link_url := $links}}
-                    {{ if $link_name == "hal"}}
+                    {{ if eq $link_name "hal"}}
                         <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🇫🇷{{$link_name}}
+                            🇫🇷 {{$link_name}}
                         </a>
                     {{end}}
-                    {{ if $link_name == "acm"}}
+                    {{ if eq $link_name "acm"}}
                         <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🚀{{$link_name}}
+                            🚀 {{$link_name}}
                         </a>
                     {{end}}
-                    {{ if $link_name == "html"}}
+                    {{ if eq $link_name "html"}}
                         <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🌐{{$link_name}}
+                            🌐 {{$link_name}}
                         </a>
                     {{end}}
-                    {{ if $link_name == "video"}}
+                    {{ if eq $link_name "video"}}
                         <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            ▶️{{$link_name}}
+                            🎬 {{$link_name}}
                         </a>
                     {{end}}
-                    {{ if $link_name == "website"}}
+                    {{ if eq $link_name "website"}}
                         <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🌎{{$link_name}}
+                            🌎 {{$link_name}}
                         </a>
                     {{end}}
                 {{end}}

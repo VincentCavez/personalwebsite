@@ -18,11 +18,11 @@
             {{ if $links }}
             <div class="section-2  w-100">
                 {{range $link_name, $link_url := $links}}
-                {{ if $link_url }}
-                <a class="main_color text-decoration-none rounded " href="{{$link_url}}" target="_blank">
-                    {{$link_name}}
-                </a>
-                {{end}}
+                {{ if eq $link_name "website"}}
+                        <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                            🌎 {{$link_name}}
+                        </a>
+                    {{end}}
                 {{end}}
             </div>
             {{end}}
