@@ -28,10 +28,10 @@
 
                 {{ if $item.link}}
                 <a href='{{ $item.link }}' target="_blank">
-                    {{ markdownify (emojify $item.text) }}
+                    {{ markdownify (emojify $item.text)}}
                 </a>
                 {{ else }}
-                {{ markdownify (emojify $item.text) }}
+                {{ markdownify (emojify $item.text)}}
                 {{ end }}
 
                 {{ if $item.extra_text }}

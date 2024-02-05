@@ -15,9 +15,15 @@ news_items:
   extra_text: "April 2023"
   link: "https://www.vincentcavez.com"
   date: 2023-04-05
+
 - text: "I participated in the [Creartathon22](https://creartathon.com), a creative hackaton"
   extra_text: "July 2022"
   date: 2022-07-17
+
+- text: "Talk at the [LISN](https://www.lisn.upsaclay.fr/) PhD Days"
+  extra_text: "June 2022"
+  date: 2022-06-10
+
 - text: "I took part in the organization of the [LISN](https://www.lisn.upsaclay.fr/) PhD Days"
   extra_text: "June 2022"
   date: 2022-06-10
