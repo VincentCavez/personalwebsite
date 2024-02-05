@@ -37,6 +37,10 @@ news_items:
   link: "https://www.vincentcavez.com"
   date: 2023-04-05
 
+- text: "Teaching Assistant of the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction)'s Winter School"
+  extra_text: "March 2023"
+  date: 2023-03-05
+
 - text: "I participated in the [Creartathon22](https://creartathon.com), a creative hackaton"
   extra_text: "July 2022"
   date: 2022-07-17
