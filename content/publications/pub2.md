@@ -7,7 +7,7 @@ authors:
 
 date: "2023-10-01"
 
-publication: "ACM Transactions on Computer-Human Interaction"
+publication: "ACM ToCHI"
 
 links:
     acm: "https://dl.acm.org/doi/10.1145/3630097"
