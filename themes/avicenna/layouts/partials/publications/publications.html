@@ -8,78 +8,81 @@
     <div class="col w-100">
         {{ range $page := $rscPages}}
         <div class="publication row  w-100">
-
-            <div class="section-1 w-100">
-                <span>
-                    {{$page.Params.title}}
-                </span>
-
+            <div>
+                <img src="{{$page.Params.image}}" width="100px" height="100px" max-width="100px">
             </div>
+            <div class="col w-100">
+                <div class="section-1 w-100">
+                    <span>
+                        {{$page.Params.title}}
+                    </span>
 
-            <div class="section-2 text-muted w-100">
+                </div>
 
-                {{ $authors := $page.Params.authors }}
+                <div class="section-2 text-muted w-100">
 
-                {{ if $authors }}
-                {{range $i, $author := $authors}}
-                <span>
-                    {{$author}}
-                </span>
-                {{ if lt $i (sub (len $authors) 1)}}
-                <span class="separator">
-                    ,
-                </span>
+                    {{ $authors := $page.Params.authors }}
+
+                    {{ if $authors }}
+                    {{range $i, $author := $authors}}
+                    <span>
+                        {{$author}}
+                    </span>
+                    {{ if lt $i (sub (len $authors) 1)}}
+                    <span class="separator">
+                        ,
+                    </span>
+                    {{end}}
+                    {{end}}
+                    {{end}}
+
+                </div>
+
+                <div class="section-2 text-muted w-100">
+
+                    <span class="text-muted publication-name">
+                        {{$page.Params.publication}},
+                    </span>
+
+                    <span class="publication-date">
+                        {{substr ($page.Params.date.Format "2006-01-02") 0 4}}
+                    </span>
+
+                </div>
+
+                {{ $links := $page.Params.links }}
+                {{ if $links }}
+                <div class="section-3  w-100">
+                    {{range $link_name, $link_url := $links}}
+                        {{ if eq $link_name "hal"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                📙 {{$link_name}}
+                            </a>
+                        {{end}}
+                        {{ if eq $link_name "acm"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                🚀 {{$link_name}}
+                            </a>
+                        {{end}}
+                        {{ if eq $link_name "html"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                🌐 {{$link_name}}
+                            </a>
+                        {{end}}
+                        {{ if eq $link_name "video"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                🎬 {{$link_name}}
+                            </a>
+                        {{end}}
+                        {{ if eq $link_name "website"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                🌎 {{$link_name}}
+                            </a>
+                        {{end}}
+                    {{end}}
+                </div>
                 {{end}}
-                {{end}}
-                {{end}}
-
             </div>
-
-            <div class="section-2 text-muted w-100">
-
-                <span class="text-muted publication-name">
-                    {{$page.Params.publication}},
-                </span>
-
-                <span class="publication-date">
-                    {{substr ($page.Params.date.Format "2006-01-02") 0 4}}
-                </span>
-
-            </div>
-
-            {{ $links := $page.Params.links }}
-            {{ if $links }}
-            <div class="section-3  w-100">
-                {{range $link_name, $link_url := $links}}
-                    {{ if eq $link_name "hal"}}
-                        <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            📙 {{$link_name}}
-                        </a>
-                    {{end}}
-                    {{ if eq $link_name "acm"}}
-                        <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🚀 {{$link_name}}
-                        </a>
-                    {{end}}
-                    {{ if eq $link_name "html"}}
-                        <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🌐 {{$link_name}}
-                        </a>
-                    {{end}}
-                    {{ if eq $link_name "video"}}
-                        <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🎬 {{$link_name}}
-                        </a>
-                    {{end}}
-                    {{ if eq $link_name "website"}}
-                        <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
-                            🌎 {{$link_name}}
-                        </a>
-                    {{end}}
-                {{end}}
-            </div>
-            {{end}}
-
 
 
         </div>

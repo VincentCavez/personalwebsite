@@ -49,6 +49,32 @@ h2 code {
     margin: auto;
 }
 
+.w-20 {
+    margin: auto;
+    max-width: 20%;
+    position: relative;
+    width: 20%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+}
+
+.w-80 {
+    margin: auto;
+    max-width: 80%;
+    position: relative;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+}
+
 .main_color  {
     color: #8C1515;
 }
