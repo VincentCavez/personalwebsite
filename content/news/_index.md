@@ -11,6 +11,27 @@ default_news_icon: "file-text"
 num_news: 10
 
 news_items:
+
+- text: "I will participate in the [Meeting of Young Mathematicians and Computer Scientists](https://filles-et-maths.fr/rjmi/)"
+  extra_text: "February 2024"
+  date: 2024-02-01
+
+- text: "Full paper conditionally accepted to [ACM CHI'24](https://chi2024.acm.org/)"
+  extra_text: "January 2024"
+  date: 2024-01-01
+
+- text: "I am a finalist of the [2024 3MT® Paris-Saclay University Competition](https://www.universite-paris-saclay.fr/three-minute-thesis-competition-3mtr#home200832)"
+  extra_text: "December 2023"
+  date: 2023-12-15
+
+- text: "Talk at the [LISN](https://www.lisn.upsaclay.fr/) Day"
+  extra_text: "December 2023"
+  date: 2023-12-01
+
+- text: "Full paper accepted to [ACM ToCHI'23](https://dl.acm.org/journal/tochi)"
+  extra_text: "September 2023"
+  date: 2023-09-26
+
 - text: "Creation of this website"
   extra_text: "April 2023"
   link: "https://www.vincentcavez.com"
