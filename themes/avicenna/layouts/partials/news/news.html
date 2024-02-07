@@ -35,7 +35,7 @@
                 {{ end }}
 
                 {{ if $item.extra_text }}
-                <span class="secondary_font text-muted">, {{ markdownify (emojify $item.extra_text) }}</span>
+                <span class="secondary_font text-muted">- {{ markdownify (emojify $item.extra_text) }}</span>
                 {{end}}
 
             </li>
