@@ -17,14 +17,20 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #050517;
+    
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    background-color: #8C1515;
+    color: #ffffff;
+    border-radius: 0.25rem!important;
+    text-decoration: none;
 }
 
 h2 code {
   font-family: Consolas,"courier new";
   /* background-color: #f1f1f1; */
-  background-color:  #8C1515;;
+  background-color:  #8C1515;
   color: white;
   padding: 2px;
 }
@@ -204,9 +210,10 @@ h2 code {
     transition-property: background-color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
-
-    border-radius: 50%;
-    color: #8C1515;
+    background-color: #8C1515;
+    border-radius: 0.25rem!important;
+    color: #ffffff;
+    
 }
 
 .publication .separator {
@@ -227,12 +234,13 @@ h2 code {
     padding: .15%;
 }
 .projects .project .section-2 a:hover {
-    transition-property: #8C1515;
+    transition-property: background-color;
     transition-duration: .2s;
     transition-timing-function: ease-in-out;
-
-    border-radius: 50%;
-    color: #8C1515;
+    background-color: #8C1515;
+    border-radius: 0.25rem!important;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 

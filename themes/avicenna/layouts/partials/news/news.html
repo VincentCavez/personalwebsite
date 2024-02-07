@@ -27,7 +27,7 @@
                 {{ end }}
 
                 {{ if $item.link}}
-                <a href='{{ $item.link }}' target="_blank">
+                <a href='{{ $item.link }}' class="main_color text-decoration-none rounded" target="_blank">
                     {{ markdownify (emojify $item.text)}}
                 </a>
                 {{ else }}
