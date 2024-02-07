@@ -14,7 +14,11 @@ news_items:
 
 - text: "I will participate in the [Meeting of Young Mathematicians and Computer Scientists](https://filles-et-maths.fr/rjmi/)"
   extra_text: "February 2024"
-  date: 2024-02-01
+  date: 2024-02-22
+  
+- text: "Titular representative on the [Inria Saclay Center Committee](https://intranet.inria.fr/Inria/Instances/Comite-de-centre/Presentation)"
+  extra_text: "February 2024"
+  date: 2024-02-07
 
 - text: "Full paper conditionally accepted to [ACM CHI'24](https://chi2024.acm.org/)"
   extra_text: "January 2024"
@@ -31,11 +35,6 @@ news_items:
 - text: "Full paper accepted to [ACM ToCHI'23](https://dl.acm.org/journal/tochi)"
   extra_text: "September 2023"
   date: 2023-09-26
-
-- text: "Creation of this website"
-  extra_text: "April 2023"
-  link: "https://www.vincentcavez.com"
-  date: 2023-04-05
 
 - text: "Teaching Assistant of the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction)'s Winter School"
   extra_text: "March 2023"

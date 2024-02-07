@@ -9,7 +9,7 @@ date: "2023-10-01"
 
 publication: "ToCHI"
 
-image: css/test2.png
+image: css/tableink.png
 
 links:
     acm: "https://dl.acm.org/doi/10.1145/3630097"
