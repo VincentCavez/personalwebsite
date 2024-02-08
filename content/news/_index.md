@@ -16,7 +16,7 @@ news_items:
   extra_text: "February 2024"
   date: 2024-02-22
   
-- text: "I got elected to represent my college on the [Inria Saclay Center Committee](https://intranet.inria.fr/Inria/Instances/Comite-de-centre/Presentation)"
+- text: "I got elected by my college to be its Titular member on the [Inria Saclay Center Committee](https://intranet.inria.fr/Inria/Instances/Comite-de-centre/Presentation)"
   extra_text: "February 2024"
   date: 2024-02-07
 
