@@ -20,6 +20,7 @@ NO CONTENT TYPE FOUND. Set content_type = "{{.Params.title | lower }}"
 {{ end }}
 
 {{ if or $title (eq $content_type "about")}}
+
 <div class="row w-100">
     <div class="col w-100">
         {{if or $title $subtitle}}
