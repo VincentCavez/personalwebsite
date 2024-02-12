@@ -52,4 +52,12 @@ news_items:
   extra_text: "June 2022"
   date: 2022-06-10
 
+- text: "test 1"
+  extra_text: "June 2020"
+  date: 2020-06-10
+
+- text: "test 2"
+  extra_text: "June 2019"
+  date: 2019-06-10
+
 ---

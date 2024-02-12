@@ -2,7 +2,8 @@
 body {
     
     font-family: 'Inter', sans-serif;
-    
+    /*font-family: "CabernetJFPro Regular";*/
+    /*font-family: "CabernetJFPro Italic";*/
     color: #071013;
     
 }
@@ -30,7 +31,8 @@ a:hover {
 }
 
 h2 code {
-  font-family: Consolas,"courier new";
+  /*font-family: Consolas,"courier new";*/
+  font-family: "CabernetJFPro Regular";/*????*/
   /* background-color: #f1f1f1; */
   background-color:  #8C1515;
   color: white;
@@ -94,6 +96,8 @@ h2 code {
     color: #8C1515;
 }
 
+
+
 .secondary_color {
     color: #071013;
 }
@@ -104,6 +108,7 @@ h2 code {
 
 .secondary_font {
     font-family: 'Ubuntu Mono', serif;
+    /*dates des news*/
 }
 
 .section-subtitle {
@@ -118,14 +123,17 @@ h2 code {
 
 .about #full_name {
     font-size: x-large;
+    font-family: "CabernetJFPro Regular";
 }
 
 .about .affiliations #title {
     padding-right: .5%;
+    font-family: "CabernetJFPro Regular";
 }
 
 .about .affiliations #name {
     padding-right: .5%;
+    font-family: "CabernetJFPro Regular";
 }   
 
 .about #email {
@@ -180,19 +188,21 @@ h2 code {
 
 .publications .publication {
     margin-top: 1.5%;
+    
 }
 
 .publication .section-1 .publication-date {
     font-family: 'Ubuntu Mono', serif;
+    /*???*/
 }
 
 .publication .section-1 .publication-name {
-    font-family: 'Ubuntu Mono', serif;
+    font-family: 'Ubuntu Mono', serif;/*???*/
 }
 
 
 .publication .section-2 {
-    font-family: 'Ubuntu Mono', serif;
+    font-family: 'Ubuntu Mono', serif;/*authors, venue and date*/
     margin-top: -.1%;
     margin-bottom: .5%;
 }
@@ -200,7 +210,7 @@ h2 code {
 
 .publication .section-3 {
     margin-top: -.5%;
-    font-family: 'Ubuntu Mono', serif;
+    font-family: 'Ubuntu Mono', serif;/*links*/
     text-decoration: none;
 }
 
@@ -273,6 +283,8 @@ h2 code {
 
 .section-title {
     margin-top: 2.5%;
+    font-family: "CabernetJFPro Regular";
+    color: #8C1515;
 }
 
 .copy_right {

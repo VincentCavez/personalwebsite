@@ -5,7 +5,7 @@
 {{ if or $aboutPage.Params.academia $aboutPage.Params.interests}}
 {{ if $aboutPage.Params.interests }}
 <div class="interests col ">
-    <h4 class="main_color">Interests</h4>
+    <h4 class="section-title">Interests</h4>
     <ul>
         {{range $aboutPage.Params.interests }}
         <li>
@@ -18,7 +18,7 @@
 
 {{if $aboutPage.Params.academia}}
 <div class="academia col">
-    <h4 class="main_color">Academia</h4>
+    <h4 class="section-title">Academia</h4>
     {{range $academia := $aboutPage.Params.academia}}
     <div class="row">
         <div class="course col">
