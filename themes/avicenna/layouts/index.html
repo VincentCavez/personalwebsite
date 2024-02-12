@@ -21,24 +21,44 @@ NO CONTENT TYPE FOUND. Set content_type = "{{.Params.title | lower }}"
 
 {{ if or $title (eq $content_type "about")}}
 
-<div class="row w-100">
-    <div class="col w-100">
-        {{if or $title $subtitle}}
-        <div class="row w-100">
-            <div class="col w-100">
-                {{if $title }}
-                <h3 class="row  w-100 section-title main_color"> {{ $title }} </h3>
-                {{ end }}
+    {{ if eq $title "News"}}
+    <div class="row w-100 news-background" style="margin-bottom: 20px;">
+        <div class="col w-100">
+            {{if or $title $subtitle}}
+            <div class="row w-100">
+                <div class="col w-100">
+                    {{if $title }}
+                    <h3 class="row  w-100 section-title main_color"> {{ $title }} </h3>
+                    {{ end }}
 
-                
+                    
+                </div>
             </div>
+            {{end}}
+
+            {{- partial (printf "%s/%s.html" $content_type $content_type) . -}}
         </div>
-        {{end}}
-
-        {{- partial (printf "%s/%s.html" $content_type $content_type) . -}}
     </div>
-</div>
+    {{else}}
+    
+    <div class="row w-100" style="margin-bottom: 20px;">
+        <div class="col w-100">
+            {{if or $title $subtitle}}
+            <div class="row w-100">
+                <div class="col w-100">
+                    {{if $title }}
+                    <h3 class="row  w-100 section-title main_color"> {{ $title }} </h3>
+                    {{ end }}
 
+                    
+                </div>
+            </div>
+            {{end}}
+
+            {{- partial (printf "%s/%s.html" $content_type $content_type) . -}}
+        </div>
+    </div>
+    {{end}}
 {{end}}
 
 <!-- this is for range -->
