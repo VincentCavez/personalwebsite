@@ -8,6 +8,8 @@
     <div class="col w-100">
         {{range $page := sort $rscPages "Params.date" "desc"}}
         <div class="project row w-100">
+
+
             <div class="section-1 w-100">
                 <span class="project-title">
                     {{$page.Params.title}}
@@ -26,6 +28,21 @@
                 {{end}}
             </div>
             {{end}}
+
+
+
+            {{ $images := $page.Params.images }}
+            {{if $images}}
+                <div class="gallery js-flickity" style="width: 100%!important; margin-bottom: 20px;"
+                data-flickity-options='{ "wrapAround": true }'>
+                {{range $img_url := $images}}
+                    
+                        <img src="{{$img_url}}" width="100%" height="100%" class="gallery-cell">
+                    
+                {{end}}
+            {{end}}
+            </div>
+            
 
 
         </div>
