@@ -14,11 +14,11 @@ body {
   
 
 .gallery {
-    background: #8C1515;
+    background: #6d6d6d1b;
   }
   
   .gallery-cell {
-    width: 33%;
+    width: 30%;
     height: 200px;
     margin-right: 10px;
     background: #8C8;
