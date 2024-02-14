@@ -3,6 +3,7 @@
 {{ $t := .Site.GetPage $content_type }}
 {{ $rscPages := $t.Resources.ByType "page"}}
 
+
 {{if gt (len $rscPages) 0}}
 <div class="projects row w-100">
     <div class="col w-100">
@@ -33,6 +34,7 @@
 
             {{ $images := $page.Params.images }}
             {{if $images}}
+           
                 <div class="gallery js-flickity" style="width: 100%!important; margin-bottom: 20px;"
                 data-flickity-options='{ "wrapAround": true }'>
                 {{range $img_url := $images}}
