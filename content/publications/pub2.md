@@ -5,7 +5,7 @@ authors:
 - Caroline Appert
 - Emmanuel Pietriga
 
-date: "2024-01-29"
+date: "2023-01-29"
 
 publication: "ToCHI"
 

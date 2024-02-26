@@ -28,10 +28,6 @@ news_items:
   extra_text: "December 2023"
   date: 2023-12-15
 
-- text: "Talk at the [LISN](https://www.lisn.upsaclay.fr/) Day"
-  extra_text: "December 2023"
-  date: 2023-12-01
-
 - text: "Full paper accepted to [ACM ToCHI'23](https://dl.acm.org/journal/tochi)"
   extra_text: "September 2023"
   date: 2023-09-26
@@ -39,6 +35,10 @@ news_items:
 - text: "Teaching Assistant of the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction)'s Winter School"
   extra_text: "March 2023"
   date: 2023-03-05
+  
+- text: "Talk at the [LISN](https://www.lisn.upsaclay.fr/) Day"
+  extra_text: "December 2023"
+  date: 2022-12-01
 
 - text: "I participated in the [Creartathon22](https://creartathon.com), a creative hackaton"
   extra_text: "July 2022"
