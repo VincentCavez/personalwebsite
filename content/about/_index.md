@@ -33,25 +33,25 @@ affiliations:
 academia:
     - course:
         degree: "Paris-Saclay University"
-        institution:  "Human-Computer Interaction Ph.D."
+        institution:  "Ph.D. in Human-Computer Interaction"
         major: ""
         start_date: "2021"
     - course:
         degree: 'Paris-Descartes University'
-        institution: "Mathematical Engineering and Biostatistics M.Sc."
+        institution: "M.Sc. in Mathematical Engineering and Biostatistics"
         major: ''
         start_date: '2018'
         end_date: '2020'
         other_info: 'graduated with high honours'
     - course:
         degree: "Paris-Saclay University"
-        institution: 'Creation and Development of Innovative Start-ups University Degree'
+        institution: 'University Degree in Creation and Development of Innovative Start-ups'
         major: ''
         start_date: '2018'
         end_date: '2019'
     - course:
         degree: 'Paris-Saclay University'
-        institution: 'Mathematics B.Sc.'
+        institution: 'B.Sc. in Mathematics'
         major: ""
         start_date: '2014'
         end_date: '2018'
