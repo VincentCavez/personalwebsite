@@ -12,7 +12,7 @@ num_news: 10
 
 news_items:
 
-- text: "I will participate in the [Meetup of Young Mathematicians and Computer Scientists](https://filles-et-maths.fr/rjmi/)"
+- text: "I was an animator in the [Meetup of Young Mathematicians and Computer Scientists](https://filles-et-maths.fr/rjmi/)"
   extra_text: "February 2024"
   date: 2024-02-22
   
