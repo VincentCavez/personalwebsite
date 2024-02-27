@@ -16,8 +16,7 @@ socials:
     instagram: "vincentkv_"
 
 interests:
-    - Interactive Surfaces
-    - Large and Heterogenous Datasets
+    - Interactive Surfaces and Pen-based Interaction
     - Multi-Layer and Multi-Scale Contexts
     - Data Visualization for Teaching and Learning
     - Machine Learning
