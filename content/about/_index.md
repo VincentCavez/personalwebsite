@@ -16,9 +16,10 @@ socials:
     instagram: "vincentkv_"
 
 interests:
-    - Interactive Surfaces and Pen-based Interaction
+    - Interactive Surfaces
+    - Object-Oriented, Multimodal and Gestural Interaction
     - Multi-Layer and Multi-Scale Contexts
-    - Data Visualization for Teaching and Learning
+    - Data Visualization and Design
     - Machine Learning
     - Computer Vision
 
