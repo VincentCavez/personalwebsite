@@ -27,11 +27,12 @@
                     {{$academia.course.institution}}
                 </div>
                 <div class="main_color dates col-md-auto  justify-content-end">
-                    {{$academia.course.start_date}}
-                    {{ if $academia.course.end_date }}
-                    - {{$academia.course.end_date}}
+                    
+                    {{ if $academia.course.start_date }}
+                    {{$academia.course.start_date }} - present
                     {{else}}
-                    - present
+                    {{ $academia.course.end_date }}
+                    
                     {{end}}
                 </div>
             </div>

@@ -40,20 +40,17 @@ academia:
         degree: 'Paris-Descartes University'
         institution: "M.Sc. in Mathematical Engineering and Biostatistics"
         major: ''
-        start_date: '2018'
         end_date: '2020'
         other_info: 'graduated with high honours'
     - course:
         degree: "Paris-Saclay University"
         institution: 'University Degree in Creation and Development of Innovative Start-ups'
         major: ''
-        start_date: '2018'
         end_date: '2019'
     - course:
         degree: 'Paris-Saclay University'
         institution: 'B.Sc. in Mathematics'
         major: ""
-        start_date: '2014'
         end_date: '2018'
 
        
