@@ -17,7 +17,7 @@ socials:
 
 interests:
     - Interactive Surfaces
-    - Object-Oriented, Multimodal and Gestural Interaction
+    - Multimodal Inputs
     - Multi-Layer and Multi-Scale Contexts
     - Data Visualization and Design
     - Machine Learning
