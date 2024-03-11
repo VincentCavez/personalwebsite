@@ -79,6 +79,11 @@
                                 🌎 {{$link_name}}
                             </a>
                         {{end}}
+                        {{ if eq $link_name "pdf"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                📕 {{$link_name}}
+                            </a>
+                        {{end}}
                     {{end}}
                 </div>
                 {{end}}
