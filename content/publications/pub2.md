@@ -7,7 +7,7 @@ authors:
 
 date: "2023-01-29"
 
-publication: "ToCHI"
+publication: "TOCHI"
 
 image: css/tableink.png
 
