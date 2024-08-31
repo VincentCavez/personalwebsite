@@ -14,11 +14,7 @@ news_items:
 - text: "I got elected Web Master for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
   extra_text: "July 2024"
   date: 2024-07-01
-
-- text: "I visited the UCSD [Creativity Lab](https://creativity.ucsd.edu/) and presented my thesis work"
-  extra_text: "May 2024"
-  date: 2024-05-27
-
+  
 - text: "I went to [CHI'24](https://chi2024.acm.org/) to present two papers and chair the ["Design Tools" session](https://programs.sigchi.org/chi/2024/program/session/156169)"
   extra_text: "May 2024"
   date: 2024-05-01
