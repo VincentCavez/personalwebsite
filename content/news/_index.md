@@ -1,10 +1,9 @@
 ---
 title: "news"
-date: 2020-11-20T17:51:47+03:30
+date: 2024-08-31
 draft: false
 headless: true
 
-# all icons by [feathericons.com](https://https://feathericons.com//) are supported
 show_news_icons: true
 default_news_icon: "file-text"
 
