@@ -12,6 +12,26 @@ num_news: 10
 
 news_items:
 
+- text: "I got elected Web Master for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
+  extra_text: "May 2024"
+  date: 2024-07-01
+
+- text: "I visited the UCSD [Creativity Lab](https://creativity.ucsd.edu/) and presented my thesis work"
+  extra_text: "May 2024"
+  date: 2024-05-27
+
+- text: "I went to [CHI'24](https://chi2024.acm.org/) to present two papers and chair the ["Design Tools" session](https://programs.sigchi.org/chi/2024/program/session/156169)"
+  extra_text: "May 2024"
+  date: 2024-05-01
+  
+  - text: "I got elected by my college to be its Titular member on the Council and Pole Committee of the Doctoral School"
+  extra_text: "March 2024"
+  date: 2024-03-15
+
+- text: "[Full paper](https://dl.acm.org/doi/10.1145/3613904.3642079) accepted to [ACM CHI'24](https://chi2024.acm.org/)"
+  extra_text: "March 2024"
+  date: 2024-03-01
+
 - text: "I was an animator in the [Meetup of Junior Women in Maths and Computer Science](https://filles-et-maths.fr/rjmi/)"
   extra_text: "February 2024"
   date: 2024-02-22
@@ -20,15 +40,11 @@ news_items:
   extra_text: "February 2024"
   date: 2024-02-07
 
-- text: "Full paper conditionally accepted to [ACM CHI'24](https://chi2024.acm.org/)"
-  extra_text: "January 2024"
-  date: 2024-01-01
-
 - text: "I am a finalist of the [2024 3MT® Paris-Saclay University Competition](https://www.universite-paris-saclay.fr/three-minute-thesis-competition-3mtr#home200832)"
   extra_text: "December 2023"
   date: 2023-12-15
 
-- text: "Full paper accepted to [ACM ToCHI'23](https://dl.acm.org/journal/tochi)"
+- text: "[Full paper](https://dl.acm.org/doi/10.1145/3630097) accepted to [ACM ToCHI'23](https://dl.acm.org/journal/tochi)"
   extra_text: "September 2023"
   date: 2023-09-26
 
