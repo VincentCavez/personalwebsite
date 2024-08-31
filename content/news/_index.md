@@ -24,7 +24,7 @@ news_items:
   extra_text: "May 2024"
   date: 2024-05-01
   
-  - text: "I got elected by my college to be its Titular member on the Council and Pole Committee of the Doctoral School"
+- text: "I got elected by my college to be its Titular member on the Council and Pole Committee of the Doctoral School"
   extra_text: "March 2024"
   date: 2024-03-15
 
