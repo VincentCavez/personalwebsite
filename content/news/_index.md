@@ -13,7 +13,7 @@ num_news: 10
 news_items:
 
 - text: "I got elected Web Master for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
-  extra_text: "May 2024"
+  extra_text: "July 2024"
   date: 2024-07-01
 
 - text: "I visited the UCSD [Creativity Lab](https://creativity.ucsd.edu/) and presented my thesis work"
