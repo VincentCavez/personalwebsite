@@ -8,6 +8,7 @@ show_news_icons: true
 default_news_icon: "file-text"
 
 num_news: 10
+total_news: 14
 
 news_items:
 
@@ -66,13 +67,5 @@ news_items:
 - text: "I took part in the organization of the [LISN](https://www.lisn.upsaclay.fr/) PhD Days"
   extra_text: "June 2022"
   date: 2022-06-10
-
-- text: "test 1"
-  extra_text: "June 2020"
-  date: 2020-06-10
-
-- text: "test 2"
-  extra_text: "June 2019"
-  date: 2019-06-10
 
 ---

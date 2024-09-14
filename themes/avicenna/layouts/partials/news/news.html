@@ -12,7 +12,7 @@
 {{ $news_icon := $default_news_icon }}
 
 {{ $num_news_to_show := $newsPage.Params.num_news }}
-<div class="news row w-100">
+<div class="news row w-100" id="short_list" style="visibility: visible;">
     <div class="col w-100">
         <ul class="news_list">
             {{ range $item := first $num_news_to_show (sort $news_items "date" "desc") }}
@@ -43,3 +43,59 @@
         </ul>
     </div>
 </div>
+
+{{ $num_news_to_show := $newsPage.Params.total_news }}
+<div class="news row w-100" id="full_list" style="visibility: hidden; height: 0; margin-top: 0;">
+    <div class="col w-100">
+        <ul class="news_list">
+            {{ range $item := first $num_news_to_show (sort $news_items "date" "desc") }}
+            {{ if $item.icon }}
+            {{ $news_icon = $item.icon }}
+            {{ end }}
+
+            <li>
+                {{ if $show_news_icons }}
+             
+               <span>📰</span>
+                {{ end }}
+
+                {{ if $item.link}}
+                <a href='{{ $item.link }}' class="main_color text-decoration-none rounded" target="_blank">
+                    {{ markdownify (emojify $item.text)}}
+                </a>
+                {{ else }}
+                {{ markdownify (emojify $item.text)}}
+                {{ end }}
+
+                {{ if $item.extra_text }}
+                <span class="secondary_font text-muted">- {{ markdownify (emojify $item.extra_text) }}</span>
+                {{end}}
+
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+</div>
+
+<script>
+    function expand_news() {
+        if (document.getElementById('short_list').style.visibility == "visible") {
+            document.getElementById('short_list').style.visibility="hidden";
+            document.getElementById('short_list').style.height=0;
+
+            document.getElementById('full_list').style.visibility="visible";
+            document.getElementById('full_list').style.height="auto";
+
+            document.getElementById('expand_button').innerText=" - ";
+        } else {
+            document.getElementById('short_list').style.visibility="visible";
+            document.getElementById('short_list').style.height="auto";
+
+            document.getElementById('full_list').style.visibility="hidden";
+            document.getElementById('full_list').style.height=0;
+
+            document.getElementById('expand_button').innerText=" + ";
+        }
+    }
+  </script>
+<button type="button" onclick="expand_news()" id="expand_button"> + </button>

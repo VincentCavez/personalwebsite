@@ -12,6 +12,31 @@ body {
     box-sizing: border-box;
   }
   
+#expand_button{
+    display: table-cell;
+    opacity: 1;
+    position: relative;
+    width: 50px;
+    color: #8C1515;
+    font: 15px/1 'Open Sans', sans-serif;
+    border-color: #8C1515;
+    text-align: center;
+    border-radius: 10px;
+    height: 20px;
+    line-height: 0px;
+    vertical-align: middle;
+}
+
+#expand_button:hover {
+    
+    transition-property: background-color,border-radius,color;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    background-color: #ec1b1b;
+    color: #ffffff;
+    border-radius: 0.25rem!important;
+    text-decoration: none;
+}
 
 .gallery {
     background: #6d6d6d1b;
