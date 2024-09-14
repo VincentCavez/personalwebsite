@@ -19,7 +19,7 @@ body {
     width: 50px;
     color: #8C1515;
     font: 15px/1 'Open Sans', sans-serif;
-    border-color: #8C1515;
+    border: 1px solid #8C1515;
     text-align: center;
     border-radius: 10px;
     height: 20px;
@@ -29,14 +29,17 @@ body {
 
 #expand_button:hover {
     
-    transition-property: background-color,border-radius,color;
+    transition-property: background-color,color;
     transition-duration: .4s;
     transition-timing-function: ease-in-out;
     background-color: #ec1b1b;
     color: #ffffff;
-    border-radius: 0.25rem!important;
     text-decoration: none;
 }
+
+#expand_button:focus{
+    outline:none;
+  }
 
 .gallery {
     background: #6d6d6d1b;
