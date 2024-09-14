@@ -15,7 +15,7 @@ news_items:
   extra_text: "July 2024"
   date: 2024-07-01
   
-- text: "I went to [CHI'24](https://chi2024.acm.org/) to present two papers and chair the ["Design Tools" session](https://programs.sigchi.org/chi/2024/program/session/156169)"
+- text: "I went to [CHI'24](https://chi2024.acm.org/) to present two papers and chair the [Design Tools session](https://programs.sigchi.org/chi/2024/program/session/156169)"
   extra_text: "May 2024"
   date: 2024-05-01
   
