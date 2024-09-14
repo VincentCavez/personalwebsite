@@ -11,6 +11,10 @@ num_news: 10
 
 news_items:
 
+- text: "I will participate in the [RJC IHM 2024](https://rjc2024.afihm.org/)"
+  extra_text: "October 2024"
+  date: 2024-10-01
+  
 - text: "I got elected Web Master for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
   extra_text: "July 2024"
   date: 2024-07-01
