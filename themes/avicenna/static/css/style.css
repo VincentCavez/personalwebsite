@@ -19,7 +19,7 @@ body {
     width: 50px;
     color: #8C1515;
     font: 15px/1 'Open Sans', sans-serif;
-    border: 1px solid #8C1515;
+    border-color: #8C1515;
     text-align: center;
     border-radius: 10px;
     height: 20px;
