@@ -12,19 +12,42 @@ body {
     box-sizing: border-box;
   }
   
+.alegreya{
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.grenze-gotisch{
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
 #expand_button{
-    display: table-cell;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+
     opacity: 1;
     position: relative;
     width: 50px;
-    color: #8C1515;
-    font: 15px/1 'Open Sans', sans-serif;
-    border-color: #8C1515;
-    text-align: center;
     border-radius: 10px;
     height: 20px;
-    line-height: 0px;
-    vertical-align: middle;
+
+    color: #8C1515;
+    background-color: #f3e6e6;
+    
+    border-color: #8C1515;
+  
+
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
 #expand_button:hover {
@@ -71,7 +94,7 @@ body {
 }
 
 #full_name {
-    font-family: "CabernetJFPro Regular";
+    
     color: #8C1515
   
 }
@@ -183,18 +206,30 @@ h2 code {
 }
 
 .about #full_name {
-    font-size: x-large;
-    font-family: "CabernetJFPro Regular";
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.4rem;
 }
 
 .about .affiliations #title {
     padding-right: .5%;
-    font-family: "CabernetJFPro Regular";
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
 }
 
 .about .affiliations #name {
     padding-right: .5%;
     font-family: "CabernetJFPro Regular";
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
 }   
 
 .about #email {
@@ -349,7 +384,11 @@ h2 code {
 
 .section-title {
     margin-top: 2.5%;
-    font-family: "CabernetJFPro Regular";
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3rem;
     color: #8C1515;
 }
 

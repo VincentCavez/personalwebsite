@@ -32,6 +32,11 @@ news_items:
   date: 2024-03-15
   type: "election"
 
+- text: "Teaching Assistant of the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction)'s Winter School"
+  extra_text: "March 2024"
+  date: 2024-03-05
+  type: "teaching"
+
 - text: "[Full paper](https://dl.acm.org/doi/10.1145/3613904.3642079) accepted to [ACM CHI'24](https://chi2024.acm.org/)"
   extra_text: "March 2024"
   date: 2024-03-01

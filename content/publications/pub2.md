@@ -1,20 +1,21 @@
 ---
-title: "Spreadsheets on Interactive Surfaces: Breaking through the Grid with the Pen"
+title: "Challenges of Music Score Writing and the Potentials of Interactive Surfaces"
 authors:
 - Vincent Cavez
-- Caroline Appert
+- Catherine Letondal
 - Emmanuel Pietriga
+- Caroline Appert
 
-date: "2023-01-29"
+date: "2024-05-01"
 
-publication: "ToCHI"
+publication: "CHI"
 
-image: css/tableink.png
+image: css/euterpen.png
 
 links:
-    acm: "https://dl.acm.org/doi/10.1145/3630097"
-    hal: "https://inria.hal.science/hal-04272550/en"
-    pdf: "https://inria.hal.science/hal-04272550/document"
-    video: "https://inria.hal.science/hal-04272550v1/file/spreadsheets_on_interactive_surfaces.mp4"
-    
+    html: "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/CHI24/190/6882868b-b929-11ee-8ef9-16bb50361d1f/OUT/chi24-190.html"
+    acm: "https://doi.org/10.1145/3613904.3642079"
+    hal: "https://inria.hal.science/hal-04497643/en"
+    pdf: "https://inria.hal.science/hal-04497643/document"
+    video: "https://inria.hal.science/hal-04497643v1/file/challenges_music_score_writing_CHI24_video.mp4"
 ---
