@@ -8,7 +8,7 @@ show_news_icons: true
 default_news_icon: "file-text"
 
 num_news: 10
-total_news: 19
+total_news: 20
 
 news_items:
 
@@ -106,5 +106,10 @@ news_items:
   extra_text: "June 2022"
   date: 2022-06-10
   type: "activity"
+
+- text: "Attending [CHI'22](https://chi2022.acm.org/) in virtual"
+  extra_text: "April 2022"
+  date: 2022-04-30
+  type: "travel"
 
 ---
