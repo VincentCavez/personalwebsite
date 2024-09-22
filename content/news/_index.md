@@ -32,7 +32,7 @@ news_items:
   date: 2024-05-14
   type: "talk"
   
-- text: "Chairing the [Design Tools B](https://programs.sigchi.org/chi/2024/program/session/156169) session] at [CHI'24](https://chi2024.acm.org/) in Honolulu"
+- text: "Chairing the [Design Tools B session](https://programs.sigchi.org/chi/2024/program/session/156169) at [CHI'24](https://chi2024.acm.org/) in Honolulu"
   extra_text: "May 2024"
   date: 2024-05-13
   type: "talk"
