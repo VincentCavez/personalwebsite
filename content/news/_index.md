@@ -22,12 +22,12 @@ news_items:
   date: 2024-07-01
   type: "election"
   
-- text: "Visiting the [Creativity Lab](https://creativity.ucsd.edu/) at [at University of California San Diego](https://ucsd.edu/)"
+- text: "Visiting the [Creativity Lab](https://creativity.ucsd.edu/) at [University of California San Diego](https://ucsd.edu/)"
   extra_text: "May 2024"
   date: 2024-05-27
   type: "travel"
   
-- text: "Presenting [Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen](https://dl.acm.org/doi/10.1145/3630097) and [Challenges of Music Score Writing and the Potentials of Interactive Surfaces](https://dl.acm.org/doi/10.1145/3613904.3642079) at [CHI'24](https://chi2024.acm.org/)"
+- text: "Presenting [Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen](https://dl.acm.org/doi/10.1145/3630097) and [Challenges of Music Score Writing and the Potentials of Interactive Surfaces](https://dl.acm.org/doi/10.1145/3613904.3642079) at [CHI\'24](https://chi2024.acm.org/)"
   extra_text: "May 2024"
   date: 2024-05-14
   type: "talk"
