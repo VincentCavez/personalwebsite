@@ -72,7 +72,7 @@ news_items:
   date: 2023-12-15
   type: "talk"
 
-- text: "[Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen](https://dl.acm.org/doi/10.1145/3630097) accepted to [ACM ToCHI'24](https://dl.acm.org/journal/tochi)"
+- text: "[Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen](https://dl.acm.org/doi/10.1145/3630097) accepted to [ACM ToCHI](https://dl.acm.org/journal/tochi)"
   extra_text: "September 2023"
   date: 2023-09-26
   type: "paper"

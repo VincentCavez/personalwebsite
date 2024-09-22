@@ -12,9 +12,9 @@ publication: "ToCHI"
 image: css/tableink.png
 
 links:
-    acm: "https://dl.acm.org/doi/10.1145/3630097"
-    hal: "https://inria.hal.science/hal-04272550/en"
     pdf: "https://inria.hal.science/hal-04272550/document"
-    video: "https://inria.hal.science/hal-04272550v1/file/spreadsheets_on_interactive_surfaces.mp4"
+    hal: "https://inria.hal.science/hal-04272550/en"
+    preview: "https://inria.hal.science/hal-04272550v1/file/spreadsheets_on_interactive_surfaces.mp4"
+    doi: "https://dl.acm.org/doi/10.1145/3630097"
     
 ---

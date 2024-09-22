@@ -59,7 +59,7 @@
                                 📙 {{$link_name}}
                             </a>
                         {{end}}
-                        {{ if eq $link_name "acm"}}
+                        {{ if eq $link_name "doi"}}
                             <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
                                 🚀 {{$link_name}}
                             </a>
@@ -69,7 +69,17 @@
                                 🌐 {{$link_name}}
                             </a>
                         {{end}}
-                        {{ if eq $link_name "video"}}
+                        {{ if eq $link_name "preview"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                🎬 {{$link_name}}
+                            </a>
+                        {{end}}
+                        {{ if eq $link_name "demo"}}
+                            <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
+                                🎬 {{$link_name}}
+                            </a>
+                        {{end}}
+                        {{ if eq $link_name "presentation"}}
                             <a class="main_color text-decoration-none rounded" href="{{$link_url}}" target="_blank">
                                 🎬 {{$link_name}}
                             </a>
