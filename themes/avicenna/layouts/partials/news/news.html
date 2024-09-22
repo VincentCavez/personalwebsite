@@ -78,21 +78,31 @@
 
             <li>
                 {{ if $show_news_icons }}
+
                 {{if eq $item.type "paper"}}
                 <span>📜</span>
                 {{ end }}
+
                 {{if eq $item.type "talk"}}
                 <span>💬</span>
                 {{ end }}
+
                 {{if eq $item.type "teaching"}}
                 <span>👨‍🏫</span>
                 {{ end }}
+
                 {{if eq $item.type "election"}}
                 <span>👔</span>
                 {{ end }}
+
                 {{if eq $item.type "activity"}}
                 <span>🎨</span>
                 {{ end }}
+
+                {{if eq $item.type "travel"}}
+                <span>🧳</span>
+                {{ end }}
+                
                 {{ end }}
 
                 {{ if $item.link}}
