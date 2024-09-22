@@ -12,10 +12,10 @@ total_news: 14
 
 news_items:
 
-- text: "I will participate in the [RJC IHM 2024](https://rjc2024.afihm.org/)"
+- text: "I will participate in the [RJC IHM 2024](https://rjc2024.afihm.org/) Summer School"
   extra_text: "October 2024"
   date: 2024-10-01
-  type: "activity"
+  type: "travel"
   
 - text: "Elected Web Master for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
   extra_text: "July 2024"
@@ -27,17 +27,17 @@ news_items:
   date: 2024-05-27
   type: "travel"
   
-- text: "Presenting [Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen](https://dl.acm.org/doi/10.1145/3630097) and [Challenges of Music Score Writing and the Potentials of Interactive Surfaces](https://dl.acm.org/doi/10.1145/3613904.3642079) at [CHI\'24](https://chi2024.acm.org/)"
+- text: "Presenting [Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen](https://dl.acm.org/doi/10.1145/3630097) and [Challenges of Music Score Writing and the Potentials of Interactive Surfaces](https://dl.acm.org/doi/10.1145/3613904.3642079) at [CHI'24](https://chi2024.acm.org/)"
   extra_text: "May 2024"
   date: 2024-05-14
   type: "talk"
   
-  - text: "Chairing the [Design Tools B](https://programs.sigchi.org/chi/2024/program/session/156169) session] at [CHI'24](https://chi2024.acm.org/) in Honolulu"
+- text: "Chairing the [Design Tools B](https://programs.sigchi.org/chi/2024/program/session/156169) session] at [CHI'24](https://chi2024.acm.org/) in Honolulu"
   extra_text: "May 2024"
   date: 2024-05-13
   type: "talk"
   
-  - text: "Attending [IHM'24](https://ihm2024.afihm.org/) in Paris"
+- text: "Attending [IHM'24](https://ihm2024.afihm.org/) in Paris"
   extra_text: "March 2024"
   date: 2024-03-25
   type: "travel"
@@ -77,7 +77,7 @@ news_items:
   date: 2023-09-26
   type: "paper"
   
-  - text: "Attending [CHI'23](https://chi2023.acm.org/) in Hamburg"
+- text: "Attending [CHI'23](https://chi2023.acm.org/) in Hamburg"
   extra_text: "March 2023"
   date: 2023-04-23
   type: "travel"
