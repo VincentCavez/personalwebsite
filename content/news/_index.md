@@ -60,7 +60,7 @@ news_items:
 - text: "Animating a workshop for the [Meetup of Junior Women in Maths and Computer Science](https://filles-et-maths.fr/rjmi/)"
   extra_text: "February 2024"
   date: 2024-02-22
-  type: "talk"
+  type: "activity"
   
 - text: "Elected by my college to be its Titular member on the [Inria Saclay Center Committee](https://intranet.inria.fr/Inria/Instances/Comite-de-centre/Presentation)"
   extra_text: "February 2024"
