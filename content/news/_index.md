@@ -8,7 +8,7 @@ show_news_icons: true
 default_news_icon: "file-text"
 
 num_news: 10
-total_news: 14
+total_news: 19
 
 news_items:
 
