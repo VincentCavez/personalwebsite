@@ -224,7 +224,6 @@ h2 code {
 
 .about .affiliations #name {
     padding-right: .5%;
-    font-family: "CabernetJFPro Regular";
     font-family: "Grenze Gotisch", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -269,7 +268,7 @@ h2 code {
 }
 
 .news-background{
-    background-color: #8c15151b;
+    background-color: #4ab0ff1b;
     border-radius: 20px;
 }
 
