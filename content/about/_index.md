@@ -60,7 +60,7 @@ academia:
 
 I am currently a third-year PhD student at [Paris-Saclay University][1], and I am fortunate to work with [Emmanuel Pietriga][7] and [Caroline Appert][8] in the [ILDA team][2].
 
-My thesis subject is "Designing Pen-based Interactions for Productivity and Creativity" but I often call it by its core concept: "Structure versus freedom". On the one hand, computers are known for their structured software that you can master using mouse and keyboard, and on the other hand, tablets offer a greater freedom of action thanks to the pen and touch inputs. If not designed carefully, tablets software fail to benefit from both structure and their own flexibility potential. Thus, I work on interactive techniques to bind together these two aspects and improve the workflow on spreadsheets, music scores and maps.
+My thesis subject is __"Designing Pen-based Interactions for Productivity and Creativity"__ but I often call it by its core concept: "Structure versus freedom". On the one hand, computers are known for their structured software that you can master using mouse and keyboard, and on the other hand, tablets offer a greater freedom of action thanks to the pen and touch inputs. If not designed carefully, tablets software fail to benefit from both structure and their own flexibility potential. Thus, I work on interactive techniques to bind together these two aspects and improve the workflow on spreadsheets, music scores and maps.
 
 [1]: https://www.universite-paris-saclay.fr/en
 [2]: https://ilda.saclay.inria.fr/
