@@ -17,7 +17,7 @@ news_items:
   date: 2024-10-01
   type: "travel"
   
-- text: "Elected Web Master for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
+- text: "Elected Website Chair for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
   extra_text: "July 2024"
   date: 2024-07-01
   type: "election"
