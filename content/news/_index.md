@@ -12,9 +12,14 @@ total_news: 20
 
 news_items:
 
-- text: "Teaching Assistant for the [Design of Interactive Systems](https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems) course and [Introduction to Human-Computer Interaction](https://www.lri.fr/~mbl/ENS/FONDIHM/2013/) french version of the course"
+- text: "Teaching Assistant of [Wendy Mackay](https://ex-situ.lri.fr/people/mackay) for the [Design of Interactive Systems](https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems) course"
   extra_text: "November 2024"
   date: 2024-11-05
+  type: "teaching"
+
+- text: "Teaching Assistant of [Michel Beaufouin-Lafon](https://www.lri.fr/~mbl/eintroduction.html) for the [Introduction to Human-Computer Interaction](https://www.lri.fr/~mbl/ENS/FONDIHM/2013/) french version of the course"
+  extra_text: "November 2024"
+  date: 2024-11-01
   type: "teaching"
 
 - text: "Made [SIGCHI Paris Chapter](https://paris.sigchi.acm.org) a brand new website!"
@@ -57,7 +62,7 @@ news_items:
   date: 2024-03-15
   type: "election"
 
-- text: "Teaching Assistant of the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction )'s Winter School"
+- text: "Teaching Assistant of [Vanessa Peña-Araya](https://varaya.cl/) for the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction )'s Winter School"
   extra_text: "March 2024"
   date: 2024-03-05
   type: "teaching"
@@ -92,7 +97,7 @@ news_items:
   date: 2023-04-23
   type: "travel"
 
-- text: "Teaching Assistant of the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction )'s Winter School"
+- text: "Teaching Assistant of [Vanessa Peña-Araya](https://varaya.cl/) for the [HCI Master](https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction )'s Winter School"
   extra_text: "March 2023"
   date: 2023-03-05
   type: "teaching"
