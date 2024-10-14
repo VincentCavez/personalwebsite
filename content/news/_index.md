@@ -12,7 +12,17 @@ total_news: 20
 
 news_items:
 
-- text: "I will participate in the [RJC IHM 2024](https://rjc2024.afihm.org/) Summer School"
+- text: "Teaching Assistant for the [Design of Interactive Systems](https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems)" course and [Introduction to Human-Computer Interaction](https://www.lri.fr/~mbl/ENS/FONDIHM/2013/) french version of the course
+  extra_text: "November 2024"
+  date: 2024-11-05
+  type: "teaching"
+
+- text: "Made [SIGCHI Paris Chapter](https://paris.sigchi.acm.org) a brand new website!"
+  extra_text: "October 2024"
+  date: 2024-10-10
+  type: "activity"
+
+- text: "Participating in the [RJC IHM 2024](https://rjc2024.afihm.org/) Summer School"
   extra_text: "October 2024"
   date: 2024-10-01
   type: "travel"
