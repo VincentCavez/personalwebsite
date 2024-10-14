@@ -12,7 +12,7 @@ total_news: 20
 
 news_items:
 
-- text: "Teaching Assistant for the [Design of Interactive Systems](https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems)" course and [Introduction to Human-Computer Interaction](https://www.lri.fr/~mbl/ENS/FONDIHM/2013/) french version of the course
+- text: "Teaching Assistant for the [Design of Interactive Systems](https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems) course and [Introduction to Human-Computer Interaction](https://www.lri.fr/~mbl/ENS/FONDIHM/2013/) french version of the course
   extra_text: "November 2024"
   date: 2024-11-05
   type: "teaching"
