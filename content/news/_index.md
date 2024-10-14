@@ -17,7 +17,7 @@ news_items:
   date: 2024-11-05
   type: "teaching"
 
-- text: "Teaching Assistant of [Michel Beaudouin-Lafon](https://www.lri.fr/~mbl/eintroduction.html) for the [Introduction to Human-Computer Interaction](https://www.lri.fr/~mbl/ENS/FONDIHM/2013/) french version of the course"
+- text: "Teaching Assistant of [Michel Beaudouin-Lafon](https://www.lri.fr/~mbl/eintroduction.html) for the [Introduction to HCI](https://www.lri.fr/~mbl/ENS/FONDIHM/2013/) course (french version)"
   extra_text: "November 2024"
   date: 2024-11-01
   type: "teaching"
