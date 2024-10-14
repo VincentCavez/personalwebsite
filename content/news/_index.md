@@ -22,7 +22,7 @@ news_items:
   date: 2024-11-01
   type: "teaching"
 
-- text: "Made [SIGCHI Paris Chapter](https://paris.sigchi.acm.org) a brand new website!"
+- text: "Made [ACM SIGCHI Paris Chapter](https://paris.sigchi.acm.org) a brand new website!"
   extra_text: "October 2024"
   date: 2024-10-10
   type: "activity"
@@ -32,7 +32,7 @@ news_items:
   date: 2024-10-01
   type: "travel"
   
-- text: "Elected Website Chair for the [Paris ACM SIGCHI Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
+- text: "Elected Website Chair for the [ACM SIGCHI Paris Chapter](https://paris.sigchi.acm.org/homepage/home.php)"
   extra_text: "July 2024"
   date: 2024-07-01
   type: "election"
