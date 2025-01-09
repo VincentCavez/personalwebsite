@@ -1,0 +1,14 @@
+{
+  "name": "pt4spreadsheet",
+  "version": "1.0.0",
+  "description": "Data manipulation interface for Wacom tablet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "iink-js": "^2.0.1"
+  }
+}

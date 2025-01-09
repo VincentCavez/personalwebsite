@@ -1,0 +1,394 @@
+
+
+
+.woodenStroke{
+  fill:rgb(90,61,43);
+}
+
+.background {
+  fill: rgb(255, 255, 255);
+}
+
+#globalContainer{
+  position:relative;
+}
+
+
+#canvasContainer{
+  touch-action: none;
+  z-index: 1000;
+}
+
+#inksContainer{
+  touch-action: none;
+  z-index: 0;
+  position: absolute;
+}
+
+#tableContainer{
+  touch-action: none;
+  position: absolute;
+  /*
+  clip-path: polygon(626px 463px,765px 236px,687px 31px,271px 100px,70px 10px,49px 250px,133px 406px,374px 462px,529px 393px);
+*/
+}
+
+
+#miniTableContainer{
+  touch-action: none;
+  position: absolute;
+}
+
+
+.ink{
+  touch-action: none;
+  position:absolute;
+  z-index: 0;
+}
+
+.plotContainer{
+  touch-action: none;
+  position: absolute;
+}
+
+
+#hoveringRectangle{
+  fill:royalblue;       /*rgb(106, 106, 148);*/
+  opacity: 0.5;
+}
+
+.scroller{
+  fill:rgb(238, 206, 238);
+}
+
+
+.columnCircle{
+  fill:white;
+  stroke:rgb(90,61,43);
+  stroke-width: 2;
+}
+
+.rowCircle{
+  fill:white;
+  stroke:rgb(90,61,43);
+  stroke-width: 2;
+}
+
+
+.listener {
+  opacity: 0;
+}
+text {
+  cursor: move;
+}
+.rowlabel{
+  font-family: 'Quicksand-Semibold';
+  font-size: 15px;
+  opacity:1;
+}
+
+.columnlabel{
+  font-family: 'Quicksand-Semibold';
+  font-size: 15px;
+  opacity:1;
+}
+
+.cell{
+  stroke:#a1a1a1;
+  stroke-width:1;
+}
+
+.cellheader{
+  stroke:#a1a1a1;
+  stroke-width:1;
+  fill:grey
+}
+
+
+.textcell{
+  font-family: 'Quicksand-Regular';
+  font-size: 15px;
+  opacity:1;
+  stroke:black;
+  stroke-width: 0.1;
+  
+}
+
+.minitableTrace{
+  stroke: royalblue; 
+  stroke-width: 4;
+  opacity: 0.5;
+}
+
+.popupIndexcss{
+  font-family: 'Quicksand-Semibold';
+  font-size: 10px;
+  opacity:1;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255),
+                1px -1px 1px rgb(255, 255, 255),
+                -1px 1px 1px rgb(255, 255, 255),
+                -1px -1px 1px rgb(255, 255, 255);
+}
+
+.popupTextcell{
+  font-family: 'Quicksand-Regular';
+  font-size: 10px;
+  opacity:1;
+}
+
+.popupIndexcss_start{
+  font-family: 'Quicksand-Semibold';
+  font-size: 10px;
+  opacity:1;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255),
+                1px -1px 1px rgb(255, 255, 255),
+                -1px 1px 1px rgb(255, 255, 255),
+                -1px -1px 1px rgb(255, 255, 255);
+}
+
+.popupLabels{
+  font-family: 'Quicksand-Semibold';
+  font-size: 10px;
+  opacity:1;
+}
+
+.redbox{
+  
+  fill: rgb(238, 206, 238);
+  opacity: 0.5;
+  /*
+  stroke:crimson;
+  */
+}
+
+.frontRowcss{
+  font-family: 'Quicksand-Semibold';
+  font-size: 15px;
+  opacity:1;
+}
+
+.extend_margin{
+  position:absolute;
+  fill:rgb(226, 226, 226);
+}
+
+.extended_margin{
+  position:absolute;
+  fill:rgb(202, 147, 6);
+}
+
+.bluebutton {
+  position:absolute;
+  fill:darkblue;
+}
+
+
+.pointNotSelected{
+  fill: rgb(247, 117, 85);
+  
+}
+
+.barNotClicked{
+  fill:rgb(224, 221, 43);
+}
+
+.barClicked{
+  fill:rgb(130, 188, 255);
+}
+
+.notbrushed{
+  opacity:0;
+}
+
+.brushed{
+  opacity:0.7;
+  fill:rgb(130, 188, 255);
+}
+
+.miniBoxplotLegend{
+  font-family: 'Quicksand-Regular';
+  font-size: 12px;
+  
+  /*text-shadow: -0.5px 0 #fff7e1, 
+                0 0.5px #fff7e1,
+                0.5px 0 #fff7e1, 
+                0 -0.5px #fff7e1
+      */
+}
+
+#NAlabel{
+  stroke: black;
+  stroke-width: 1px;
+  padding: 10px;
+}
+
+.miniBoxplotHover{
+  font-family: 'Quicksand-Regular';
+  font-size: 12px;
+}
+
+.selStep{
+  font-family: 'Quicksand-Semibold';
+  font-size: 20px;
+}
+
+
+.unavailable {
+ fill:rgba(145, 145, 145, 0.637);
+
+}
+
+.densityArea{
+  fill:rgb(255, 193, 122);
+}
+.boxplotLine{
+  stroke: black;
+}
+.barArea{
+  /*
+  fill:rgb(255, 238, 192);
+  */
+  fill:rgb(255, 226, 148);
+}
+.barAreaSelected{
+  fill:hsl(213, 92%, 87%)
+}
+.barAreaZoomed{
+  fill:rgb(255, 217, 134);
+}
+
+.disabled{
+  fill:rgb(217, 198, 147);
+  stroke:rgb(217, 198, 147);
+}
+
+.plotaxes{
+  font-family: 'Quicksand-Regular';
+}
+
+.plotaxesVertical{
+  font-family: 'Quicksand-Regular';
+  writing-mode: vertical-rl;
+}
+
+.plottitle{
+  font-family: 'Quicksand-Semibold';
+}
+
+.gallery{
+  fill:rgb(82,179,182);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+.gallerytitle{
+  filter: invert(23%) sepia(75%) saturate(4858%) hue-rotate(345deg) brightness(101%) contrast(85%);
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+.jumpingcircle{
+  touch-action: none;
+  fill:teal;
+}
+
+#jumpingman{
+  touch-action: none;
+  position: absolute;
+}
+
+#clock{
+  touch-action: none;
+  position: absolute;
+}
+
+
+.postit{
+  fill:rgb(247, 234, 100);
+  opacity:0.8
+}
+
+.miniPostitContainer{
+  position: absolute;
+}
+
+
+
+.circle{
+  fill:rgb(100, 144, 247)
+}
+
+
+
+
+.sc_principal{
+  position:absolute;
+  stroke: navy;
+  stroke-width: 1.5;
+  fill: hsla(230,100%,50%,0.3);
+}
+.sc_secondary{
+  position:absolute;
+  stroke: none;
+  stroke-width: none;
+  fill: hsla(230,100%,75%,0.15);
+}
+.caret{
+  position:absolute;
+  stroke: navy;
+  stroke-width: 1.5;
+}
+
+.tabsContainer{
+  clip-path: url(#box);
+}
+
+
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url(fonts/Quicksand-Regular.ttf) format("truetype");
+ }
+
+ @font-face {
+  font-family: "Quicksand-Semibold";
+  src: url(fonts/Quicksand-SemiBold.ttf) format("truetype");
+ }
+
+.blue_paint{
+  filter: invert(12%) sepia(86%) saturate(5293%) hue-rotate(244deg) brightness(89%) contrast(155%);
+}
+
+.darkblue_paint{
+  filter : invert(12%) sepia(58%) saturate(7262%) hue-rotate(243deg) brightness(62%) contrast(131%);
+}
+.lightseagreen_paint{
+  filter: invert(83%) sepia(42%) saturate(6851%) hue-rotate(130deg) brightness(90%) contrast(75%);
+}
+.green_paint{
+  filter: invert(17%) sepia(86%) saturate(7464%) hue-rotate(129deg) brightness(100%) contrast(105%);
+}
+.orange_paint{
+  filter: invert(81%) sepia(49%) saturate(5162%) hue-rotate(359deg) brightness(100%) contrast(107%);
+}
+.red_paint{
+  filter: invert(17%) sepia(86%) saturate(7498%) hue-rotate(3deg) brightness(105%) contrast(120%);
+}
+.black_paint{
+  filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(313deg) brightness(93%) contrast(107%);
+}
+
+#iinkLayer {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+#iinkWrapper {
+  width:400px;
+  height:200px;
+}
