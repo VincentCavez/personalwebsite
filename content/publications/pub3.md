@@ -10,7 +10,7 @@ date: "2025-05-01"
 
 publication: "CHI"
 
-image: css/euterpen2.png
+image: css/euterpen2.jpg
 
 links:
     preview: "https://youtu.be/kQCPalX9SqM"
