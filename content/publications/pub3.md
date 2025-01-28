@@ -13,6 +13,6 @@ publication: "CHI"
 image: css/euterpen2.jpg
 
 links:
-    demo: "https://youtu.be/kQCPalX9SqM"
+    demo: "https://youtu.be/Ft8iVLEYzuQ"
    
 ---
