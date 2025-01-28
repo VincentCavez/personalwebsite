@@ -12,6 +12,11 @@ total_news: 20
 
 news_items:
 
+- text: "Visiting the [VISVAR Lab](https://visvar.github.io/) at [University of Stuttgart](https://www.visus.uni-stuttgart.de/en/)"
+  extra_text: "February 2025"
+  date: 2025-02-11
+  type: "travel"
+
 - text: "Teaching Assistant of [Wendy Mackay](https://ex-situ.lri.fr/people/mackay) for the [Design of Interactive Systems](https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems) course"
   extra_text: "November 2024"
   date: 2024-11-05
