@@ -3,8 +3,8 @@ title: "(To appear) EuterPen: Unleashing Creative Expression in Music Score Writ
 authors:
 - Vincent Cavez
 - Catherine Letondal
-- Emmanuel Pietriga
 - Caroline Appert
+- Emmanuel Pietriga
 
 date: "2025-05-01"
 
@@ -13,6 +13,7 @@ publication: "CHI"
 image: css/euterpen2.jpg
 
 links:
+    html: "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/CHI25/405/3a612cf5-d7ea-11ef-ada9-16bb50361d1f/OUT/chi25-405.html"
     demo: "https://youtu.be/Ft8iVLEYzuQ"
    
 ---
