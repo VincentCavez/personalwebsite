@@ -24,6 +24,3 @@ startLevel = 1
 [params]
 # it is used for the copy-right section of your page
 name = "Vincent Cavez"
-
-- name: Upload a Build Artifact
-  uses: actions/upload-artifact@v4.6.0
