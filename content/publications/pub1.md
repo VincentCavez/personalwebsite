@@ -15,7 +15,7 @@ links:
     pdf: "https://inria.hal.science/hal-04272550/document"
     hal: "https://inria.hal.science/hal-04272550/en"
     demo: "https://inria.hal.science/hal-04272550v1/file/spreadsheets_on_interactive_surfaces.mp4"
-    presentation: "https://www.youtube.com/watch?v=XhsH7LGY4JY&t=147s&ab_channel=VincentCavez"
+    presentation: "https://youtu.be/XhsH7LGY4JY?si=FjNQKjqdF9AXXCvf"
     doi: "https://dl.acm.org/doi/10.1145/3630097"
 
 ---
