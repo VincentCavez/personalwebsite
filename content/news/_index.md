@@ -12,10 +12,20 @@ total_news: 20
 
 news_items:
 
+- text: "Successfully defended my [PhD thesis](https://theses.hal.science/tel-04986694)"
+  extra_text: "March 2025"
+  date: 2025-03-03
+  type: "talk"
+
 - text: "Visiting the [VISVAR Lab](https://visvar.github.io/) at [University of Stuttgart](https://www.visus.uni-stuttgart.de/en/)"
   extra_text: "February 2025"
   date: 2025-02-11
   type: "travel"
+
+- text: "[EuterPen: Unleashing Creative Expression in Music Score Writing](https://www.vincentcavez.com/euterPen.pdf) accepted to [ACM CHI'25](https://chi2025.acm.org/)"
+  extra_text: "February 2025"
+  date: 2025-02-01
+  type: "paper"
 
 - text: "Teaching Assistant of [Wendy Mackay](https://ex-situ.lri.fr/people/mackay) for the [Design of Interactive Systems](https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems) course"
   extra_text: "November 2024"

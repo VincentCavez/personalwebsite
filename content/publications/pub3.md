@@ -17,5 +17,6 @@ links:
     demo: "https://youtu.be/Ft8iVLEYzuQ"
     pdf: "https://vincentcavez.com/euterPen.pdf"
     hal: "https://inria.hal.science/hal-04989074"
+    doi: "https://doi.org/10.1145/3706598.3713488"
    
 ---
