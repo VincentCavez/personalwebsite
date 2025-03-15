@@ -58,9 +58,9 @@ academia:
 
 
 
-I am a PhD candidate at [Paris-Saclay University][1], and I am fortunate to work with [Emmanuel Pietriga][7] and [Caroline Appert][8] in the [ILDA team][2].
+Hi! I'm Vincent Cavez, PhD in Human-Computer Interaction. I was fortunate to write my PhD thesis under the supervision of [Emmanuel Pietriga][7] and [Caroline Appert][8], within the [ILDA team][2].
 
-My thesis subject is _"Designing Pen-based Interactions for Productivity and Creativity"_ but I often call it by its core concept: "Structure versus Freedom". On the one hand, computers are known for their structured software that you can master using mouse and keyboard, and on the other hand, tablets offer a greater freedom of action thanks to the pen and touch inputs. If not designed carefully, tablets software fail to benefit from both structure and their own flexibility potential. Thus, I work on interactive techniques to bind together these two aspects and promote productivity and creativity.
+My thesis subject was _"Designing Pen-based Interactions for Productivity and Creativity"_ but I often call it by its core concept: "Structure versus Freedom". On the one hand, computers are known for their structured software that you can master using mouse and keyboard, and on the other hand, tablets offer a greater freedom of action thanks to the pen and touch inputs. If not designed carefully, tablets software fail to benefit from both structure and their own flexibility potential. Thus, I work on interactive techniques to bind together these two aspects and promote productivity and creativity.
 
 [1]: https://www.universite-paris-saclay.fr/en
 [2]: https://ilda.saclay.inria.fr/
