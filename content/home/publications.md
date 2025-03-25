@@ -7,7 +7,7 @@ weight: 3
 content_type: 'publications'
 section_settings:
     show_section: true
-    title: 'Publications'
+    title: 'International Publications'
     subtitle: ''    
 ---
 

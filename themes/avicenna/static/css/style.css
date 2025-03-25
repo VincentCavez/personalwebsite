@@ -105,6 +105,25 @@ body {
     }
 }
 
+.posterpic {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #8C1515, #ff0000) 1;
+    width: 140px;
+    height: 198px;
+   
+}
+
+@media (max-width: 768px) { /* For mobile screens */
+    .posterpic {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #8C1515, #ff0000) 1;
+        width: 100px;  /* Smaller width for mobile */
+        height: 141px;
+    }
+}
+
 #full_name {
     
     color: #8C1515

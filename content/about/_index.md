@@ -20,8 +20,7 @@ interests:
     - Multimodal Interaction
     - Multi-Layer and Multi-Scale Contexts
     - Data Visualization and Design
-    - Machine Learning
-    - Computer Vision
+    - Education and Learning
 
 affiliations:
     - affiliation:
