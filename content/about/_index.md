@@ -34,7 +34,7 @@ academia:
         degree: "Paris-Saclay University"
         institution:  "Ph.D. in Human-Computer Interaction"
         major: ""
-        start_date: "2021"
+        end_date: "2025"
     - course:
         degree: 'Paris-Descartes University'
         institution: "M.Sc. in Mathematical Engineering and Biostatistics"
