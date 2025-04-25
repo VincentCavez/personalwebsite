@@ -17,5 +17,6 @@ links:
     demo: "https://inria.hal.science/hal-04272550v1/file/spreadsheets_on_interactive_surfaces.mp4"
     presentation: "https://youtu.be/XhsH7LGY4JY?si=FjNQKjqdF9AXXCvf"
     doi: "https://dl.acm.org/doi/10.1145/3630097"
+    code: "https://github.com/VincentCavez/EunomInk"
 
 ---

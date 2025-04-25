@@ -78,6 +78,14 @@
                         
                     {{end}}
 
+                    {{ if $links.code}}
+                        
+                        <a class="main_color text-decoration-none rounded" href="{{$links.code}}" target="_blank">
+                            ⚙️ code
+                        </a>
+                        
+                    {{end}}
+
                     {{ if $links.website}}
                     
                         <a class="main_color text-decoration-none rounded" href="{{$links.website}}" target="_blank">

@@ -19,5 +19,6 @@ links:
     hal: "https://inria.hal.science/hal-04989074"
     doi: "https://doi.org/10.1145/3706598.3713488"
     presentation: "https://youtu.be/nXOP_JexYTk"
+    code: "https://github.com/VincentCavez/EuterPen"
    
 ---
