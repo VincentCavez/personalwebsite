@@ -31,6 +31,11 @@ affiliations:
 
 academia:
     - course:
+        degree: "Stanford University"
+        institution:  "Postdoctoral Scholar"
+        major: ""
+        start_date: "2025"
+    - course:
         degree: "Paris-Saclay University"
         institution:  "Ph.D. in Human-Computer Interaction"
         major: ""
