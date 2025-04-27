@@ -24,9 +24,9 @@ interests:
 
 affiliations:
     - affiliation:
-        title: "Ph.D. Student"
-        name: "Paris-Saclay University"
-        email: "vincent.cavez@inria.fr"
+        title: "Postdoctoral Scholar"
+        name: "Stanford University"
+        email: "contact@vincentcavez.com"
    
 
 academia:
