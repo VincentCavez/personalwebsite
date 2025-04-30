@@ -20,5 +20,6 @@ links:
     doi: "https://doi.org/10.1145/3706598.3713488"
     presentation: "https://youtu.be/nXOP_JexYTk"
     code: "https://github.com/VincentCavez/EuterPen"
+    talk: "https://youtu.be/v48YBrHsmxw?si=TAFS7WUlYwAteK6a"
    
 ---

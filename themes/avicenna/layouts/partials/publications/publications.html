@@ -101,7 +101,7 @@
                         </a>
                        
                     {{end}}
-
+                    
                     {{ if $links.demo}}
                      
                         <a class="main_color text-decoration-none rounded" href="{{$links.demo}}" target="_blank">
@@ -116,6 +116,14 @@
                             🎬 presentation
                         </a>
                       
+                    {{end}}
+
+                    {{ if $links.talk}}
+                        
+                        <a class="main_color text-decoration-none rounded" href="{{$links.preview}}" target="_blank">
+                            💬 talk
+                        </a>
+                       
                     {{end}}
 
                     {{ if $links.doi}}
