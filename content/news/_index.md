@@ -12,6 +12,11 @@ total_news: 20
 
 news_items:
 
+- text: "Presenting [EuterPen: Unleashing Creative Expression in Music Score Writing](https://dl.acm.org/doi/10.1145/3706598.3713488) at [CHI'25](https://chi2025.acm.org/)"
+  extra_text: "April 2025"
+  date: 2025-04-28
+  type: "talk"
+
 - text: "Successfully defended my [PhD thesis](https://theses.hal.science/tel-04986694) in Paris-Saclay University!"
   extra_text: "March 2025"
   date: 2025-03-03
