@@ -20,7 +20,7 @@ news_items:
 - text: "Successfully defended my [PhD thesis](https://theses.hal.science/tel-04986694) in Paris-Saclay University!"
   extra_text: "March 2025"
   date: 2025-03-03
-  type: "talk"
+  type: "diploma"
 
 - text: "Visiting the [VISVAR Lab](https://visvar.github.io/) at [University of Stuttgart](https://www.visus.uni-stuttgart.de/en/)"
   extra_text: "February 2025"
