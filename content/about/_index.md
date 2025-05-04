@@ -18,7 +18,7 @@ socials:
 interests:
     - Interactive Surfaces
     - Multimodal Interaction
-    - Multi-Layer and Multi-Scale Contexts
+    - Malleable Interfaces
     - Data Visualization and Design
     - Education and Learning
 
@@ -26,7 +26,7 @@ affiliations:
     - affiliation:
         title: "Postdoctoral Scholar"
         name: "Stanford University"
-        email: "contact@vincentcavez.com"
+        email: "vcavez@stanford.edu"
    
 
 academia:
