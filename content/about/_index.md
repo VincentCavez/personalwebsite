@@ -14,7 +14,7 @@ socials:
     twitter: "Vincent_Cavez"
     linkedin: "vincentcavez"
     instagram: "vincentkv_"
-    google_scholar: "Vincent Cavez"
+    google_scholar: "JSY1rtEAAAAJ&hl=en&oi=ao"
 
 interests:
     - Interactive Surfaces
