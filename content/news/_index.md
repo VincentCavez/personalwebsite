@@ -22,7 +22,7 @@ news_items:
   date: 2025-03-03
   type: "diploma"
 
-- text: "Visiting the [VISVAR Lab](https://visvar.github.io/) at [University of Stuttgart](https://www.visus.uni-stuttgart.de/en/)"
+- text: "Presenting my work at the [VISVAR Lab](https://visvar.github.io/) at [University of Stuttgart](https://www.visus.uni-stuttgart.de/en/)"
   extra_text: "February 2025"
   date: 2025-02-11
   type: "travel"
@@ -57,7 +57,7 @@ news_items:
   date: 2024-07-01
   type: "election"
   
-- text: "Visiting the [Creativity Lab](https://creativity.ucsd.edu/) at [University of California San Diego](https://ucsd.edu/)"
+- text: "Presenting my work at the [Creativity Lab](https://creativity.ucsd.edu/) at [University of California San Diego](https://ucsd.edu/)"
   extra_text: "May 2024"
   date: 2024-05-27
   type: "travel"
