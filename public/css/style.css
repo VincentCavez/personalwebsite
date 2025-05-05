@@ -1,0 +1,488 @@
+
+body {
+    
+    font-family: 'Inter', sans-serif;
+    /*font-family: "CabernetJFPro Regular";*/
+    /*font-family: "CabernetJFPro Italic";*/
+    color: #071013;
+    
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+.alegreya{
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.grenze-gotisch{
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+#expand_button{
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+
+    opacity: 1;
+    position: relative;
+    width: 50px;
+    border-radius: 10px;
+    height: 20px;
+
+    color: #8C1515;
+    background-color: #f3e6e6;
+    
+    border-color: #8C1515;
+  
+
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#expand_button:hover {
+    
+    transition-property: background-color,color;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    background-color: #ec1b1b;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#expand_button:focus{
+    outline:none;
+  }
+
+.gallery {
+    background: #6d6d6d1b;
+  }
+  
+.gallery-cell {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+}
+  
+/* cell number */
+.gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+  
+.pic {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #8C1515, #ff0000) 1;
+    width: 140px;
+    height: 140px;
+   
+}
+
+@media (max-width: 768px) { /* For mobile screens */
+    .pic {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #8C1515, #ff0000) 1;
+        width: 100px;  /* Smaller width for mobile */
+        height: 100px;
+    }
+}
+
+.posterpic {
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #8C1515, #ff0000) 1;
+    width: 140px;
+    height: 198px;
+   
+}
+
+@media (max-width: 768px) { /* For mobile screens */
+    .posterpic {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #8C1515, #ff0000) 1;
+        width: 100px;  /* Smaller width for mobile */
+        height: 141px;
+    }
+}
+
+#full_name {
+    
+    color: #8C1515
+  
+}
+
+a {
+    color: #8C1515;
+}
+
+a:hover {
+    
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    background-color: #8C1515;
+    color: #ffffff;
+    border-radius: 0.25rem!important;
+    text-decoration: none;
+}
+
+h2 code {
+  /*font-family: Consolas,"courier new";*/
+  font-family: "CabernetJFPro Regular";/*????*/
+  /* background-color: #f1f1f1; */
+  background-color:  #8C1515;
+  color: white;
+  padding: 2px;
+}
+
+#TableOfContents ul {
+    margin: auto;
+    padding-left: 2%;
+    padding-top: 0%;
+}
+#TableOfContents {
+    margin: auto;
+}
+
+.toc {
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.body {
+    margin: auto;
+    
+}
+
+.h-100 {
+    margin: auto;
+}
+
+.w-100 {
+    margin: auto;
+}
+
+.w-20 {
+    margin: auto;
+    max-width: 20%;
+    position: relative;
+    width: 20%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+}
+
+.w-80 {
+    margin: auto;
+    max-width: 80%;
+    position: relative;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+
+}
+
+.main_color  {
+    color: #8C1515;
+}
+
+
+
+.secondary_color {
+    color: #071013;
+}
+
+.email_color {
+    color: #071013;
+}
+
+.secondary_font {
+    font-family: 'Ubuntu Mono', serif;
+    /*dates des news*/
+}
+
+.section-subtitle {
+    font-family: 'Ubuntu Mono', serif;
+}
+
+#profile_picture  {
+    width: 20%;
+    aspect-ratio : 1 / 1;
+    margin-top: 1%;
+}
+
+.about #full_name {
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.4rem;
+}
+
+.about .affiliations #title {
+    padding-right: .5%;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.about .affiliations #name {
+    padding-right: .5%;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}   
+
+.about #email {
+    font-family: 'Ubuntu Mono', serif; 
+    margin: auto;
+}
+
+.about .socials {
+    font-size: small;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.about .socials a {
+    margin-left: .6%;
+}
+
+.about #blog_logo {
+    font-size: smaller;
+    margin-top: .2%;
+}
+
+.about .academia .degree_major {
+    font-size: small;
+}
+
+.about .academia .other_info {
+    font-size: small;
+}
+
+.course {
+    margin-top: 1%;
+}
+
+.news {
+    margin-top: 1.5%;
+}
+
+.news-background{
+    background-color: #4ab0ff1b;
+    border-radius: 20px;
+}
+
+.news_list  {
+    padding: 0%;
+    list-style-type: none;
+}
+
+.news_list svg {
+    margin-right: .5%;
+}
+
+.news_icon i {
+    font-size: x-small;
+    color: #071013;
+}
+
+.publications .publication {
+    margin-top: 1.5%;
+    
+}
+
+.publication .section-1 .publication-date {
+    font-family: 'Ubuntu Mono', serif;
+    /*???*/
+}
+
+.publication .section-1 .publication-name {
+    font-family: 'Ubuntu Mono', serif;/*???*/
+}
+
+
+.publication .section-2 {
+    font-family: 'Ubuntu Mono', serif;/*authors, venue and date*/
+    margin-top: -.1%;
+    margin-bottom: .5%;
+}
+
+
+.publication .section-3 {
+    margin-top: -.5%;
+    font-family: 'Ubuntu Mono', serif;/*links*/
+    text-decoration: none;
+}
+
+.publication .section-3 a{
+    padding: .15%;
+}
+
+.publication .section-3 a:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    background-color: #8C1515;
+    border-radius: 0.25rem!important;
+    color: #ffffff;
+    
+}
+
+.publication .separator {
+    margin-left: -1%;
+}
+
+.projects .project {
+    margin-top: 1.5%;
+}
+
+.project .section-2 a {
+    padding: .8%;
+    margin-left: -.1%;
+}
+
+.projects .project a{
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+}
+.projects .project .section-2 a:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    background-color: #8C1515;
+    border-radius: 0.25rem!important;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.teachings .teaching {
+    margin-top: 1.5%;
+}
+
+.teaching .section-2 a {
+    padding: .8%;
+    margin-left: -.1%;
+}
+
+.teachings .teaching a{
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+}
+.teachings .teaching .section-2 a:hover {
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+
+    border-radius: 50%;
+    color: #8C1515;
+}
+
+
+
+.section-title {
+    margin-top: 2.5%;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.3rem;
+    color: #8C1515;
+}
+
+.copy_right {
+    font-size: small;
+}
+.pagination {
+    margin: auto;
+}
+
+.pagination a  {
+    color: #8C1515;
+    size: 100%;
+}
+
+.pagination .page_link  {
+    font-weight: bold;
+    background-color: #8C1515;
+}
+
+.page-item.active .page-link {
+    border-color: black;
+    background-color: #8C1515;
+    font-weight: bold;
+    color: white;
+}
+
+.tags_navigation {
+    margin-bottom: .5%;
+}
+
+.tags_navigation .tag {
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+    background-color: #8C1515;
+    color: aliceblue;
+    padding-left: .5%;
+    padding-right: .5%;
+}
+
+.tags_navigation .tag:hover {
+    text-decoration: underline;
+}
+
+.blog_nav_bar {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.blog_nav_bar .item {
+    font-family: 'Ubuntu Mono', serif;
+    padding: .15%;
+    background-color: #8C1515;
+    color: aliceblue;
+    padding-left: .5%;
+    padding-right: .5%;
+}
+
+.reading_time {
+    font-family: 'Ubuntu Mono', serif;
+    margin-top: -.5%;
+    margin-bottom: 1%;
+}
+
+.read_more {
+    margin-top: 1%;
+}
