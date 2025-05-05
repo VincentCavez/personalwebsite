@@ -47,6 +47,10 @@
                 <span>🧳</span>
                 {{ end }}
 
+                {{if eq $item.type "diploma"}}
+                <span>🎓</span>
+                {{ end }}
+
                 {{ end }}
 
                 {{ if $item.link}}
@@ -104,7 +108,7 @@
                 {{ end }}
 
                 {{if eq $item.type "diploma"}}
-                <span>🍾</span>
+                <span>🎓</span>
                 {{ end }}
                 
                 {{ end }}
