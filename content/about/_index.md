@@ -62,10 +62,9 @@ academia:
 ---
 
 
+Hi! I'm Vincent Cavez, a french Postdoctoral Scholar in [Human-Centered AI][10] and [Education][11] at Stanford University. Under the supervision of [Hari Subramonyam][9], I design AI and pen-based interfaces to support speech-language pathologists in tracking progress and optimizing interventions with their patients.
 
-Hi! I'm Vincent Cavez, PhD in Human-Computer Interaction. I was fortunate to work on my PhD thesis under the supervision of [Emmanuel Pietriga][7] and [Caroline Appert][8], within the [ILDA team][2].
-
-My thesis subject was _"Designing Pen-based Interactions for Productivity and Creativity"_ but I often call it by its core concept: "Structure versus Freedom". On the one hand, computers are known for their structured software that you can master using mouse and keyboard, and on the other hand, tablets offer a greater freedom of action thanks to the pen and touch inputs. If not designed carefully, tablets software fail to benefit from both structure and their own flexibility potential. Thus, I worked on interactions to bind together these two aspects and promote productivity and creativity.
+Before that, I was fortunate to pursue my PhD thesis [_"Designing Pen-based Interactions for Productivity and Creativity"_][6] with the help of my amazing supervisors, [Emmanuel Pietriga][7] and [Caroline Appert][8], within the [ILDA team][2].
 
 [1]: https://www.universite-paris-saclay.fr/en
 [2]: https://ilda.saclay.inria.fr/
@@ -75,3 +74,6 @@ My thesis subject was _"Designing Pen-based Interactions for Productivity and Cr
 [6]: https://www.theses.fr/s297907
 [7]: https://pages.saclay.inria.fr/emmanuel.pietriga/
 [8]: https://www.lri.fr/~appert/
+[9]: https://haridecoded.com/
+[10]: https://hai.stanford.edu/
+[11]: https://ed.stanford.edu/
