@@ -11,6 +11,7 @@
     {{- partial "core/footer.html" . -}}
     {{- partial "core/script.html" . -}}
     <canvas id="traceCanvas"></canvas>
+    
     <script>
 
     const canvas = document.getElementById('traceCanvas');
@@ -92,6 +93,10 @@
     canvas.addEventListener('mousemove', draw);
     canvas.addEventListener('mouseleave', stopDrawing);
     canvas.addEventListener('mouseout', stopDrawing);
+
+    canvas.addEventListener('pointerdown', (e) => {
+  e.preventDefault();
+}, { passive: false });
 
     fadeLines(); // Start the fade-out loop
     </script>
