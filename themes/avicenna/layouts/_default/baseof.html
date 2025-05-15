@@ -100,21 +100,12 @@
       document.body.style.cursor = 'auto';
     });
 
-    if ('scrollend' in window) {
+  
       window.addEventListener('scrollend', (e) => {
         stopDrawing();
         startDrawing(e);
       });
-    } else {
-      let scrollTimeout;
-      window.addEventListener('scroll', () => {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout((e) => {
-          stopDrawing();
-          startDrawing(e);
-        }, 200);
-      });
-    }
+   
 
    
     canvas.addEventListener('pointerdown', (e) => {
