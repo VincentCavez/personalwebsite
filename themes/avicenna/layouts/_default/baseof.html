@@ -91,23 +91,27 @@
     }
 
     function handleScrollEnd(e) {
-      console.log("ca repart")
-        stopDrawing();
-        startDrawing(e);
-}
+      stopDrawing();
+      startDrawing(e);
+    }
 
-    canvas.addEventListener('mouseenter', startDrawing,
+    function canvasbehavior(e) {
+      startDrawing(e)
       window.addEventListener('scrollend', handleScrollEnd)
-      
-    )
-    canvas.addEventListener('mousemove', draw);
-    canvas.addEventListener('mouseleave', stopDrawing,
+    }
+
+    canvas.addEventListener('mouseenter', canvasbehavior);
+    
+    function bodybehavior() {
+      stopDrawing();
       window.removeEventListener('scrollend', handleScrollEnd)
-    )
+    }
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseleave', bodybehavior);
+    
    
     window.addEventListener('scroll', () => {
       document.body.style.cursor = 'auto';
-      
     });
 
   
