@@ -34,6 +34,7 @@
     const lines = [];
 
     function startDrawing(e) {
+      document.body.style.cursor = 'url(css/pen.png), auto';
       isDrawing = true;
       lastX = e.pageX;
       lastY = e.pageY;
@@ -63,6 +64,7 @@
 
     function stopDrawing() {
       isDrawing = false;
+      document.body.style.cursor = 'auto';
     }
 
     // Fade out lines over time
@@ -72,7 +74,7 @@
 
       lines.forEach(line => {
         const elapsed = currentTime - line.timestamp;
-        const fadeDuration = 1000; // 5 seconds fade duration
+        const fadeDuration = 1000; 
         const opacity = Math.max(0, 1 - elapsed / fadeDuration);
 
         if (opacity > 0) {
@@ -93,7 +95,10 @@
     canvas.addEventListener('mousemove', draw);
     canvas.addEventListener('mouseleave', stopDrawing);
     canvas.addEventListener('mouseout', stopDrawing);
-
+    window.addEventListener('scrollend', (e) => {
+  stopDrawing();
+  startDrawing(e);
+});
     canvas.addEventListener('pointerdown', (e) => {
   e.preventDefault();
 }, { passive: false });
