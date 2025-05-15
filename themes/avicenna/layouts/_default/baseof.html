@@ -4,10 +4,97 @@
 {{- partial "core/head.html" . -}}
 
 <body class="container d-flex flex-column min-vh-100">
+    
+
     {{- block "main" . }}{{- end }}
 
     {{- partial "core/footer.html" . -}}
     {{- partial "core/script.html" . -}}
-</body>
+    <canvas id="traceCanvas"></canvas>
+    <script>
+
+    const canvas = document.getElementById('traceCanvas');
+    const ctx = canvas.getContext('2d');
+    const strokes = [];
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+
+    // Set canvas size
+    function resizeCanvas() {
+      canvas.width = document.documentElement.scrollWidth;
+      canvas.height = document.documentElement.scrollHeight;
+      console.log(canvas.width, canvas.height)
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas(); // Initial call to set the canvas size
+
+    const lines = [];
+
+    function startDrawing(e) {
+      isDrawing = true;
+      lastX = e.pageX;
+      lastY = e.pageY;
+    }
+
+    function draw(e) {
+      if (!isDrawing) return;
+
+      const currentX = e.pageX;
+      const currentY = e.pageY;
+
+      // Store line segment with timestamp
+      lines.push({ x1: lastX, y1: lastY, x2: currentX, y2: currentY, timestamp: Date.now() });
+
+      // Draw the line segment
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(currentX, currentY);
+      ctx.lineWidth = 5;
+      ctx.strokeStyle = 'rgba(252, 236, 209, 1)';
+      ctx.lineCap = 'round';
+      ctx.stroke();
+
+      lastX = currentX;
+      lastY = currentY;
+    }
+
+    function stopDrawing() {
+      isDrawing = false;
+    }
+
+    // Fade out lines over time
+    function fadeLines() {
+      const currentTime = Date.now();
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      lines.forEach(line => {
+        const elapsed = currentTime - line.timestamp;
+        const fadeDuration = 1000; // 5 seconds fade duration
+        const opacity = Math.max(0, 1 - elapsed / fadeDuration);
+
+        if (opacity > 0) {
+          ctx.beginPath();
+          ctx.moveTo(line.x1, line.y1);
+          ctx.lineTo(line.x2, line.y2);
+          ctx.lineWidth = 5;
+          ctx.strokeStyle = `rgba(252, 236, 209, ${opacity})`;
+          ctx.lineCap = 'round';
+          ctx.stroke();
+        }
+      });
+
+      requestAnimationFrame(fadeLines);
+    }
+
+    canvas.addEventListener('mouseenter', startDrawing);
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseleave', stopDrawing);
+    canvas.addEventListener('mouseout', stopDrawing);
+
+    fadeLines(); // Start the fade-out loop
+    </script>
+  </body>
 
 </html>

@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     
@@ -112,6 +112,10 @@
 
 
         
+        <a class="main_color" rel="me" href='https://scholar.google.com/citations?user=JSY1rtEAAAAJ&amp;hl=en&amp;oi=ao' target="_blank">
+            <i class="ai ai-2x ai-google-scholar academic_icons_customize"></i>
+        </a>
+        
 
         
 
@@ -153,8 +157,8 @@
 
 <div class="introduction row w-100 text-justify">
     <div class="col w-100">
-        <p>Hi! I&rsquo;m Vincent Cavez, PhD in Human-Computer Interaction. I was fortunate to work on my PhD thesis under the supervision of <a href="https://pages.saclay.inria.fr/emmanuel.pietriga/">Emmanuel Pietriga</a> and <a href="https://www.lri.fr/~appert/">Caroline Appert</a>, within the <a href="https://ilda.saclay.inria.fr/">ILDA team</a>.</p>
-<p>My thesis subject was <em>&ldquo;Designing Pen-based Interactions for Productivity and Creativity&rdquo;</em> but I often call it by its core concept: &ldquo;Structure versus Freedom&rdquo;. On the one hand, computers are known for their structured software that you can master using mouse and keyboard, and on the other hand, tablets offer a greater freedom of action thanks to the pen and touch inputs. If not designed carefully, tablets software fail to benefit from both structure and their own flexibility potential. Thus, I worked on interactions to bind together these two aspects and promote productivity and creativity.</p>
+        <p>Hi! I&rsquo;m Vincent Cavez, a french Postdoctoral Scholar in <a href="https://hai.stanford.edu/">Human-Centered AI</a> and <a href="https://ed.stanford.edu/">Education</a> at Stanford University. Under the supervision of <a href="https://haridecoded.com/">Hari Subramonyam</a>, I design AI and pen-based interfaces to support speech-language pathologists in tracking progress and optimizing interventions with their patients.</p>
+<p>Before that, I was fortunate to pursue my PhD thesis <a href="https://www.theses.fr/s297907"><em>&ldquo;Designing Pen-based Interactions for Productivity and Creativity&rdquo;</em></a> with the help of my amazing supervisors, <a href="https://pages.saclay.inria.fr/emmanuel.pietriga/">Emmanuel Pietriga</a> and <a href="https://www.lri.fr/~appert/">Caroline Appert</a>, within the <a href="https://ilda.saclay.inria.fr/">ILDA team</a>.</p>
 
     </div>
 </div>
@@ -2375,6 +2379,56 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 <script>
     feather.replace()
-</script></body>
+</script><canvas id="traceCanvas"></canvas>
+  <script>
+    const canvas = document.getElementById('traceCanvas');
+    const ctx = canvas.getContext('2d');
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+    let hue = 0;
+
+    
+    function resizeCanvas() {
+  canvas.width = document.documentElement.scrollWidth;
+  canvas.height = document.documentElement.scrollHeight;
+  
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); 
+
+    
+   
+    
+    
+    canvas.addEventListener('mouseenter', (e) => {
+       
+      isDrawing = true;
+      [lastX, lastY] = [e.pageX, e.pageY];
+    },{ passive: true });
+
+    
+    canvas.addEventListener('mouseleave', () => {
+      isDrawing = false;
+    },{ passive: true });
+
+    
+    canvas.addEventListener('mousemove', (e) => {
+      if (!isDrawing) return;
+      const [x, y] = [e.pageX, e.pageY];
+      ctx.strokeStyle = `rgb(252, 236, 209)`;
+      ctx.lineWidth = 5;
+      ctx.lineJoin = ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(x, y);
+      ctx.stroke();
+      [lastX, lastY] = [x, y];
+      hue += 1;
+      if (hue >= 360) hue = 0;
+    },{ passive: true });
+  </script>
+</body>
 
 </html>

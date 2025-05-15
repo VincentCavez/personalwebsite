@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     
@@ -247,6 +247,56 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
 <script>
     feather.replace()
-</script></body>
+</script><canvas id="traceCanvas"></canvas>
+  <script>
+    const canvas = document.getElementById('traceCanvas');
+    const ctx = canvas.getContext('2d');
+    let isDrawing = false;
+    let lastX = 0;
+    let lastY = 0;
+    let hue = 0;
+
+    
+    function resizeCanvas() {
+  canvas.width = document.documentElement.scrollWidth;
+  canvas.height = document.documentElement.scrollHeight;
+  
+}
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); 
+
+    
+   
+    
+    
+    canvas.addEventListener('mouseenter', (e) => {
+       
+      isDrawing = true;
+      [lastX, lastY] = [e.pageX, e.pageY];
+    },{ passive: true });
+
+    
+    canvas.addEventListener('mouseleave', () => {
+      isDrawing = false;
+    },{ passive: true });
+
+    
+    canvas.addEventListener('mousemove', (e) => {
+      if (!isDrawing) return;
+      const [x, y] = [e.pageX, e.pageY];
+      ctx.strokeStyle = `rgb(252, 236, 209)`;
+      ctx.lineWidth = 5;
+      ctx.lineJoin = ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(lastX, lastY);
+      ctx.lineTo(x, y);
+      ctx.stroke();
+      [lastX, lastY] = [x, y];
+      hue += 1;
+      if (hue >= 360) hue = 0;
+    },{ passive: true });
+  </script>
+</body>
 
 </html>
