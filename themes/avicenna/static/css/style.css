@@ -7,7 +7,7 @@ body {
     color: #071013;
     background-color: white;
     /*background-color: rgb(252, 236, 209);*/
-    cursor: url('css/pen.png'), auto;
+    cursor: url('pen.png'), auto;
 }
 * {
     -webkit-box-sizing: border-box;
