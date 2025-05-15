@@ -24,8 +24,7 @@
     // Set canvas size
     function resizeCanvas() {
       canvas.width = document.documentElement.scrollWidth;
-      canvas.height = document.documentElement.scrollHeight;
-      console.log(canvas.width, canvas.height)
+      canvas.height = document.documentElement.scrollHeight - 500;
     }
 
     window.addEventListener('resize', resizeCanvas);
@@ -91,20 +90,28 @@
       requestAnimationFrame(fadeLines);
     }
 
-    canvas.addEventListener('mouseenter', startDrawing);
-    canvas.addEventListener('mousemove', draw);
-    canvas.addEventListener('mouseleave', stopDrawing);
-    canvas.addEventListener('mouseout', stopDrawing);
+    function handleScrollEnd(e) {
+      console.log("ca repart")
+        stopDrawing();
+        startDrawing(e);
+}
 
+    canvas.addEventListener('mouseenter', startDrawing,
+      window.addEventListener('scrollend', handleScrollEnd)
+      
+    )
+    canvas.addEventListener('mousemove', draw);
+    canvas.addEventListener('mouseleave', stopDrawing,
+      window.removeEventListener('scrollend', handleScrollEnd)
+    )
+   
     window.addEventListener('scroll', () => {
       document.body.style.cursor = 'auto';
+      
     });
 
   
-      window.addEventListener('scrollend', (e) => {
-        stopDrawing();
-        startDrawing(e);
-      });
+      
    
 
    
