@@ -18,4 +18,5 @@ links:
     preview: "https://inria.hal.science/hal-04497643v1/file/challenges_music_score_writing_CHI24_video.mp4"
     presentation: "https://youtu.be/uaiAjv3y7qU?si=hVQhmIwbx1jJ2ZdF"
     doi: "https://doi.org/10.1145/3613904.3642079"
+    vignette: "https://www.youtube.com/embed/uaiAjv3y7qU?si=LAJ-M88F_qXiCzs9"
 ---
