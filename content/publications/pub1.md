@@ -18,5 +18,6 @@ links:
     presentation: "https://youtu.be/XhsH7LGY4JY?si=FjNQKjqdF9AXXCvf"
     doi: "https://dl.acm.org/doi/10.1145/3630097"
     code: "https://github.com/VincentCavez/EunomInk"
+    vignette: "https://www.youtube.com/embed/hMAaX3anHm8?si=2lonJuN4sA4aTqKb"
 
 ---
