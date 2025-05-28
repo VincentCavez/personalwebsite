@@ -9,7 +9,18 @@
         {{ range $page := $rscPages}}
         <div class="publication row  w-100">
             <div>
-                <img src="{{$page.Params.image}}" class="pic">
+                {{ $links := $page.Params.links }}
+                {{ if $links }}
+                {{ if $links.vignette}}
+                <iframe width="100%" height="200px" src="{{$links.vignette}}"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                {{end}}
+                
+                {{end}}
+                
             </div>
             <div class="col w-100">
                 <div class="section-1 w-100">

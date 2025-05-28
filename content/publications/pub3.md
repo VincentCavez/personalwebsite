@@ -21,5 +21,6 @@ links:
     presentation: "https://youtu.be/nXOP_JexYTk"
     code: "https://github.com/VincentCavez/EuterPen"
     talk: "https://youtu.be/v48YBrHsmxw?si=TAFS7WUlYwAteK6a"
+    vignette: "https://www.youtube.com/embed/Ft8iVLEYzuQ?si=jQqQV_IC0FzOhX6_"
    
 ---
