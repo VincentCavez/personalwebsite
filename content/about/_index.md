@@ -62,7 +62,7 @@ academia:
 ---
 
 
-Hi! I'm Vincent Cavez, Postdoctoral Scholar at Stanford University working at the intersection of [Human-Centered AI][10] and [Education][11] with [Dr. Hari Subramonyam][9], I investigate the use of AI and pen-based interfaces to support language acquisition in children with Developmental Language Disorder.
+Hi! I'm Vincent Cavez, Postdoctoral Scholar at Stanford University working at the intersection of [Human-Centered AI][10] and [Education][11] with [Dr. Hari Subramonyam][9]. I investigate the use of AI and pen-based interfaces to support language acquisition in children with Developmental Language Disorder.
 
 Before that, I was fortunate to pursue my PhD thesis [_"Designing Pen-based Interactions for Productivity and Creativity"_][6] with the support of my amazing supervisors, [Dr. Emmanuel Pietriga][7] and [Dr. Caroline Appert][8], within the [ILDA team][2].
 
