@@ -13,16 +13,15 @@ blog: false
 socials:
     twitter: "Vincent_Cavez"
     linkedin: "vincentcavez"
-    instagram: "vincentkv_"
     google_scholar: "citations?user=JSY1rtEAAAAJ&hl=en&oi=ao"
     youtube: "@VincentCavez"
 
 interests:
-    - Interactive Surfaces
-    - Multimodal Interaction
+    - Learning Sciences 
     - Malleable Interfaces
+    - Structural Interaction
     - Data Visualization and Design
-    - Education and Learning
+    - Interactive Surfaces
 
 affiliations:
     - affiliation:
@@ -63,9 +62,9 @@ academia:
 ---
 
 
-Hi! I'm Vincent Cavez, a french Postdoctoral Scholar in [Human-Centered AI][10] and [Education][11] at Stanford University. Under the supervision of [Hari Subramonyam][9], I design AI and pen-based interfaces to support speech-language pathologists in tracking progress and optimizing interventions with their patients.
+Hi! I'm Vincent Cavez, Postdoctoral Scholar at Stanford University working at the intersection of [Human-Centered AI][10] and [Education][11] with [Dr. Hari Subramonyam][9], I investigate the use of AI and pen-based interfaces to support language acquisition in children with Developmental Language Disorder.
 
-Before that, I was fortunate to pursue my PhD thesis [_"Designing Pen-based Interactions for Productivity and Creativity"_][6] with the help of my amazing supervisors, [Emmanuel Pietriga][7] and [Caroline Appert][8], within the [ILDA team][2].
+Before that, I was fortunate to pursue my PhD thesis [_"Designing Pen-based Interactions for Productivity and Creativity"_][6] with the support of my amazing supervisors, [Dr. Emmanuel Pietriga][7] and [Dr. Caroline Appert][8], within the [ILDA team][2].
 
 [1]: https://www.universite-paris-saclay.fr/en
 [2]: https://ilda.saclay.inria.fr/
