@@ -12,6 +12,11 @@ total_news: 20
 
 news_items:
 
+- text: "Started my Postdoctoral Appointment at Stanford University in [Dr. Hari Subramonyam](https://haridecoded.com/)'s team"
+  extra_text: "May 2025"
+  date: 2025-05-08
+  type: "election"
+
 - text: "Presenting [EuterPen: Unleashing Creative Expression in Music Score Writing](https://dl.acm.org/doi/10.1145/3706598.3713488) at [CHI'25](https://chi2025.acm.org/)"
   extra_text: "April 2025"
   date: 2025-04-28
