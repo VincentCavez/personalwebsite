@@ -300,6 +300,14 @@
             border-right: 6px solid transparent;
             border-bottom: 6px solid #667eea;
         }
+
+        .movie-cell {
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text x="0" y="20" font-size="20">🌐</text></svg>'), pointer;
+        }
+
+        .movie-cell:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -390,7 +398,7 @@
             const tbody = document.getElementById('tableBody');
             tbody.innerHTML = '';
 
-            const visibleHeaders = currentHeaders.filter(h => !h.includes('_comment'));
+            const visibleHeaders = currentHeaders.filter(h => !h.includes('_comment') && h !== 'link');
             data.forEach(row => {
                 const tr = document.createElement('tr');
 
@@ -444,8 +452,19 @@
                         cellContent.classList.add('zero-value');
                     }
 
-                    if (comment && comment.trim() !== '') {
-                        // Ajouter la classe pour les cellules avec commentaire
+                    // Gestion spéciale pour la colonne Movie
+                    if (header === 'Movie') {
+                        td.classList.add('movie-cell');
+                        cellContent.textContent = value;
+
+                        // Ajouter un gestionnaire de clic pour ouvrir le lien
+                        if (row['link'] && row['link'].trim() !== '') {
+                            td.addEventListener('click', function() {
+                                window.open(row['link'], '_blank');
+                            });
+                        }
+                    } else if (comment && comment.trim() !== '') {
+                        // Pour les autres colonnes, ajouter les commentaires normalement
                         td.classList.add('has-comment');
                         cellContent.textContent = value;
                         const iconSpan = document.createElement('span');
@@ -501,6 +520,23 @@
                 const scoreContent = document.createElement('span');
                 scoreContent.className = 'cell-value';
                 scoreContent.textContent = scoreValue;
+
+                // Ajouter le commentaire Movie_comment sur la cellule Score
+                const movieComment = row['Movie_comment'];
+                if (movieComment && movieComment.trim() !== '') {
+                    scoreTd.classList.add('has-comment');
+                    const iconSpan = document.createElement('span');
+                    iconSpan.className = 'comment-icon';
+                    iconSpan.textContent = '💬';
+                    scoreContent.appendChild(iconSpan);
+                    scoreTd.dataset.comment = movieComment;
+
+                    // Ajouter les événements pour afficher le popup
+                    scoreTd.addEventListener('mouseenter', showCommentPopup);
+                    scoreTd.addEventListener('mousemove', updatePopupPosition);
+                    scoreTd.addEventListener('mouseleave', hideCommentPopup);
+                }
+
                 scoreTd.appendChild(scoreContent);
 
                 tr.appendChild(scoreTd);
@@ -675,8 +711,8 @@
             currentHeaders = headers;
             currentData = data;
 
-            // Filtrer les colonnes pour exclure celles avec "_comment"
-            const visibleHeaders = headers.filter(h => !h.includes('_comment'));
+            // Filtrer les colonnes pour exclure celles avec "_comment" et la colonne "link"
+            const visibleHeaders = headers.filter(h => !h.includes('_comment') && h !== 'link');
 
             // Créer l'en-tête du tableau
             const headerRow = document.getElementById('tableHeader');
