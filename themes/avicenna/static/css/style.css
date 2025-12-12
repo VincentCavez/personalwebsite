@@ -149,7 +149,10 @@ canvas {
     }
     .pictureplaceholder {
         width: 100%;
-}
+    }
+    .interestsacademia{
+        display: flow;
+    }
 }
 
 #full_name {
