@@ -18,6 +18,10 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
                 {{end}}
+                {{ if $links.image}}
+                <img width="100%" height="200px" src="{{$links.image}}">
+                </img>
+                {{end}}
                 
                 {{end}}
                 
