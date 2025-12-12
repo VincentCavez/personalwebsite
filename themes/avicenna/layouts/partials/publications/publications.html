@@ -12,14 +12,14 @@
                 {{ $links := $page.Params.links }}
                 {{ if $links }}
                 {{ if $links.vignette}}
-                <iframe width="100%" height="200px" src="{{$links.vignette}}"
+                <iframe width="100%" max-width="366px" height="200px" src="{{$links.vignette}}"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
                 {{end}}
                 {{ if $links.image}}
-                <img width="100%" height="200px" src="{{$links.image}}">
+                <img width="100%" max-width="366px" height="200px" src="{{$links.image}}">
                 </img>
                 {{end}}
                 
