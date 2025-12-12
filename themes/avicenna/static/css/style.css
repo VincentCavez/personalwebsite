@@ -124,6 +124,17 @@ canvas {
    
 }
 
+.phdthesisvideo {
+        width: 80%;
+        height: 470px
+    }
+
+.pictureplaceholder {
+    width: 300px;
+    height:100%;
+    margin-bottom: 1%;
+}
+
 @media (max-width: 768px) { /* For mobile screens */
     .posterpic {
         border-width: 2px;
@@ -132,6 +143,13 @@ canvas {
         width: 100px;  /* Smaller width for mobile */
         height: 141px;
     }
+    .phdthesisvideo {
+        width: 100%;
+        height: 200px
+    }
+    .pictureplaceholder {
+        width: 100%;
+}
 }
 
 #full_name {
