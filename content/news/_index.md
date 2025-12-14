@@ -12,6 +12,16 @@ total_news: 20
 
 news_items:
 
+- text: "[Teaching Spell Checkers to Teach: Pedagogical Program Synthesis for Interactive Learning](https://www.vincentcavez.com/SPIRE.pdf) conditionally accepted to [ACM IUI'26](https://iui.acm.org/2026/)"
+  extra_text: "December 2025"
+  date: 2025-12-12
+  type: "paper"
+
+- text: "Presented some of my postdoctoral work at the [ASHA Convention](https://convention.asha.org/) in Washington DC"
+  extra_text: "May 2025"
+  date: 2025-11-22
+  type: "talk"
+
 - text: "Started my Postdoctoral Appointment at Stanford University in [Dr. Hari Subramonyam](https://haridecoded.com/)'s team"
   extra_text: "May 2025"
   date: 2025-05-08
@@ -30,7 +40,7 @@ news_items:
 - text: "Presenting my work at the [VISVAR Lab](https://visvar.github.io/) at [University of Stuttgart](https://www.visus.uni-stuttgart.de/en/)"
   extra_text: "February 2025"
   date: 2025-02-11
-  type: "travel"
+  type: "talk"
 
 - text: "[EuterPen: Unleashing Creative Expression in Music Score Writing](https://www.vincentcavez.com/euterPen.pdf) accepted to [ACM CHI'25](https://chi2025.acm.org/)"
   extra_text: "February 2025"
@@ -65,7 +75,7 @@ news_items:
 - text: "Presenting my work at the [Creativity Lab](https://creativity.ucsd.edu/) at [University of California San Diego](https://ucsd.edu/)"
   extra_text: "May 2024"
   date: 2024-05-27
-  type: "travel"
+  type: "talk"
   
 - text: "Presenting [Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen](https://dl.acm.org/doi/10.1145/3630097) and [Challenges of Music Score Writing and the Potentials of Interactive Surfaces](https://dl.acm.org/doi/10.1145/3613904.3642079) at [CHI'24](https://chi2024.acm.org/)"
   extra_text: "May 2024"
