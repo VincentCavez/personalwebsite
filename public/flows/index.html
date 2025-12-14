@@ -35,12 +35,10 @@
             margin: 30px auto 40px;
             padding: 20px;
             font-size: 16px;
-            color: #ffffff;
-            background: linear-gradient(135deg, rgba(170, 157, 140, 0.695) 0%, rgba(151, 139, 122, 0.812) 100%);
+            color: #000000;
             backdrop-filter: blur(10px);
             border-radius: 15px;
             max-width: 85vw;
-            box-shadow: 0 8px 32px 0 rgba(135, 114, 70, 0.37);
             
         }
 
@@ -59,7 +57,7 @@
             font-weight: bold;
             margin: 0 2px;
             border-radius: 6px;
-            background-color: white;
+            background-color: rgb(0, 0, 0);
             padding: 5px;
             font-size: 0.75em;
             display: inline-block;
@@ -73,6 +71,8 @@
             align-items: center;
             gap: 2px;
             max-height: 70px;
+            min-height: 15px;
+            min-width: 20px;
             flex-wrap: wrap;
         }
 
@@ -89,7 +89,7 @@
 
         .coefficient-content.drag-over {
             background-color: rgba(0, 0, 0, 0.1);
-            outline: 2px dashed #666;
+            outline: 2px dashed #bcbcbc;
         }
 
         .coef-value {
@@ -114,7 +114,7 @@
             border-radius: 25px;
             font-size: 14px;
             width: 300px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.47);
             transition: all 0.3s ease;
             background: white;
         }
@@ -653,8 +653,7 @@
             const popup = document.getElementById('commentPopup');
             const comment = e.currentTarget.dataset.comment;
 
-            console.log('Showing comment:', comment); // Debug
-
+            
             if (comment && comment.trim() !== '') {
                 popup.textContent = comment;
                 popup.style.display = 'block';
@@ -818,10 +817,7 @@
             currentHeaders = headers;
             currentData = data;
 
-            // Debug: afficher la dernière ligne pour vérifier le parsing
-            console.log('Last row (with comments):', data[data.length - 1]);
-            console.log('Headers:', headers);
-
+           
             // Filtrer les colonnes pour exclure celles avec "_comment" et la colonne "link"
             const visibleHeaders = headers.filter(h => !h.includes('_comment') && h !== 'link');
 
