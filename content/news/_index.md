@@ -12,7 +12,7 @@ total_news: 20
 
 news_items:
 
-- text: "[Teaching Spell Checkers to Teach: Pedagogical Program Synthesis for Interactive Learning](https://www.vincentcavez.com/SPIRE.pdf) conditionally accepted to [ACM IUI'26](https://iui.acm.org/2026/)"
+- text: "[Teaching Spell Checkers to Teach: Pedagogical Program Synthesis for Interactive Learning](https://www.vincentcavez.com/SPIRE.pdf) accepted to [ACM IUI'26](https://iui.acm.org/2026/)"
   extra_text: "December 2025"
   date: 2025-12-12
   type: "paper"
