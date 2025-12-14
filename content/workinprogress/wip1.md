@@ -1,8 +1,6 @@
 ---
 title: "Structural Interaction Theory"
 authors:
-- Vincent Cavez
-- Kashif Imteyaz
 
 image: css/sit.png
 

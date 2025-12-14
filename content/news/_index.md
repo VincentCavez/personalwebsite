@@ -18,7 +18,7 @@ news_items:
   type: "paper"
 
 - text: "Presented some of my postdoctoral work at the [ASHA Convention](https://convention.asha.org/) in Washington DC"
-  extra_text: "May 2025"
+  extra_text: "November 2025"
   date: 2025-11-22
   type: "talk"
 
