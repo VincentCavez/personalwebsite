@@ -5,7 +5,7 @@ authors:
 
 date: "2024-10-04"
 
-publication: "RJC"
+publication: "RJC IHM"
 
 image: css/post1.png
 
