@@ -110,6 +110,10 @@ body {
         width: 100px;  /* Smaller width for mobile */
         height: 100px;
     }
+
+    #profile_picture {
+        width: 50%;
+    }
 }
 
 .posterpic {
