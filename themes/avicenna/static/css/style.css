@@ -115,6 +115,8 @@ canvas {
     }
     #profile_picture {
         width: 50%;
+        aspect-ratio : 1 / 1;
+        margin-top: 1%;
     }
 }
 
