@@ -17,7 +17,7 @@ socials:
     youtube: "@VincentCavez"
 
 interests:
-    - Creativity support
+    - Creativity Support
     - Learning Sciences 
     - Gesture-based and Voice Input
     - Structural Interaction
