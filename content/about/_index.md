@@ -64,7 +64,7 @@ academia:
 
 I am a human-computer interaction researcher at Stanford University. I design and study digital tools that enrich human activities while making them feel simpler and more fluid, with a particular interest in gesture-based and voice interaction. My work spans creative practices, productivity, and learning.
 
-I am currently doing a postdoc with [Hari Subramonyam][9], where I mainly investigate how AI-assisted storytelling can support language acquisition through polymorphic feedback. With my mentees, I also develop tools to improve spelling, and learn Mechanics through sketching. I received my Ph.D. in Computer Science at Paris-Saclay University, advised by [Emmanuel Pietriga][7] and [Caroline Appert][8] within the [ILDA team][2]. Since 2024, I am also the Webmaster of the [ACM SIGCHI Paris Chapter][12].
+I am currently doing a postdoc with [Hari Subramonyam][9], where I mainly investigate how AI-assisted storytelling can support language acquisition through polymorphic feedback. With my mentees, I also develop tools to improve spelling, practice music, and learn Mechanics through sketching. I received my Ph.D. in Computer Science at Paris-Saclay University, advised by [Emmanuel Pietriga][7] and [Caroline Appert][8] within the [ILDA team][2]. Since 2024, I am also the Webmaster of the [ACM SIGCHI Paris Chapter][12].
 
 
 
