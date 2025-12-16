@@ -17,15 +17,16 @@ socials:
     youtube: "@VincentCavez"
 
 interests:
+    - Creativity support
     - Learning Sciences 
-    - Malleable Interfaces
+    - Gesture-based and Voice Input
     - Structural Interaction
-    - Data Visualization and Design
+    - Data Visualization
     - Interactive Surfaces
 
 affiliations:
     - affiliation:
-        title: "Postdoctoral Scholar"
+        title: "HCI Researcher"
         name: "Stanford University"
         email: "vcavez@stanford.edu"
    
@@ -61,10 +62,11 @@ academia:
        
 ---
 
+I am a human-computer interaction researcher at Stanford University. I design and study digital tools that enrich human activities while making them feel simpler and more fluid, with a particular interest in gesture-based and voice interaction. My work spans creative practices, productivity, and learning.
 
-Hi! I'm Vincent Cavez, Postdoctoral Scholar at Stanford University working at the intersection of [Human-Centered AI][10] and [Education][11] with [Dr. Hari Subramonyam][9]. I investigate the use of AI and pen-based interfaces to support language acquisition in children with Developmental Language Disorder.
+I am currently doing a postdoc with [Hari Subramonyam][9], where I mainly investigate how AI-powered storytelling can support language acquisition through polymorphic feedback. I received my Ph.D. in Computer Science at Paris-Saclay University, advised by [Emmanuel Pietriga][7] and [Caroline Appert][8] within the [ILDA team][2]. Since 2024, I am also the Webmaster of the [ACM SIGCHI Paris Chapter][12].
 
-Before that, I was fortunate to pursue my PhD thesis [_"Designing Pen-based Interactions for Productivity and Creativity"_][6] with the support of my amazing supervisors, [Dr. Emmanuel Pietriga][7] and [Dr. Caroline Appert][8], within the [ILDA team][2].
+
 
 [1]: https://www.universite-paris-saclay.fr/en
 [2]: https://ilda.saclay.inria.fr/
@@ -77,3 +79,4 @@ Before that, I was fortunate to pursue my PhD thesis [_"Designing Pen-based Inte
 [9]: https://haridecoded.com/
 [10]: https://hai.stanford.edu/
 [11]: https://ed.stanford.edu/
+[12]: https://paris.sigchi.acm.org/
