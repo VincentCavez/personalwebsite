@@ -16,5 +16,6 @@ publication: "IUI"
 links:
     pdf: "https://vincentcavez.com/SPIRE.pdf"
     image: "css/spire.png"
+    doi: "https://arxiv.org/abs/2512.12115"
    
 ---
