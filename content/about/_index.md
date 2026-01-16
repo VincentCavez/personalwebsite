@@ -44,7 +44,7 @@ academia:
         end_date: "2025"
     - course:
         degree: 'Paris-Descartes University'
-        institution: "M.Sc. in Mathematical Engineering and Biostatistics"
+        institution: "M.Sc. in Mathematical Engineering and Statistics"
         major: ''
         end_date: '2020'
         other_info: 'graduated with high honours'
