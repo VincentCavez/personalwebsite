@@ -6,6 +6,6 @@ authors:
 image: css/tactus.png
 
 links:
-    
+    pdf: "https://vincentcavez.com/Tactus.pdf"
    
 ---
