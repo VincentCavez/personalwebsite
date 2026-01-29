@@ -12,6 +12,16 @@ total_news: 20
 
 news_items:
 
+- text: "I will attend [CHI'26](https://rjc2024.afihm.org/) in Barcelona, let's meet!"
+  extra_text: "April 2026"
+  date: 2026-04-13
+  type: "travel"
+
+- text: "I will present [SPIRE](https://www.vincentcavez.com/SPIRE.pdf) at the [LSTD@25](https://ed.stanford.edu/events/learning-sciences-and-design-technology-25th-anniversary-conference) conference next month"
+  extra_text: "February 2026"
+  date: 2026-02-20
+  type: "talk"
+
 - text: "[Teaching Spell Checkers to Teach: Pedagogical Program Synthesis for Interactive Learning](https://www.vincentcavez.com/SPIRE.pdf) accepted to [ACM IUI'26](https://iui.acm.org/2026/)"
   extra_text: "December 2025"
   date: 2025-12-12
