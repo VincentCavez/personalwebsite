@@ -12,7 +12,7 @@ total_news: 20
 
 news_items:
 
-- text: "I will attend [CHI'26](https://rjc2024.afihm.org/) in Barcelona, let's meet!"
+- text: "I will attend [CHI'26](https://chi2026.acm.org/) in Barcelona, let's meet!"
   extra_text: "April 2026"
   date: 2026-04-13
   type: "travel"
