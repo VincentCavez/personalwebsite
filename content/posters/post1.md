@@ -1,7 +1,7 @@
 ---
 title: "Designing Pen-based Interactions for Productivity and Creativity"
 authors:
-- Vincent Cavez
+- Vincent Cavez , Emmanuel Pietriga , Caroline Appert
 
 date: "2024-10-04"
 
