@@ -9,6 +9,8 @@ publication: "LSTD@25"
 
 image: css/post2.png
 
+orientation: "horizontal"
+
 links:
     pdf: "https://vincentcavez.com/LSTDPoster.pdf"
 

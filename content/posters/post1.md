@@ -9,6 +9,8 @@ publication: "RJC IHM"
 
 image: css/post1.png
 
+orientation: "vertical"
+
 links:
     pdf: "https://vincentcavez.com/RJCPoster.pdf"
 

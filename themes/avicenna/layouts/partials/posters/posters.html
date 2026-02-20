@@ -9,7 +9,12 @@
         {{ range $page := $rscPages}}
         <div class="publication row  w-100">
             <div>
+                {{if $orientation "vertical"}}
                 <img src="{{$page.Params.image}}" class="posterpic">
+                {{end}}
+                {{if $orientation "horizontal"}}
+                <img src="{{$page.Params.image}}" class="posterpic" style="height:140px;width:198px">
+                {{end}}
             </div>
             <div class="col w-100">
                 <div class="section-1 w-100">
