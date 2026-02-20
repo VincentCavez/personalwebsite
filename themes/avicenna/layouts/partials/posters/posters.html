@@ -10,10 +10,10 @@
         <div class="publication row  w-100">
             <div>
                 {{ $orientation := $page.Params.orientation }}
-                {{if $orientation "vertical"}}
+                {{if eq $orientation "vertical"}}
                 <img src="{{$page.Params.image}}" class="posterpic">
                 {{end}}
-                {{if $orientation "horizontal"}}
+                {{if eq $orientation "horizontal"}}
                 <img src="{{$page.Params.image}}" class="posterpic" style="height:140px;width:198px">
                 {{end}}
             </div>
