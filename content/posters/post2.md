@@ -3,7 +3,7 @@ title: "Teaching Spell Checkers to Teach: Pedagogical Program Synthesis for Inte
 authors:
 - Momin N. Siddiqui, Vincent Cavez, Sahana Rangasrinivasan, Abbie L Olszewski, Srirangaraj Setlur, Maneesh Agrawala, Hari Subramonyam
 
-date: "2026-20-02"
+date: "2026-02-20"
 
 publication: "LSTD@25"
 
