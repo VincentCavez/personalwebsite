@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincent Cavez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="main-container" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+        <a style="font-size: var(--lg-font-size); color: var(--title-font-color); font-weight: 600;" href="index.html">Vincent Cavez</a>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 15px; justify-content: right;">
+            <a class="navbar-link active" href="index.html">Home</a>
+            <a class="navbar-link" href="#publications">Publications</a>
+            <a class="navbar-link" href="#perso">Projects</a>
+        </div>
+    </div>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+    <div class="main-container">
+        <div id="about-content">
+            <!-- Left Column: Profile -->
+            <div id="profile">
+                <img src="img/stanfordpicture.jpeg" alt="Vincent Cavez" class="rounded" style="width: 200px; max-width: 200px;">
+
+                <div class="contact-info">
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:contact@vincentcavez.com">contact@vincentcavez.com</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-at"></i>
+                        <a href="https://vincentcavez.com">vincentcavez.com</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <span>Stanford University, CA, USA</span>
+                    </div>
+                </div>
+
+                <!-- Bio Timeline -->
+                <div id="bio">
+                    <table>
+                        <tr>
+                            <td>2025 - 2026</td>
+                            <td><strong>Postdoctoral Scholar</strong>, Stanford University</td>
+                        </tr>
+                        <tr>
+                            <td>2021 - 2025</td>
+                            <td><strong>PhD in Computer Science</strong>, Univ. Paris-Saclay</td>
+                        </tr>
+                        <tr>
+                            <td>2018 - 2020</td>
+                            <td><strong>MSc in Mathematical Engineering</strong>, Univ. Paris-Cité</td>
+                        </tr>
+                        <tr>
+                            <td>2014 - 2018</td>
+                            <td><strong>BSc in Mathematics</strong>, Univ. Paris-Saclay</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Right Column: Info -->
+            <div id="info">
+                <p>
+                    I am a <strong>Postdoctoral Scholar</strong> in Human-Computer Interaction at <strong>Stanford University</strong>. I design and study digital tools that enrich human activities while making them feel simpler and more fluid, with a particular interest in gesture-based and voice interaction. My work spans creative practices, productivity, and learning.
+
+With <a href="https://haridecoded.com/">Hari Subramonyam</a>, I investigate just-in-time animation generation to support children’s storytelling. With my mentees, I develop tools for spelling, music practice, and physics learning through sketching. I received my Ph.D. in Computer Science from Paris-Saclay University, advised by <a href="https://pages.saclay.inria.fr/emmanuel.pietriga/">Emmanuel Pietriga</a> and <a href="https://www.lri.fr/~appert/website/">Caroline Appert</a>. Since 2024, I am also the Webmaster of the <a href="https://paris.sigchi.acm.org/">ACM SIGCHI Paris Chapter</a>.
+                </p>
+                
+
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=JSY1rtEAAAAJ&hl=en&oi=ao"><i class="fa fa-graduation-cap"></i> Scholar</a>
+                    <a href="https://www.youtube.com/@VincentCavez"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                    <a href="https://github.com/VincentCavez"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://x.com/Vincent_Cavez"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                    <a href="https://www.linkedin.com/in/vincentcavez/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://orcid.org/0000-0002-6662-7362"><i class="fab fa-orcid"></i> ORCID</a>
+                   
+                </div>
+
+                <!-- Callout Box for Students -->
+                <div class="callout">
+                    I am currently on the job market for a postdoctoral position!
+                </div>
+
+                <!-- Research Interests -->
+                <div style="margin-top: var(--sm-gap);">
+                    <strong>Research interests:</strong>
+                    <div class="research-interests">
+                        <span class="chip">Interacting with AI</span>
+                        <span class="chip">Creativity Support</span>
+                        <span class="chip">Learning Sciences</span>
+                        <span class="chip">Interactive Surfaces</span>
+                    </div>
+                </div>
+
+                <!-- Latest News -->
+                <div style="margin-top: var(--md-gap);">
+                    <h3>Latest News</h3>
+
+                    <input type="checkbox" id="more-news-checkbox">
+
+                    <div class="news">
+                        <span class="news-date">Apr 2026</span>
+                        <span>&#x1F5E3; Presenting Tactus at <a href="https://chi2026.acm.org/">CHI'26</a> in Barcelona</span>
+                    </div>
+                    <div class="news">
+                        <span class="news-date">Feb 2026</span>
+                        <span>&#x1F3C6; Presenting SPIRE at <a href="https://ed.stanford.edu/events/learning-sciences-and-design-technology-25th-anniversary-conference">LSTD@25</a> in Stanford</span>
+                    </div>
+                    <div class="news">
+                        <span class="news-date">Dec 2025</span>
+                        <span>&#x1F5E3; SPIRE got accepted at <a href="https://iui.acm.org/2026/">IUI'26</a>!</span>
+                    </div>
+                    <div class="news">
+                        <span class="news-date">Nov 2025</span>
+                        <span>&#x1F3C6; Presenting my postdoctoral work at the <a href="https://convention.asha.org/">ASHA Convention</a> in Washington DC</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">May 2025</span>
+                        <span>&#x1F389; Starting my Postdoctoral Appointment at Stanford University with <a href="https://haridecoded.com/">Hari Subramonyam</a></span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Apr 2025</span>
+                        <span>&#x1F389; Presenting EuterPen at <a href="https://chi2025.acm.org/">CHI'25</a> in Yokohama</span>
+                    </div>
+
+                    <!-- Hidden news items (shown on toggle) -->
+                    <div class="news hidden">
+                        <span class="news-date">Mar 2025</span>
+                        <span>&#x1F393; Successfully defended my PhD thesis in Paris-Saclay University!</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Feb 2025</span>
+                        <span>&#x1F3C6; Presenting my doctoral work at the <a href="https://visvar.github.io/">VISVAR Lab</a> at <a href="https://www.visus.uni-stuttgart.de/en/">University of Stuttgart</a></span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Nov 2024</span>
+                      <span>&#x1F4DA; Teaching Assistant of <a href="https://ex-situ.lri.fr/people/mackay">Wendy Mackay</a> for the <a href="https://ex-situ.lri.fr/teaching/dois-2024-design-of-interactive-systems">Design of Interactive Systems</a> course</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Nov 2024</span>
+                      <span>&#x1F4DA; Teaching Assistant of <a href="https://www.lri.fr/~mbl/eintroduction.html">Michel Beaudouin-Lafon</a> for the <a href="https://www.lri.fr/~mbl/ENS/FONDIHM/2013/">Introduction to HCI</a> course (French version)</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Oct 2024</span>
+                      <span>&#x1F4DA; Made <a href="https://paris.sigchi.acm.org/">ACM SIGCHI Paris Chapter</a> a brand new website</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Oct 2024</span>
+                      <span>&#x1F4DA; Attending the <a href="https://rjc2024.afihm.org/">RJC IHM 2024</a> Summer School</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Jul 2024</span>
+                      <span>&#x1F4DA; Elected Webmaster for the <a href="https://paris.sigchi.acm.org/">ACM SIGCHI Paris Chapter</a> a brand new website</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">May 2024</span>
+                        <span>&#x1F3C6; Presenting my doctoral work at the <a href="https://hci.ucsd.edu/">Creativity Lab</a> at <a href="https://ucsd.edu/">University of California San Diego</a></span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">May 2024</span>
+                        <span>&#x1F3C6; Presenting <strong>Spreadsheets on Interactive Surfaces: Breaking Through the Grid with the Pen</strong> and <strong>Challenges of Music Score Writing and the Potentials of Interactive Surfaces</strong> at <a href="https://chi2024.acm.org/">CHI'24</a></span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">May 2024</span>
+                        <span>&#x1F3C6; Chairing the <a href="https://programs.sigchi.org/chi/2024/program/session/156169">Design Tools B session</a> at <a href="https://chi2024.acm.org/">CHI'24</a> in Honolulu</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Mar 2024</span>
+                      <span>&#x1F4DA; Attending <a href="https://ihm2024.afihm.org/">IHM'24</a> in Paris</span>
+                    </div>
+
+
+                    <div class="news hidden">
+                        <span class="news-date">Mar 2024</span>
+                        <span>&#x1F4DA; Elected as a member on the Council and Pole Committee of the Doctoral School</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Mar 2024</span>
+                        <span>&#x1F4DA; Teaching Assistant of <a href="https://varaya.cl/">Vanessa Peña-Araya</a> for the <a href="https://www.universite-paris-saclay.fr/en/education/master/computer-science/m1-human-computer-interaction">HCI Master</a>’s Winter School</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Apr 2023</span>
+                      <span>&#x1F4DA; Attending <a href="https://chi2023.acm.org/">CHI'23</a> in Hamburg</span>
+                    </div>
+                    <div class="news hidden">
+                        <span class="news-date">Apr 2023</span>
+                      <span>&#x1F4DA; Attending <a href="https://chi2022.acm.org/">CHI'22</a> online</span>
+                    </div>
+
+                    <label for="more-news-checkbox" class="show-more-label">Show more...</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Publications Section -->
+<section id="publications">
+    <div class="main-container">
+
+        <!-- International Publications -->
+        <h2>International Publications</h2>
+        <div class="horizontal-list" style="margin-top: var(--sm-gap);">
+
+            <!-- Publication Card 1 - with award -->
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/tactus.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>Opportunities to Support Musicians’ Score-based Practice with Context-Specific Annotations on Tablet</div>
+                    <div><small>Xintian Fu, <span class="author">Vincent Cavez</span></small></div>
+                    <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+                        <small class="chip">CHI EA 2026</small>
+                       
+                    </div>
+                    <div class="btn-list vgap">
+                        <a href="https://vincentcavez.com/img/pdfs/Tactus.pdf"><i class="fa fa-file-pdf"></i> PDF</a>
+                        <a href="https://github.com/VincentCavez/Tactus"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3772363.3798332"><i class="fa fa-external-link"></i> DOI</a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Publication Card 2 - with honorable mention -->
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/spire.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div><span class="author">Teaching Spell Checkers to Teach:</span> Pedagogical Program Synthesis for Interactive Learning</div>
+                    <div><small>Momin N. Siddiqui, <span class="author">Vincent Cavez</span>, Sahana Rangasrinivasan, Abbie L Olszewski, Srirangaraj Setlur, Maneesh Agrawala, Hari Subramonyam</small></div>
+                    <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+                        <small class="chip">IUI 2026</small>
+                    </div>
+                    <div class="btn-list vgap">
+                        <a href="https://arxiv.org/pdf/2512.12115"><i class="fa fa-file-pdf"></i> PDF</a>
+                        <a href="https://vincentcavez.com/img/pdfs/LSTDPoster.pdf"><i class="fa-solid fa-paint-roller"></i> Poster</a>
+                     <!--   <a href="#"><i class="fa fa-link"></i> Website</a> -->
+                        <a href="https://doi.org/10.48550/arXiv.2512.12115"><i class="fa fa-external-link"></i> DOI</a>
+                        <a class="collapser" data-target="collapse2"><i class="fa fa-caret-down"></i> Bibtex</a>
+                    </div>
+                    <div class="collapse" id="collapse2">
+                        <textarea class="form-control" rows="10" readonly>@misc{siddiqui2026teachingspellcheckersteach,
+                                                                            title={Teaching Spell Checkers to Teach: Pedagogical Program Synthesis for Interactive Learning}, 
+                                                                            author={Momin N. Siddiqui and Vincent Cavez and Sahana Rangasrinivasan and Abbie Olszewski and Srirangaraj Setlur and Maneesh Agrawala and Hari Subramonyam},
+                                                                            year={2026},
+                                                                            eprint={2512.12115},
+                                                                            archivePrefix={arXiv},
+                                                                            primaryClass={cs.HC},
+                                                                            url={https://arxiv.org/abs/2512.12115}, 
+                                                                        }
+                                                                    </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Euterpen -->
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/euterpen.jpg" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div><span class="author">EuterPen:</span> Unleashing Creative Expression in Music Score Writing</div>
+                    <div><small><span class="author">Vincent Cavez</span>, Catherine Letondal, Caroline Appert, Emmanuel Pietriga</small></div>
+                    <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+                        <small class="chip">CHI 2025</small>
+                    </div>
+                    <div class="btn-list vgap">
+                        <a href="https://vincentcavez.com/img/pdfs/euterPen.pdf"><i class="fa fa-file-pdf"></i> PDF</a>
+                        <a href="https://www.youtube.com/watch?v=Ft8iVLEYzuQ"><i class="fa fa-film"></i> Demo</a>
+                        <a href="https://www.youtube.com/watch?v=nXOP_JexYTk"><i class="fa fa-commenting"></i> Presentation</a>
+                        <a href="https://github.com/VincentCavez/EuterPen"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3706598.3713488"><i class="fa fa-external-link"></i> DOI</a>
+                        <a class="collapser" data-target="collapse3"><i class="fa fa-caret-down"></i> Bibtex</a>
+                    </div>
+                    <div class="collapse" id="collapse3">
+                        <textarea class="form-control" rows="10" readonly>@inproceedings{10.1145/3706598.3713488,
+                                                                                        author = {Cavez, Vincent and Letondal, Catherine and Appert, Caroline and Pietriga, Emmanuel},
+                                                                                        title = {EuterPen: Unleashing Creative Expression in Music Score Writing},
+                                                                                        year = {2025},
+                                                                                        isbn = {9798400713941},
+                                                                                        publisher = {Association for Computing Machinery},
+                                                                                        address = {New York, NY, USA},
+                                                                                        url = {https://doi.org/10.1145/3706598.3713488},
+                                                                                        doi = {10.1145/3706598.3713488},
+                                                                                        abstract = {Music notation programs force composers to follow the many rules of the staff notation when writing music and constantly seek to optimize symbol placement, making numerous adjustments automatically. Even though this impedes their creative process, many composers still use them throughout their workflow, for lack of a better option. We introduce EuterPen, a music notation program prototype that selectively relaxes both syntactic and structural constraints while editing a score. Composers can input and manipulate music symbols with increased flexibility, leveraging the affordances of pen and touch. They can make space on, between and around staves to insert additional content such as digital ink, pictures and audio samples. We describe the iterative design process that led to EuterPen: prototyping phases, a participatory design workshop, and a series of interviews. Feedback from the participating professional composers indicates that EuterPen offers a compelling and promising approach to music writing.},
+                                                                                        booktitle = {Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems},
+                                                                                        articleno = {760},
+                                                                                        numpages = {16},
+                                                                                        keywords = {digital pen, multi-touch interaction, ink, music engraving},
+                                                                                        location = {
+                                                                                        },
+                                                                                        series = {CHI '25}}                       
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Challenges of msw -->
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/challengesofmsw.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>Challenges of Music Score Writing and the Potentials of Interactive Surfaces</div>
+                    <div><small><span class="author">Vincent Cavez</span>, Catherine Letondal, Emmanuel Pietriga, Caroline Appert</small></div>
+                    <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+                        <small class="chip">CHI 2024</small>
+                    </div>
+                    <div class="btn-list vgap">
+                        <a href="https://inria.hal.science/hal-04497643/document"><i class="fa fa-file-pdf"></i> PDF</a>
+                        <a href="https://inria.hal.science/hal-04497643v1/file/challenges_music_score_writing_CHI24_video.mp4"><i class="fa fa-film"></i> Preview</a>
+                        <a href="https://www.youtube.com/watch?v=uaiAjv3y7qU"><i class="fa fa-commenting"></i> Presentation</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3613904.3642079"><i class="fa fa-external-link"></i> DOI</a>
+                        <a class="collapser" data-target="collapse4"><i class="fa fa-caret-down"></i> Bibtex</a>
+                    </div>
+                    <div class="collapse" id="collapse4">
+                        <textarea class="form-control" rows="10" readonly>@inproceedings{10.1145/3613904.3642079,
+                                                                            author = {Cavez, Vincent and Letondal, Catherine and Pietriga, Emmanuel and Appert, Caroline},
+                                                                            title = {Challenges of Music Score Writing and the Potentials of Interactive Surfaces},
+                                                                            year = {2024},
+                                                                            isbn = {9798400703300},
+                                                                            publisher = {Association for Computing Machinery},
+                                                                            address = {New York, NY, USA},
+                                                                            url = {https://doi.org/10.1145/3613904.3642079},
+                                                                            doi = {10.1145/3613904.3642079},
+                                                                            abstract = {Composers use music notation programs throughout their creative process. Those programs are essentially elaborate structured document editors that enable composers to create high-quality scores by enforcing musical notation rules. They effectively support music engraving, but impede the more creative stages in the composition process because of their lack of flexibility. Composers thus often combine these desktop tools with other mediums such as paper. Interactive surfaces that support pen and touch input have the potential to address the tension between the contradicting needs for structure and flexibility. We interview nine professional composers. We report insights about their thought process and creative intentions, and rely on the “Cognitive Dimensions of Notations” framework to capture the frictions they experience when materializing those intentions on a score. We then discuss how interactive surfaces could increase flexibility by temporarily breaking the structure when manipulating the notation.},
+                                                                            booktitle = {Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems},
+                                                                            articleno = {728},
+                                                                            numpages = {16},
+                                                                            keywords = {digital pen, ink, multi-touch interaction, music engraving},
+                                                                            location = {Honolulu, HI, USA},
+                                                                            series = {CHI '24}}                       
+                        </textarea>
+                    </div>
+                </div>
+        
+            </div>
+
+            <!-- Eunomink -->
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/eunomink.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div><span class="author">Spreadsheets on Interactive Surfaces:</span> Breaking through the Grid with the Pen</div>
+                    <div><small><span class="author">Vincent Cavez</span>, Catherine Letondal, Caroline Appert, Emmanuel Pietriga</small></div>
+                    <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+                        <small class="chip">ToCHI 2024</small>
+                    </div>
+                    <div class="btn-list vgap">
+                        <a href="https://inria.hal.science/hal-04272550/document"><i class="fa fa-file-pdf"></i> PDF</a>
+                        <a href="https://inria.hal.science/hal-04272550v1/file/spreadsheets_on_interactive_surfaces.mp4"><i class="fa fa-film"></i> Demo</a>
+                        <a href="https://www.youtube.com/watch?v=XhsH7LGY4JY"><i class="fa fa-commenting"></i> Presentation</a>
+                        <a href="https://github.com/VincentCavez/EunomInk"><i class="fab fa-github"></i> Code</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3630097"><i class="fa fa-external-link"></i> DOI</a>
+                        <a class="collapser" data-target="collapse5"><i class="fa fa-caret-down"></i> Bibtex</a>
+                    </div>
+                    <div class="collapse" id="collapse5">
+                        <textarea class="form-control" rows="10" readonly>@article{10.1145/3630097,
+                                                                            author = {Cavez, Vincent and Appert, Caroline and Pietriga, Emmanuel},
+                                                                            title = {Spreadsheets on Interactive Surfaces: Breaking through the Grid with the Pen},
+                                                                            year = {2024},
+                                                                            issue_date = {April 2024},
+                                                                            publisher = {Association for Computing Machinery},
+                                                                            address = {New York, NY, USA},
+                                                                            volume = {31},
+                                                                            number = {2},
+                                                                            issn = {1073-0516},
+                                                                            url = {https://doi.org/10.1145/3630097},
+                                                                            doi = {10.1145/3630097},
+                                                                            abstract = {Spreadsheet programs for interactive surfaces have limited manipulations capabilities and are often frustrating to use. One key reason is that the spreadsheet grid creates a layer that intercepts most user input events, making it difficult to reach the cell values that lie underneath. We conduct an analysis of commercial spreadsheet programs and an elicitation study to understand what users can do and what they would like to do with spreadsheets on interactive surfaces. Informed by these, we design interaction techniques that leverage the precision of the pen to mitigate friction between the different layers. These enable more operations by direct manipulation on and through the grid, targeting not only cells and groups of cells, but values and substrings within and across cells as well. We prototype these interaction techniques and conduct a qualitative study with information workers who perform a variety of spreadsheet operations on their own data.},
+                                                                            journal = {ACM Trans. Comput.-Hum. Interact.},
+                                                                            month = jan,
+                                                                            articleno = {16},
+                                                                            numpages = {33},
+                                                                            keywords = {Digital pen, multi-touch interaction, ink, spreadsheets}
+                                                                            }                      
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- More publications would go here -->
+
+
+        </div>
+
+        <!-- WIP -->
+        <h2 class="lg-vgap">Work in Progress</h2>
+        <div class="horizontal-list" style="margin-top: var(--sm-gap);">
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/sitgenui.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>Structural Interaction for Generative User Interfaces</div>
+                    <div><small><span class="author">Vincent Cavez</span></small></div>
+                    
+                    <div class="btn-list vgap">
+                        <a href="https://vincentcavez.com/img/pdfs/Structural_Interaction_Gen_UI.pdf"><i class="fa fa-file-pdf"></i> PDF</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/sitcat.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>How Structure Mediates Creative Activity Traces</div>
+                    <div><small><span class="author">Vincent Cavez</span></small></div>
+                    
+                    <div class="btn-list vgap">
+                        <a href="https://vincentcavez.com/img/pdfs/Structural_Interaction_CAT.pdf"><i class="fa fa-file-pdf"></i> PDF</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/sit.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div><span class="author">Structural Interaction:</span> Shifting the Focus of User Interface Design</div>
+                    <div><small><span class="author">Vincent Cavez</span>, Kashif Imteyaz, Anne-Flore Cabouat</small></div>
+                    
+                    <div class="btn-list vgap">
+                        <a href="https://vincentcavez.com/img/pdfs/Structural_Interaction_Theory.pdf"><i class="fa fa-file-pdf"></i> PDF</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        <!-- PhD Thesis -->
+        <h2 class="lg-vgap">PhD Thesis</h2>
+        <div class="horizontal-list" style="margin-top: var(--sm-gap);">
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/thesis.png" alt="PhD Thesis thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>Designing Pen-based Interactions for Productivity and Creativity</div>
+                    <div><small><span class="author">Vincent Cavez</span></small></div>
+                    <div style="margin-top: 12px; display: flex; flex-wrap: wrap; gap: 6px;">
+                        <small class="chip">Universite Paris-Saclay, 2021</small>
+                    </div>
+                    <div class="btn-list vgap">
+                        <a href="https://vincentcavez.com/img/pdfs/PhDThesis.pdf"><i class="fa fa-file-pdf"></i> PDF</a>
+                        <a href="https://vincentcavez.com/img/pdfs/RJCPoster.pdf"><i class="fa-solid fa-paint-roller"></i> Poster</a>
+                        <a href="https://www.youtube.com/watch?v=1aiGhsnzN-Y"><i class="fa fa-external-link"></i> DOI</a>
+                        <a class="collapser" data-target="collapse6"><i class="fa fa-caret-down"></i> Bibtex</a>
+                    </div>
+                    <div class="collapse" id="collapse6">
+                        <textarea class="form-control" rows="8" readonly>@phdthesis{cavez:tel-04986694,
+  TITLE = {{Designing Pen-based Interactions for Productivity and Creativity}},
+  AUTHOR = {Cavez, Vincent},
+  URL = {https://theses.hal.science/tel-04986694},
+  NUMBER = {2025UPASG013},
+  SCHOOL = {{Universit{\'e} Paris-Saclay}},
+  YEAR = {2025},
+  MONTH = Mar,
+  KEYWORDS = {Pen-Based interaction ; Touch-Based interaction ; Interactive data manipulation ; Spreadsheets ; Musical composition ; Artificial intelligence ; Intelligence artificielle ; Composition musicale ; Tableurs ; Manipulation interactive de donn{\'e}es ; Interaction tactile ; Interaction au stylet},
+  TYPE = {Theses},
+  PDF = {https://theses.hal.science/tel-04986694v1/file/135618_CAVEZ_2025_archivage-2.pdf},
+  HAL_ID = {tel-04986694},
+  HAL_VERSION = {v1},
+}</textarea>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="perso">
+
+<div class="main-container">
+
+
+        <!-- WIP -->
+        <h2 class="lg-vgap">Projects</h2>
+        <div class="horizontal-list" style="margin-top: var(--sm-gap);">
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/egon.png" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div><span class="author">Egon:</span> Creation of an Interactive and Intelligent Artefact in five days</div>
+                    <div><small><span class="author">Vincent Cavez</span>, Gustave Cortal, Vénissia Kay, Corentin Loubet, Ignacio Baltazar Perez Messina</small></div>
+                    
+                    <div class="btn-list vgap">
+                        <a href="https://www.youtube.com/watch?v=2eCg7FHQp2I"><i class="fa fa-film"></i> Video</a>
+                        <a href="https://repositum.tuwien.at/handle/20.500.12708/153390"><i class="fa fa-link"></i> Website</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/dj.JPG" alt="Publication thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>Music</div>
+                    <div><small><span class="author">Vincent Cavez</span></small></div>
+                    
+                    <div class="btn-list vgap">
+                        <a href="https://www.youtube.com/@jensvanaaron/videos"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                        <a href="https://lordaaron.bandcamp.com/"><i class="fa fa-link"></i> Website</a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+
+        
+        
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<section id="footer" class="vertical-list vgap" style="align-items: center;">
+    Copyright 2026 &copy; Vincent Cavez
+</section>
+
+<!-- BibTeX Collapse Script -->
+<script>
+window.addEventListener('load', function () {
+    var coll = document.getElementsByClassName("collapser");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function (event) {
+            event.preventDefault();
+            var collapseId = this.getAttribute("data-target");
+            var collapse = document.getElementById(collapseId);
+            collapse.classList.toggle("show");
+        });
+    }
+});
+</script>
+
+</body>
+</html>
