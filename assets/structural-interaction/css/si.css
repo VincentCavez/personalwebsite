@@ -852,6 +852,11 @@
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
+    /* The one-line tagline only fits above this width, so let it wrap below it. */
+    .si-tagline {
+        white-space: normal;
+    }
+
     .si-explorer {
         grid-template-columns: 1fr;
     }
