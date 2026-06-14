@@ -1,0 +1,925 @@
+/* si.css
+   Scoped styles for the Structural Interaction project page.
+   Every selector is prefixed .si- or lives under .si-scope so it never
+   collides with the main site stylesheet (css/style.css).
+   Semantic colors are accents only, used by the interactive components. */
+
+.si-scope {
+    --user: #E0A23C;        /* User (amber) */
+    --imperative: #DD6B4F;  /* Imperative rule (coral) */
+    --declarative: #3E6BD6; /* Declarative rule (blue) */
+    --element: #3DA35D;     /* Element (green) */
+    --rigidity: #3E6BD6;
+    --enforcement: #DD6B4F;
+
+    --si-surface: #1c1c1c;
+    --si-surface-2: #232323;
+    --si-border: rgba(229, 231, 235, 0.14);
+    --si-border-strong: rgba(229, 231, 235, 0.28);
+    --si-radius: 14px;
+}
+
+/* Generic section rhythm */
+.si-section {
+    margin-top: var(--lg-gap);
+}
+
+/* Generic toggle used by the interactive components */
+.si-scope .is-hidden {
+    display: none !important;
+}
+
+.si-prose {
+    max-width: 760px;
+    margin-top: var(--sm-gap);
+}
+
+/* Components are allowed to breathe wider than the reading column */
+.si-wide .si-explorer,
+.si-wide .si-sandbox {
+    margin-top: var(--md-gap);
+}
+
+/* ---------- Title block ---------- */
+.si-titleblock {
+    margin-top: var(--md-gap);
+}
+
+.si-title {
+    color: var(--title-font-color);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.25;
+    max-width: 900px;
+}
+
+.si-venue {
+    color: var(--muted-color);
+    margin-top: 8px;
+}
+
+.si-authors {
+    margin-top: var(--sm-gap);
+    line-height: 1.7;
+}
+
+.si-authors .si-author-name {
+    color: var(--title-font-color);
+    font-weight: 600;
+}
+
+.si-authors .si-author-aff {
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+}
+
+/* ---------- Hero / teaser ---------- */
+.si-hero {
+    position: relative;
+    margin-top: var(--lg-gap);
+    border: 1px solid var(--si-border);
+    border-radius: var(--si-radius);
+    background: var(--si-surface);
+    overflow: hidden;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.si-hero-bg {
+    position: absolute;
+    inset: 0;
+    opacity: 0.18;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    pointer-events: none;
+}
+
+.si-hero-bg svg {
+    height: 100%;
+    width: auto;
+    max-width: 60%;
+}
+
+.si-hero-content {
+    position: relative;
+    padding: var(--md-gap);
+}
+
+.si-tagline {
+    color: var(--title-font-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 620px;
+    line-height: 1.4;
+}
+
+.si-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: var(--sm-gap);
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #121212;
+    font-weight: 600;
+}
+
+.si-cta:hover {
+    background: var(--light-color);
+    text-decoration: none;
+}
+
+/* ---------- Links bar ---------- */
+.si-linksbar {
+    margin-top: var(--md-gap);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.si-linksbar .si-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border: 1px solid var(--si-border-strong);
+    border-radius: 8px;
+    color: var(--font-color);
+    font-weight: 500;
+    font-size: var(--sm-font-size);
+}
+
+.si-linksbar .si-link:hover {
+    background: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+}
+
+.si-linksbar .si-link i {
+    color: var(--primary-color);
+}
+
+.si-linksbar .si-link-group-label {
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+    margin-left: 8px;
+}
+
+/* ---------- State badges (reused across explorer and use cases) ---------- */
+.si-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: var(--sm-font-size);
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+    border: 1px solid transparent;
+}
+
+.si-badge--rigidity {
+    background: rgba(62, 107, 214, 0.18);
+    color: #aec4f5;
+    border-color: rgba(62, 107, 214, 0.5);
+}
+
+.si-badge--enforcement {
+    background: rgba(221, 107, 79, 0.18);
+    color: #f0b3a3;
+    border-color: rgba(221, 107, 79, 0.5);
+}
+
+.si-couple {
+    display: inline-flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ---------- The two dimensions ---------- */
+.si-axes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--md-gap);
+    margin-top: var(--md-gap);
+}
+
+.si-axis {
+    border: 1px solid var(--si-border);
+    border-radius: var(--si-radius);
+    background: var(--si-surface);
+    padding: var(--sm-gap);
+}
+
+.si-axis h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.si-axis--rigidity h3::before,
+.si-axis--enforcement h3::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+.si-axis--rigidity h3::before { background: var(--rigidity); }
+.si-axis--enforcement h3::before { background: var(--enforcement); }
+
+.si-axis-summary {
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+    margin-bottom: var(--sm-gap);
+}
+
+.si-axis-scale {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.si-axis-step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: baseline;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    cursor: default;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.si-axis-step:hover,
+.si-axis-step:focus-within {
+    background: var(--si-surface-2);
+    border-color: var(--si-border);
+}
+
+.si-axis-step .si-step-value {
+    font-weight: 600;
+    color: var(--title-font-color);
+    font-size: var(--sm-font-size);
+}
+
+.si-axis-step .si-step-def {
+    font-size: var(--sm-font-size);
+}
+
+.si-axis-step .si-step-example {
+    display: block;
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+    margin-top: 2px;
+}
+
+.si-axis-arrow {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+    margin-top: 8px;
+    padding: 0 8px;
+}
+
+/* ---------- Explorer (centerpiece) ---------- */
+.si-explorer {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(240px, 1fr);
+    gap: var(--md-gap);
+    align-items: start;
+}
+
+.si-explorer-gridwrap {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 8px;
+}
+
+.si-col-headers {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.si-row-headers {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.si-grid {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.si-axis-label {
+    font-size: var(--sm-font-size);
+    color: var(--muted-color);
+    font-weight: 600;
+}
+
+.si-axis-label.si-axis-label--col {
+    grid-column: 2;
+    grid-row: 0;
+}
+
+.si-header-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6px 4px;
+    font-size: var(--sm-font-size);
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid var(--si-border);
+    background: var(--si-surface);
+    cursor: help;
+    position: relative;
+}
+
+.si-header-cell--col { color: #f0b3a3; }
+.si-header-cell--row { color: #aec4f5; writing-mode: horizontal-tb; }
+
+.si-row-headers .si-header-cell {
+    justify-content: flex-start;
+    padding-left: 10px;
+    min-width: 92px;
+}
+
+.si-header-cell:hover,
+.si-header-cell:focus-visible {
+    border-color: var(--si-border-strong);
+    background: var(--si-surface-2);
+    outline: none;
+}
+
+.si-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: left;
+    padding: 10px;
+    min-height: 86px;
+    border-radius: 10px;
+    border: 1px solid var(--si-border);
+    background: var(--si-surface);
+    color: var(--font-color);
+    cursor: pointer;
+    font-family: inherit;
+    transition: border-color 0.15s, background-color 0.15s, transform 0.1s;
+}
+
+.si-cell:hover {
+    border-color: var(--si-border-strong);
+    background: var(--si-surface-2);
+}
+
+.si-cell:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.si-cell.is-active {
+    border-color: var(--primary-color);
+    background: var(--si-surface-2);
+}
+
+.si-cell .si-cell-name {
+    color: var(--title-font-color);
+    font-weight: 600;
+    font-size: var(--sm-font-size);
+    line-height: 1.3;
+}
+
+.si-cell .si-cell-tool {
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+}
+
+/* subtle 2D encoding: corner dot intensity by position, never affects text */
+.si-cell .si-cell-dot {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    opacity: 0.55;
+}
+
+.si-cell { position: relative; }
+
+/* Detail panel */
+.si-detail {
+    border: 1px solid var(--si-border);
+    border-radius: var(--si-radius);
+    background: var(--si-surface);
+    padding: var(--md-gap);
+    position: sticky;
+    top: 90px;
+}
+
+.si-detail h3 {
+    margin-bottom: 6px;
+}
+
+.si-detail .si-detail-tool {
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+    margin-bottom: var(--sm-gap);
+}
+
+.si-detail .si-couple {
+    margin-bottom: var(--sm-gap);
+}
+
+.si-detail .si-detail-text {
+    font-size: var(--md-font-size);
+}
+
+.si-detail .si-detail-hint {
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+}
+
+/* ---------- Sandbox "Feel the rule" ---------- */
+.si-sandbox {
+    border: 1px solid var(--si-border);
+    border-radius: var(--si-radius);
+    background: var(--si-surface);
+    padding: var(--md-gap);
+}
+
+.si-sandbox-stage {
+    position: relative;
+    display: flex;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid var(--si-border);
+    background: var(--si-surface-2);
+    touch-action: none;
+}
+
+.si-panel {
+    background: rgba(62, 107, 214, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aec4f5;
+    font-size: var(--sm-font-size);
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.si-panel-right {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--muted-color);
+}
+
+.si-divider {
+    width: 10px;
+    flex: 0 0 10px;
+    background: var(--primary-color);
+    cursor: ew-resize;
+    position: relative;
+    z-index: 3;
+}
+
+.si-divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+}
+
+.si-divider:focus-visible {
+    outline: 2px solid var(--light-color);
+    outline-offset: 2px;
+}
+
+.si-limit-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 2px dashed rgba(221, 107, 79, 0.8);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.si-limit-line.si-limit-max {
+    border-left-color: rgba(61, 163, 93, 0.85);
+}
+
+.si-limit-line.is-hidden {
+    display: none;
+}
+
+.si-limit-grab {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+    transform: translateX(-7px);
+    z-index: 4;
+    cursor: ew-resize;
+}
+
+.si-sandbox-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--md-gap);
+    margin-top: var(--md-gap);
+}
+
+.si-control h3 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: var(--md-font-size);
+}
+
+.si-control--rigidity h3::before,
+.si-control--enforcement h3::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+}
+
+.si-control--rigidity h3::before { background: var(--rigidity); }
+.si-control--enforcement h3::before { background: var(--enforcement); }
+
+.si-segmented {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.si-segmented button {
+    flex: 1 1 auto;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid var(--si-border);
+    background: var(--si-surface-2);
+    color: var(--font-color);
+    font-family: inherit;
+    font-size: var(--sm-font-size);
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.15s, background-color 0.15s;
+}
+
+.si-segmented button:hover {
+    border-color: var(--si-border-strong);
+}
+
+.si-segmented button:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.si-segmented button.is-selected {
+    background: var(--primary-color);
+    color: #121212;
+    border-color: var(--primary-color);
+}
+
+.si-control-hint {
+    color: var(--muted-color);
+    font-size: var(--sm-font-size);
+    margin-top: 8px;
+    min-height: 2.6em;
+}
+
+.si-liftable-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: var(--sm-font-size);
+}
+
+.si-sandbox-readout {
+    margin-top: var(--md-gap);
+    padding: var(--sm-gap);
+    border-radius: 10px;
+    background: var(--si-surface-2);
+    border: 1px solid var(--si-border);
+}
+
+.si-sandbox-readout .si-couple {
+    margin-bottom: 6px;
+}
+
+.si-sandbox-readout .si-readout-text {
+    font-size: var(--md-font-size);
+    color: var(--title-font-color);
+}
+
+/* ---------- Directed graph ---------- */
+.si-graph-figure {
+    margin-top: var(--md-gap);
+    border: 1px solid var(--si-border);
+    border-radius: var(--si-radius);
+    background: var(--si-surface);
+    padding: var(--md-gap);
+}
+
+.si-graph svg {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+}
+
+.si-graph .si-node rect,
+.si-graph .si-node circle {
+    transition: opacity 0.15s;
+}
+
+.si-graph .si-node text {
+    fill: #121212;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 13px;
+    pointer-events: none;
+}
+
+.si-graph .si-edge {
+    cursor: pointer;
+    transition: opacity 0.15s, stroke-width 0.15s;
+}
+
+.si-graph .si-edge-hit {
+    stroke: transparent;
+    stroke-width: 16;
+    fill: none;
+}
+
+.si-graph.is-dim .si-edge:not(.is-active),
+.si-graph.is-dim .si-node:not(.is-active) {
+    opacity: 0.25;
+}
+
+.si-graph .si-edge.is-active {
+    stroke-width: 3.5;
+}
+
+.si-graph .si-edge-label {
+    fill: var(--font-color);
+    font-size: 12px;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.si-graph-caption {
+    margin-top: var(--sm-gap);
+    color: var(--font-color);
+    font-size: var(--sm-font-size);
+    min-height: 2.6em;
+}
+
+/* ---------- Use cases ---------- */
+.si-usecases {
+    display: flex;
+    flex-direction: column;
+    gap: var(--md-gap);
+    margin-top: var(--md-gap);
+}
+
+.si-usecase {
+    border: 1px solid var(--si-border);
+    border-radius: var(--si-radius);
+    background: var(--si-surface);
+    padding: var(--md-gap);
+}
+
+.si-usecase h3 {
+    margin-bottom: var(--sm-gap);
+}
+
+.si-usecase-toggle {
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    border-radius: 10px;
+    background: var(--si-surface-2);
+    border: 1px solid var(--si-border);
+    margin-bottom: var(--sm-gap);
+}
+
+.si-usecase-toggle button {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 7px;
+    background: none;
+    color: var(--font-color);
+    font-family: inherit;
+    font-size: var(--sm-font-size);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.si-usecase-toggle button:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.si-usecase-toggle button.is-selected {
+    background: var(--primary-color);
+    color: #121212;
+}
+
+.si-usecase-body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: var(--md-gap);
+    align-items: start;
+}
+
+.si-usecase-figure {
+    border: 1px solid var(--si-border);
+    border-radius: 10px;
+    background: var(--si-surface-2);
+    overflow: hidden;
+}
+
+.si-usecase-figure svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.si-usecase-states {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: var(--sm-gap);
+}
+
+.si-usecase-state {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.si-usecase-state .si-state-name {
+    color: var(--title-font-color);
+    font-weight: 600;
+    font-size: var(--sm-font-size);
+    min-width: 110px;
+}
+
+/* ---------- Why it matters ---------- */
+.si-why {
+    max-width: 820px;
+    margin-top: var(--sm-gap);
+    padding-left: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm-gap);
+}
+
+.si-abstract {
+    max-width: 820px;
+}
+
+/* ---------- Cite ---------- */
+.si-cite {
+    position: relative;
+    margin-top: var(--sm-gap);
+}
+
+.si-bibtex {
+    border: 1px solid var(--si-border);
+    border-radius: var(--si-radius);
+    background: var(--si-surface);
+    padding: var(--md-gap);
+    overflow-x: auto;
+    font-family: monospace;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--font-color);
+    white-space: pre;
+}
+
+.si-copy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid var(--si-border-strong);
+    border-radius: 8px;
+    background: var(--si-surface-2);
+    color: var(--font-color);
+    font-family: inherit;
+    font-size: var(--sm-font-size);
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.si-copy:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.si-copy:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.si-copy i {
+    color: var(--primary-color);
+}
+
+.si-copy.is-copied {
+    color: var(--element);
+    border-color: var(--element);
+}
+
+.si-copy.is-copied i {
+    color: var(--element);
+}
+
+/* ---------- Active internal nav link ---------- */
+.si-nav-link.is-current {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: var(--primary-color);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+    .si-explorer {
+        grid-template-columns: 1fr;
+    }
+
+    .si-detail {
+        position: static;
+    }
+
+    .si-axes {
+        grid-template-columns: 1fr;
+    }
+
+    .si-sandbox-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .si-usecase-body {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .si-title { font-size: 1.6rem; }
+    .si-tagline { font-size: 1.2rem; }
+
+    /* Explorer stays usable: shrink text and let tracks shrink to fit */
+    .si-grid { gap: 4px; min-width: 0; }
+    .si-col-headers { gap: 4px; min-width: 0; }
+    .si-cell { min-height: 72px; padding: 7px; min-width: 0; }
+    .si-cell .si-cell-name { font-size: 0.7rem; overflow-wrap: anywhere; }
+    .si-cell .si-cell-tool { font-size: 0.66rem; overflow-wrap: anywhere; }
+    .si-row-headers .si-header-cell { min-width: 52px; padding-left: 6px; font-size: 0.66rem; overflow-wrap: anywhere; }
+    .si-header-cell--col { font-size: 0.66rem; padding: 4px 2px; }
+    .si-explorer-gridwrap { gap: 5px; }
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .si-scope * {
+        transition: none !important;
+        animation: none !important;
+    }
+}

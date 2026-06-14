@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Interaction | Vincent Cavez</title>
+    <meta name="description" content="Structural Interaction makes structure a first-class design object and describes how any rule behaves along two independent axes: rigidity and enforcement. Four values per axis give a 16-cell design space for diagnosing and designing interfaces.">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Structural Interaction: Shifting the Focus of User Interface Design">
+    <meta property="og:description" content="A framework that makes structure a first-class design object, with two independent axes (rigidity and enforcement) and a 16-cell design space.">
+    <meta property="og:image" content="../img/thumbnails/sit.png">
+    <meta property="og:url" content="https://vincentcavez.com/projects/structural-interaction.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Structural Interaction: Shifting the Focus of User Interface Design">
+    <meta name="twitter:description" content="A framework that makes structure a first-class design object, with two independent axes (rigidity and enforcement) and a 16-cell design space.">
+    <meta name="twitter:image" content="../img/thumbnails/sit.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../assets/structural-interaction/css/si.css">
+</head>
+<body>
+
+<!-- Navigation (mirrors the site shell) -->
+<nav>
+    <div class="main-container" style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+        <a style="font-size: var(--lg-font-size); color: var(--title-font-color); font-weight: 600;" href="../index.html">Vincent Cavez</a>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 15px; justify-content: right;">
+            <a class="navbar-link" href="../index.html">Home</a>
+            <a class="navbar-link si-nav-link" href="#explorer">Design space</a>
+            <a class="navbar-link si-nav-link" href="#sandbox">Feel the rule</a>
+            <a class="navbar-link si-nav-link" href="#cite">Cite</a>
+        </div>
+    </div>
+</nav>
+
+<main class="si-scope">
+
+    <!-- Title block -->
+    <section class="main-container si-titleblock">
+        <h1 class="si-title">Structural Interaction: Shifting the Focus of User Interface Design</h1>
+        <p class="si-venue">DIS Companion '26, Singapore (June 13 to 17, 2026)</p>
+        <p class="si-authors" id="si-authors"><!-- filled by main.js --></p>
+    </section>
+
+    <!-- Hero / teaser -->
+    <section class="main-container si-hero">
+        <div class="si-hero-bg" id="si-hero-bg" aria-hidden="true"><!-- reduced graph preview, filled by graph.js --></div>
+        <div class="si-hero-content">
+            <p class="si-tagline">Structure is not merely something interfaces have; it is something interfaces do.</p>
+            <a class="si-cta" href="#explorer">Explore the framework <i class="fa fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Links bar -->
+    <section class="main-container si-linksbar" id="si-linksbar" aria-label="Paper links">
+        <!-- filled by main.js -->
+    </section>
+
+    <!-- TL;DR -->
+    <section class="main-container si-section" id="tldr">
+        <h2>TL;DR</h2>
+        <p class="si-prose">
+            User interfaces run on <strong>rules</strong> that decide how you create, organize, and transform content.
+            We call those rules <strong>structure</strong>. Structural Interaction makes structure a
+            <strong>first-class design object</strong> and describes how any rule behaves along two independent axes:
+            <strong>rigidity</strong> (how much a rule can be shaped) and <strong>enforcement</strong> (how much it
+            yields when you push against it). Four values per axis give a <strong>16-cell design space</strong> for
+            diagnosing and designing interfaces.
+        </p>
+    </section>
+
+    <!-- The framework -->
+    <section class="main-container si-section" id="framework">
+        <h2>The framework</h2>
+
+        <h3>Defining structure</h3>
+        <p class="si-prose">
+            We model an interface as a directed graph of <strong>elements</strong> (the content) and the
+            <strong>rules</strong> that govern them. Rules come in two kinds. <strong>Declarative rules</strong>
+            describe constraints that hold continuously (a grid that keeps cells aligned, a minimum panel width).
+            <strong>Imperative rules</strong> are actions the user triggers (a command, a macro, a shortcut). Together,
+            elements and rules form the structure of the interface.
+        </p>
+
+        <h3>The user interface as a directed graph</h3>
+        <p class="si-prose">
+            Hover or focus an edge to read how each part of the interface acts on the others. The loop closes when the
+            user perceives the elements.
+        </p>
+        <figure class="si-graph-figure">
+            <div id="si-graph" class="si-graph"><!-- inline SVG injected by graph.js --></div>
+            <figcaption id="si-graph-caption" class="si-graph-caption" aria-live="polite">
+                Hover an edge or a label to read its role.
+            </figcaption>
+        </figure>
+
+        <h3>The two dimensions</h3>
+        <p class="si-prose">
+            Every rule sits at a couple of values, one per axis. <strong>Rigidity</strong> runs from system control to
+            user control; <strong>enforcement</strong> runs from unyielding to yielding. The two are orthogonal.
+        </p>
+        <div class="si-axes" id="si-axes"><!-- filled by main.js from dimensions --></div>
+    </section>
+
+    <!-- 16-cell design space (centerpiece) -->
+    <section class="main-container si-section si-wide" id="explorer">
+        <h2>The 16-cell design space</h2>
+        <p class="si-prose">
+            Four values of rigidity by four values of enforcement. Hover, focus, or use the arrow keys to inspect each
+            cell. Press Enter to pin a cell open.
+        </p>
+        <div class="si-explorer" id="si-explorer"><!-- grid + detail panel injected by explorer.js --></div>
+    </section>
+
+    <!-- Feel the rule -->
+    <section class="main-container si-section si-wide" id="sandbox">
+        <h2>Feel the rule</h2>
+        <p class="si-prose">
+            A panel with a minimum width. Drag the divider to the left to push the panel against its limit, then change
+            how the rule behaves. Enforcement decides how the limit yields; rigidity decides what you can do to the
+            limit itself.
+        </p>
+        <div class="si-sandbox" id="si-sandbox"><!-- sandbox injected by sandbox.js --></div>
+    </section>
+
+    <!-- The framework in practice -->
+    <section class="main-container si-section" id="usecases">
+        <h2>The framework in practice</h2>
+        <p class="si-prose">
+            Two use cases. Toggle between the problem and the solution to see how a structural diagnosis turns into
+            independent design moves on each axis.
+        </p>
+        <div class="si-usecases" id="si-usecases"><!-- injected by usecases.js --></div>
+    </section>
+
+    <!-- Why it matters -->
+    <section class="main-container si-section" id="why">
+        <h2>Why it matters</h2>
+        <ol class="si-why">
+            <li>
+                <strong>Precise diagnosis.</strong> Once rigidity and enforcement are separated, you can tell apart
+                problems that look identical. "This tool is too rigid" often conflates two independent properties that
+                need different fixes.
+            </li>
+            <li>
+                <strong>Complements existing models.</strong> Where DIRA decomposes interfaces into parts and
+                interaction substrates define adjustable environments, the state couple specifies how each individual
+                rule should respond during interaction.
+            </li>
+            <li>
+                <strong>A vocabulary for generative UIs.</strong> When an LLM produces and evolves structure at runtime,
+                rigidity and enforcement give users and systems a shared language for how much structure should yield,
+                when, and under whose control. A candidate future dimension is <strong>agentivity</strong> (how control
+                over imperative rules is distributed across the user, the system, and generative agents).
+            </li>
+        </ol>
+    </section>
+
+    <!-- Abstract -->
+    <section class="main-container si-section" id="abstract">
+        <h2>Abstract</h2>
+        <p class="si-prose si-abstract" id="si-abstract"><!-- filled by main.js --></p>
+    </section>
+
+    <!-- Cite -->
+    <section class="main-container si-section" id="cite">
+        <h2>Cite</h2>
+        <div class="si-cite">
+            <button type="button" class="si-copy" id="si-copy-bibtex" aria-label="Copy BibTeX to clipboard">
+                <i class="fa fa-copy"></i> <span class="si-copy-label">Copy</span>
+            </button>
+            <pre class="si-bibtex" id="si-bibtex">@inproceedings{cavez2026structural,
+  author    = {Cavez, Vincent and Imteyaz, Kashif and Cabouat, Anne-Flore},
+  title     = {Structural Interaction: Shifting the Focus of User Interface Design},
+  year      = {2026},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3802974.3809476},
+  doi       = {10.1145/3802974.3809476},
+  booktitle = {Designing Interactive Systems Conference (DIS Companion '26)},
+  series    = {DIS Companion '26},
+  location  = {Singapore, Singapore},
+  numpages  = {5}
+}</pre>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer (mirrors the site shell) -->
+<section id="footer" class="vertical-list vgap" style="align-items: center;">
+    Copyright 2026 &copy; Vincent Cavez
+</section>
+
+<script type="module" src="../assets/structural-interaction/js/main.js"></script>
+
+</body>
+</html>
