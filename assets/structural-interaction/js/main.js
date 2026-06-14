@@ -2,7 +2,7 @@
 // Initializes the page: title block, links bar, the two-dimension cards, the abstract,
 // every interactive component, the internal scrollspy, and the Copy BibTeX button.
 
-import { paper, dimensions, abstract } from "./data.js";
+import { paper, abstract } from "./data.js";
 import { initExplorer } from "./explorer.js";
 import { initSandbox } from "./sandbox.js";
 import { initGraph, initGraphPreview } from "./graph.js";
@@ -36,38 +36,6 @@ function renderLinksBar() {
         '<span class="si-link-group-label">Related projects:</span>';
     html += RELATED.map(r => '<a class="si-link" href="' + r.url + '">' + r.label + "</a>").join("");
     el.innerHTML = html;
-}
-
-function renderAxes() {
-    const el = document.getElementById("si-axes");
-    if (!el) return;
-    const arrows = {
-        rigidity: ["system control", "user control"],
-        enforcement: ["unyielding", "yielding"]
-    };
-    el.innerHTML = ["rigidity", "enforcement"]
-        .map(key => {
-            const dim = dimensions[key];
-            const steps = dim.values
-                .map(
-                    v =>
-                        '<div class="si-axis-step" tabindex="0">' +
-                        '<span class="si-step-value">' + v.value + "</span>" +
-                        '<span class="si-step-def">' + v.definition +
-                        '<span class="si-step-example">Example: ' + v.example + "</span></span>" +
-                        "</div>"
-                )
-                .join("");
-            return (
-                '<div class="si-axis si-axis--' + key + '">' +
-                "<h3>" + dim.label + "</h3>" +
-                '<p class="si-axis-summary">' + dim.summary + "</p>" +
-                '<div class="si-axis-scale">' + steps + "</div>" +
-                '<div class="si-axis-arrow"><span>' + arrows[key][0] + "</span><span>" + arrows[key][1] + "</span></div>" +
-                "</div>"
-            );
-        })
-        .join("");
 }
 
 function renderAbstract() {
@@ -125,10 +93,9 @@ function initScrollspy() {
 function boot() {
     renderAuthors();
     renderLinksBar();
-    renderAxes();
     renderAbstract();
 
-    initGraph(document.getElementById("si-graph"), document.getElementById("si-graph-caption"));
+    initGraph(document.getElementById("si-graph"));
     initGraphPreview(document.getElementById("si-hero-bg"));
     initExplorer(document.getElementById("si-explorer"));
     initSandbox(document.getElementById("si-sandbox"));

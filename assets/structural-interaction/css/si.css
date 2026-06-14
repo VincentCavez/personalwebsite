@@ -655,12 +655,7 @@
 .si-graph svg {
     width: 100%;
     height: auto;
-    max-height: 380px;
-}
-
-.si-graph .si-node rect,
-.si-graph .si-node circle {
-    transition: opacity 0.15s;
+    max-height: 470px;
 }
 
 .si-graph .si-node text {
@@ -668,41 +663,18 @@
     font-family: inherit;
     font-weight: 600;
     font-size: 13px;
-    pointer-events: none;
 }
 
-.si-graph .si-edge {
-    cursor: pointer;
-    transition: opacity 0.15s, stroke-width 0.15s;
-}
-
-.si-graph .si-edge-hit {
-    stroke: transparent;
-    stroke-width: 16;
-    fill: none;
-}
-
-.si-graph.is-dim .si-edge:not(.is-active),
-.si-graph.is-dim .si-node:not(.is-active) {
-    opacity: 0.25;
-}
-
-.si-graph .si-edge.is-active {
-    stroke-width: 3.5;
-}
-
-.si-graph .si-edge-label {
+.si-graph .si-edge-text {
     fill: var(--font-color);
-    font-size: 12px;
-    font-weight: 600;
-    pointer-events: none;
+    font-size: 11px;
+    font-weight: 500;
 }
 
 .si-graph-caption {
     margin-top: var(--sm-gap);
-    color: var(--font-color);
+    color: var(--muted-color);
     font-size: var(--sm-font-size);
-    min-height: 2.6em;
 }
 
 /* ---------- Use cases ---------- */
