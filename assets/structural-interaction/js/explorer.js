@@ -116,10 +116,14 @@ export function initExplorer(root) {
     function renderDetail(cell, btn) {
         clearActive();
         btn.classList.add("is-active");
+        // Per-cell illustration extracted from the project poster (Keynote source).
+        // The figure removes itself if the image is missing.
+        const figureSrc = "../assets/structural-interaction/figures/cells/" + cell.rigidity + "-" + cell.enforcement + ".png";
         detail.innerHTML =
             "<h3>" + cell.name + "</h3>" +
             '<div class="si-detail-tool">' + cell.tool + "</div>" +
             coupleBadges(cell.rigidity, cell.enforcement) +
+            '<figure class="si-detail-figure"><img src="' + figureSrc + '" alt="" loading="lazy" onerror="this.closest(\'.si-detail-figure\').remove()"></figure>' +
             '<p class="si-detail-text">' + cell.detail + "</p>";
     }
 
@@ -129,8 +133,7 @@ export function initExplorer(root) {
         const dim = dimensions[dimKey];
         detail.innerHTML =
             "<h3>" + dim.label + " (" + def.value + ")</h3>" +
-            '<p class="si-detail-text">' + def.definition + "</p>" +
-            '<p class="si-detail-hint">Example: ' + def.example + "</p>";
+            '<p class="si-detail-text">' + def.definition + "</p>";
     }
 
     function onCellKey(e, index) {

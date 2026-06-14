@@ -450,6 +450,22 @@
     margin-bottom: var(--sm-gap);
 }
 
+/* Per-cell illustration from the poster, shown on a light card so every
+   drawing reads well regardless of its own background. */
+.si-detail-figure {
+    margin: 0 0 var(--sm-gap);
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid var(--si-border);
+    padding: 10px;
+}
+
+.si-detail-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .si-detail .si-detail-text {
     font-size: var(--md-font-size);
 }
