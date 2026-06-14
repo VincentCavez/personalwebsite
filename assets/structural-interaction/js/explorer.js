@@ -116,9 +116,9 @@ export function initExplorer(root) {
     function renderDetail(cell, btn) {
         clearActive();
         btn.classList.add("is-active");
-        // Per-cell illustration extracted from the project poster (Keynote source).
-        // The figure removes itself if the image is missing.
-        const figureSrc = "../assets/structural-interaction/figures/cells/" + cell.rigidity + "-" + cell.enforcement + ".png";
+        // Per-cell illustration from the project poster (vector SVG).
+        // The figure removes itself if the file is missing.
+        const figureSrc = "../assets/structural-interaction/figures/cells/" + cell.rigidity + "-" + cell.enforcement + ".svg";
         detail.innerHTML =
             "<h3>" + cell.name + "</h3>" +
             '<div class="si-detail-tool">' + cell.tool + "</div>" +
