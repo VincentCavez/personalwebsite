@@ -112,9 +112,3 @@ export function initGraph(root) {
     if (!root) return;
     root.innerHTML = buildSVG(true);
 }
-
-// A non-interactive reduced copy for the hero background (no labels, kept uncluttered).
-export function initGraphPreview(root) {
-    if (!root) return;
-    root.innerHTML = buildSVG(false);
-}

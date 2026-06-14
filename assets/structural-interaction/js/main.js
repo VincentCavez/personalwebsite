@@ -5,7 +5,7 @@
 import { paper, abstract } from "./data.js";
 import { initExplorer } from "./explorer.js";
 import { initSandbox } from "./sandbox.js";
-import { initGraph, initGraphPreview } from "./graph.js";
+import { initGraph } from "./graph.js";
 import { initUseCases } from "./usecases.js";
 
 // Related projects shown in the links bar.
@@ -96,7 +96,6 @@ function boot() {
     renderAbstract();
 
     initGraph(document.getElementById("si-graph"));
-    initGraphPreview(document.getElementById("si-hero-bg"));
     initExplorer(document.getElementById("si-explorer"));
     initSandbox(document.getElementById("si-sandbox"));
     initUseCases(document.getElementById("si-usecases"));
