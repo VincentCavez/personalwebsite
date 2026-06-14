@@ -11,7 +11,7 @@ import { initUseCases } from "./usecases.js";
 // Related projects shown in the links bar.
 const RELATED = [
     { label: "EuterPen (CHI '25)", url: "https://doi.org/10.1145/3706598.3713488" },
-    { label: "Spreadsheets on Interactive Surfaces (ToCHI 2024)", url: "https://doi.org/10.1145/3630097" }
+    { label: "EunomInk (ToCHI 2024)", url: "https://doi.org/10.1145/3630097" }
 ];
 
 function renderAuthors() {
@@ -32,8 +32,7 @@ function renderLinksBar() {
     if (!el) return;
     let html =
         '<a class="si-link" href="' + paper.pdfUrl + '"><i class="fa fa-file-pdf"></i> Paper (PDF)</a>' +
-        '<a class="si-link" href="' + paper.acmUrl + '"><i class="fa fa-external-link"></i> ACM DL</a>' +
-        '<a class="si-link" href="' + paper.doiUrl + '"><i class="fa fa-link"></i> DOI</a>' +
+        '<a class="si-link" href="' + paper.doiUrl + '"><i class="fa fa-external-link"></i> DOI</a>' +
         '<span class="si-link-group-label">Related projects:</span>';
     html += RELATED.map(r => '<a class="si-link" href="' + r.url + '">' + r.label + "</a>").join("");
     el.innerHTML = html;
