@@ -165,18 +165,6 @@
     border: 1px solid transparent;
 }
 
-.si-badge--rigidity {
-    background: rgba(62, 107, 214, 0.18);
-    color: #aec4f5;
-    border-color: rgba(62, 107, 214, 0.5);
-}
-
-.si-badge--enforcement {
-    background: rgba(221, 107, 79, 0.18);
-    color: #f0b3a3;
-    border-color: rgba(221, 107, 79, 0.5);
-}
-
 .si-couple {
     display: inline-flex;
     gap: 6px;
@@ -338,8 +326,8 @@
     position: relative;
 }
 
-.si-header-cell--col { color: #f0b3a3; }
-.si-header-cell--row { color: #aec4f5; writing-mode: horizontal-tb; }
+/* Header background and text colors come from the paper scales, set inline in explorer.js. */
+.si-header-cell--row { writing-mode: horizontal-tb; }
 
 .si-row-headers .si-header-cell {
     justify-content: flex-start;
@@ -390,6 +378,7 @@
     font-weight: 600;
     font-size: var(--sm-font-size);
     line-height: 1.3;
+    padding-right: 24px;
 }
 
 .si-cell .si-cell-tool {
@@ -397,15 +386,20 @@
     font-size: var(--sm-font-size);
 }
 
-/* subtle 2D encoding: corner dot intensity by position, never affects text */
-.si-cell .si-cell-dot {
+/* Two corner dots: rigidity (row) color and enforcement (column) color for this cell. */
+.si-cell-dots {
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 6px;
-    height: 6px;
+    display: flex;
+    gap: 4px;
+}
+
+.si-cell .si-cell-dot {
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    opacity: 0.55;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
 }
 
 .si-cell { position: relative; }
@@ -659,16 +653,14 @@
 }
 
 .si-graph .si-node text {
-    fill: #121212;
     font-family: inherit;
-    font-weight: 600;
-    font-size: 13px;
 }
 
 .si-graph .si-edge-text {
-    fill: var(--font-color);
-    font-size: 11px;
-    font-weight: 500;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .si-graph-caption {

@@ -1,108 +1,79 @@
 // graph.js
-// Figure 1 as a static inline SVG: four nodes and the eight connection types.
-// Each arrow carries its description written next to it (no interactivity, no examples).
+// Figure 1 as a static inline SVG, matching the poster's directed graph:
+// a diamond of light-filled nodes (User left, Imperative top, Declarative bottom, Element right),
+// six edges labeled with their verb in the edge color, and a dotted "perceives" arrow.
 
 import { graphEdges } from "./data.js";
 
-// Node centers in the SVG coordinate space.
+// Nodes: light tint fill, colored border and colored text (poster style).
 const NODES = {
-    "User": { x: 150, y: 80, color: "var(--user)" },
-    "Element": { x: 610, y: 80, color: "var(--element)" },
-    "Imperative Rule": { x: 150, y: 360, color: "var(--imperative)" },
-    "Declarative Rule": { x: 610, y: 360, color: "var(--declarative)" }
+    "User": { cx: 110, cy: 210, w: 132, h: 58, fill: "#FBF4DE", color: "var(--user)", lines: ["User"] },
+    "Element": { cx: 690, cy: 210, w: 152, h: 58, fill: "#DFF1E6", color: "var(--element)", lines: ["Element"] },
+    "Imperative Rule": { cx: 400, cy: 95, w: 190, h: 76, fill: "#FCE6E0", color: "var(--imperative)", lines: ["Imperative", "Rule"] },
+    "Declarative Rule": { cx: 400, cy: 330, w: 200, h: 76, fill: "#E1E9FB", color: "var(--declarative)", lines: ["Declarative", "Rule"] }
 };
 
-const NODE_W = 160;
-const NODE_H = 56;
-
-// Per-edge geometry: path, marker color (by source), and the label placed beside the arrow.
-// Labels are split into lines by hand so they sit cleanly next to each arrow.
-const EDGE_GEO = {
-    a: {
-        d: "M150 108 L150 332", color: "var(--user)", marker: "user",
-        label: { x: 162, y: 200, anchor: "start", lines: ["The user triggers", "imperative rules."] }
-    },
-    h: {
-        d: "M230 80 L530 80", color: "var(--user)", marker: "user",
-        label: { x: 380, y: 42, anchor: "middle", lines: ["The user perceives elements,", "closing the interaction loop."] }
-    },
-    b: {
-        d: "M214 348 L548 112", color: "var(--imperative)", marker: "imp",
-        label: { x: 430, y: 182, anchor: "middle", lines: ["Imperative rules", "act on elements."] }
-    },
-    c: {
-        d: "M230 360 L530 360", color: "var(--imperative)", marker: "imp",
-        label: { x: 380, y: 346, anchor: "middle", lines: ["Imperative rules act on declarative rules."] }
-    },
-    d: {
-        d: "M110 388 C 90 432, 210 432, 190 388", color: "var(--imperative)", marker: "imp",
-        label: { x: 150, y: 452, anchor: "middle", lines: ["Imperative rules act on", "other imperative rules."] }
-    },
-    e: {
-        d: "M610 332 L610 108", color: "var(--declarative)", marker: "dec",
-        label: { x: 598, y: 200, anchor: "end", lines: ["Declarative rules", "constrain elements."] }
-    },
-    f: {
-        d: "M570 388 C 550 432, 670 432, 650 388", color: "var(--declarative)", marker: "dec",
-        label: { x: 610, y: 452, anchor: "middle", lines: ["Declarative rules constrain", "other declarative rules."] }
-    },
-    g: {
-        d: "M530 380 L230 380", color: "var(--declarative)", marker: "dec",
-        label: { x: 380, y: 400, anchor: "middle", lines: ["Declarative rules constrain imperative rules."] }
-    }
-};
+// The six edges shown on the poster (the two self-loops are omitted there).
+// Verb text is pulled from graphEdges by id.
+const EDGES = [
+    { id: "a", d: "M150 182 L314 121", color: "var(--user)", marker: "user", label: { x: 224, y: 142, anchor: "middle" } },
+    { id: "b", d: "M494 113 L618 185", color: "var(--imperative)", marker: "imp", label: { x: 566, y: 138, anchor: "middle" } },
+    { id: "c", d: "M385 133 L385 292", color: "var(--imperative)", marker: "imp", label: { x: 350, y: 216, anchor: "end" } },
+    { id: "g", d: "M415 292 L415 133", color: "var(--declarative)", marker: "dec", label: { x: 450, y: 216, anchor: "start" } },
+    { id: "e", d: "M497 320 L620 234", color: "var(--declarative)", marker: "dec", label: { x: 558, y: 292, anchor: "middle" } },
+    { id: "h", d: "M110 240 L110 410 L690 410 L690 241", color: "var(--muted-color)", marker: "perc", label: { x: 400, y: 400, anchor: "middle" }, dash: true }
+];
 
 function markerDefs() {
     const one = (id, color) =>
-        '<marker id="si-arrow-' + id + '" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">' +
+        '<marker id="si-arrow-' + id + '" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">' +
         '<path d="M0 0 L10 5 L0 10 z" fill="' + color + '"></path></marker>';
     return (
         "<defs>" +
         one("user", "var(--user)") +
         one("imp", "var(--imperative)") +
         one("dec", "var(--declarative)") +
+        one("perc", "var(--muted-color)") +
         "</defs>"
     );
 }
 
-function nodeMarkup(label) {
-    const n = NODES[label];
-    const x = n.x - NODE_W / 2;
-    const y = n.y - NODE_H / 2;
+function nodeMarkup(name) {
+    const n = NODES[name];
+    const x = n.cx - n.w / 2;
+    const y = n.cy - n.h / 2;
+    let text;
+    if (n.lines.length === 1) {
+        text = '<text x="' + n.cx + '" y="' + (n.cy + 6) + '" text-anchor="middle" fill="' + n.color + '" font-weight="700" font-size="17">' + n.lines[0] + "</text>";
+    } else {
+        text =
+            '<text x="' + n.cx + '" y="' + (n.cy - 7) + '" text-anchor="middle" fill="' + n.color + '" font-size="15" font-style="italic" font-weight="600">' + n.lines[0] + "</text>" +
+            '<text x="' + n.cx + '" y="' + (n.cy + 16) + '" text-anchor="middle" fill="' + n.color + '" font-size="15" font-weight="700">' + n.lines[1] + "</text>";
+    }
     return (
         '<g class="si-node">' +
-        '<rect x="' + x + '" y="' + y + '" width="' + NODE_W + '" height="' + NODE_H + '" rx="12" fill="' + n.color + '"></rect>' +
-        '<text x="' + n.x + '" y="' + (n.y + 4) + '" text-anchor="middle">' + label + "</text>" +
+        '<rect x="' + x + '" y="' + y + '" width="' + n.w + '" height="' + n.h + '" rx="10" fill="' + n.fill + '" stroke="' + n.color + '" stroke-width="2.5"></rect>' +
+        text +
         "</g>"
     );
 }
 
-function labelMarkup(label) {
-    const tspans = label.lines
-        .map((ln, i) => '<tspan x="' + label.x + '" dy="' + (i === 0 ? 0 : 14) + '">' + ln + "</tspan>")
-        .join("");
-    return (
-        '<text class="si-edge-text" x="' + label.x + '" y="' + label.y + '" text-anchor="' + label.anchor + '">' +
-        tspans +
-        "</text>"
-    );
-}
-
-function edgeMarkup(edge, withLabels) {
-    const g = EDGE_GEO[edge.id];
+function edgeMarkup(e) {
+    const verb = (graphEdges.find(g => g.id === e.id) || {}).verb || "";
+    const dash = e.dash ? ' stroke-dasharray="8 7" stroke-linecap="round"' : "";
     return (
         '<g class="si-edge-group">' +
-        '<path class="si-edge" d="' + g.d + '" fill="none" stroke="' + g.color + '" stroke-width="2" marker-end="url(#si-arrow-' + g.marker + ')"></path>' +
-        (withLabels ? labelMarkup(g.label) : "") +
+        '<path class="si-edge" d="' + e.d + '" fill="none" stroke="' + e.color + '" stroke-width="2.5" marker-end="url(#si-arrow-' + e.marker + ')"' + dash + "></path>" +
+        '<text class="si-edge-text" x="' + e.label.x + '" y="' + e.label.y + '" text-anchor="' + e.label.anchor + '" fill="' + e.color + '">' + verb + "</text>" +
         "</g>"
     );
 }
 
-function buildSVG(withLabels) {
+function buildSVG() {
     return (
-        '<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Directed graph of the user interface: the user triggers imperative rules and perceives elements; imperative rules act on elements, declarative rules and other imperative rules; declarative rules constrain elements, imperative rules and other declarative rules.">' +
+        '<svg viewBox="0 0 800 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Directed graph: the user triggers imperative rules and perceives elements; imperative rules act on elements and declarative rules; declarative rules constrain imperative rules and elements.">' +
         markerDefs() +
-        graphEdges.map(e => edgeMarkup(e, withLabels)).join("") +
+        EDGES.map(edgeMarkup).join("") +
         Object.keys(NODES).map(nodeMarkup).join("") +
         "</svg>"
     );
@@ -110,5 +81,5 @@ function buildSVG(withLabels) {
 
 export function initGraph(root) {
     if (!root) return;
-    root.innerHTML = buildSVG(true);
+    root.innerHTML = buildSVG();
 }

@@ -7,13 +7,28 @@ import { cells, dimensions } from "./data.js";
 const RIGIDITY_ORDER = dimensions.rigidity.values.map(v => v.value); // fixed -> authorable
 const ENFORCEMENT_ORDER = dimensions.enforcement.values.map(v => v.value); // persistent -> liftable
 
-// Shared badge markup for a (rigidity, enforcement) couple.
+// Paper color scales, sampled from the poster table headers.
+export const RIG_COLORS = { fixed: "#502200", negotiable: "#87481E", malleable: "#B96A3B", authorable: "#EA8A5A" };
+export const ENF_COLORS = { persistent: "#171277", elastic: "#0740A0", escapable: "#0E7DA4", liftable: "#11A0AA" };
+
+// Readable foreground (near-black or white) for a given background hex.
+export function textOn(hex) {
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
+    const lum = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    return lum > 0.6 ? "#121212" : "#ffffff";
+}
+
+// Shared badge markup for a (rigidity, enforcement) couple, colored with the paper scales.
 export function coupleBadges(rigidity, enforcement) {
+    const r = RIG_COLORS[rigidity];
+    const e = ENF_COLORS[enforcement];
     return (
         '<span class="si-couple">' +
-        '<span class="si-badge si-badge--rigidity">' + rigidity + '</span>' +
-        '<span class="si-badge si-badge--enforcement">' + enforcement + '</span>' +
-        '</span>'
+        '<span class="si-badge" style="background:' + r + ";color:" + textOn(r) + '">' + rigidity + "</span>" +
+        '<span class="si-badge" style="background:' + e + ";color:" + textOn(e) + '">' + enforcement + "</span>" +
+        "</span>"
     );
 }
 
@@ -45,6 +60,8 @@ export function initExplorer(root) {
         el.className = "si-header-cell si-header-cell--col";
         el.tabIndex = 0;
         el.textContent = value;
+        el.style.backgroundColor = ENF_COLORS[value];
+        el.style.color = textOn(ENF_COLORS[value]);
         el.setAttribute("role", "columnheader");
         el.addEventListener("mouseenter", () => showDimension("enforcement", def));
         el.addEventListener("focus", () => showDimension("enforcement", def));
@@ -58,6 +75,8 @@ export function initExplorer(root) {
         el.className = "si-header-cell si-header-cell--row";
         el.tabIndex = 0;
         el.textContent = value;
+        el.style.backgroundColor = RIG_COLORS[value];
+        el.style.color = textOn(RIG_COLORS[value]);
         el.setAttribute("role", "rowheader");
         el.addEventListener("mouseenter", () => showDimension("rigidity", def));
         el.addEventListener("focus", () => showDimension("rigidity", def));
@@ -79,14 +98,15 @@ export function initExplorer(root) {
         // tab into the grid once, then arrow keys move within it.
         btn.tabIndex = index === 0 ? 0 : -1;
 
-        const rIdx = RIGIDITY_ORDER.indexOf(cell.rigidity);
-        const eIdx = ENFORCEMENT_ORDER.indexOf(cell.enforcement);
-        const dotColor = eIdx >= rIdx ? "var(--enforcement)" : "var(--rigidity)";
-
+        // Two corner dots: the rigidity (row) color and the enforcement (column) color
+        // for this position in the matrix.
         btn.innerHTML =
-            '<span class="si-cell-dot" style="background:' + dotColor + '"></span>' +
-            '<span class="si-cell-name">' + cell.name + '</span>' +
-            '<span class="si-cell-tool">' + cell.tool + '</span>';
+            '<span class="si-cell-dots">' +
+            '<span class="si-cell-dot" style="background:' + RIG_COLORS[cell.rigidity] + '" title="rigidity: ' + cell.rigidity + '"></span>' +
+            '<span class="si-cell-dot" style="background:' + ENF_COLORS[cell.enforcement] + '" title="enforcement: ' + cell.enforcement + '"></span>' +
+            "</span>" +
+            '<span class="si-cell-name">' + cell.name + "</span>" +
+            '<span class="si-cell-tool">' + cell.tool + "</span>";
 
         btn.addEventListener("mouseenter", () => showCell(cell, btn));
         btn.addEventListener("focus", () => showCell(cell, btn));
