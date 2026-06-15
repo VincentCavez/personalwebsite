@@ -20,7 +20,7 @@ const EDGES = [
     { id: "b", d: "M494 113 L618 185", color: "var(--imperative)", marker: "imp", label: { x: 566, y: 138, anchor: "middle" } },
     { id: "c", d: "M385 133 L385 292", color: "var(--imperative)", marker: "imp", label: { x: 350, y: 216, anchor: "end" } },
     { id: "g", d: "M415 292 L415 133", color: "var(--declarative)", marker: "dec", label: { x: 450, y: 216, anchor: "start" } },
-    { id: "e", d: "M497 320 L620 234", color: "var(--declarative)", marker: "dec", label: { x: 558, y: 292, anchor: "middle" } },
+    { id: "e", d: "M497 320 L620 234", color: "var(--declarative)", marker: "dec", label: { x: 566, y: 300, anchor: "middle" } },
     { id: "h", d: "M110 240 L110 410 L690 410 L690 241", color: "var(--muted-color)", marker: "perc", label: { x: 400, y: 400, anchor: "middle" }, dash: true }
 ];
 
