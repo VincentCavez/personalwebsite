@@ -16,7 +16,7 @@
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 15px; justify-content: right;">
             <a class="navbar-link active" href="index.html">Home</a>
             <a class="navbar-link" href="#publications">Publications</a>
-            <a class="navbar-link" href="#perso">Projects</a>
+            <a class="navbar-link" href="#projects">Projects</a>
         </div>
     </div>
 </nav>
@@ -213,8 +213,14 @@
 <section id="publications">
     <div class="main-container">
 
+        <!-- Tabs -->
+        <div class="tabs" role="tablist">
+            <button class="tab active" role="tab" id="tab-publications" aria-selected="true" aria-controls="panel-publications">International Publications</button>
+            <button class="tab" role="tab" id="tab-projects" aria-selected="false" aria-controls="panel-projects" tabindex="-1">Projects</button>
+        </div>
+
         <!-- International Publications -->
-        <h2>International Publications</h2>
+        <div class="tab-panel" role="tabpanel" id="panel-publications" aria-labelledby="tab-publications">
         <div class="horizontal-list" style="margin-top: var(--sm-gap);">
 
             <!-- Tellimation -->
@@ -632,18 +638,63 @@
             </div>
 
         </div>
+        </div>
 
-    </div>
-</section>
+        <!-- Projects -->
+        <div class="tab-panel" role="tabpanel" id="panel-projects" aria-labelledby="tab-projects" hidden>
 
-<section id="perso">
-
-<div class="main-container">
-
-
-        <!-- WIP -->
-        <h2 class="lg-vgap">Projects</h2>
+        <h2>Research Projects</h2>
         <div class="horizontal-list" style="margin-top: var(--sm-gap);">
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/shield.webp" alt="SHIELD thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div><span class="author">SHIELD:</span> Storytelling Helper for Interactive and Expressive Literacy Development</div>
+                    <div><small><span class="author">Vincent Cavez</span>, Marielle Zheng, Momin Siddiqui, Abbie L Olszewski, Srirangaraj Setlur, Maneesh Agrawala, Hari Subramonyam</small></div>
+
+                    <div class="btn-list vgap">
+                        <a href="https://togethertales-cfb8063a74c7.herokuapp.com/login"><i class="fa fa-link"></i> Website</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="lg-vgap">Personal Projects</h2>
+        <div class="horizontal-list" style="margin-top: var(--sm-gap);">
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/fuseclash.webp" alt="FuseClash thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>FuseClash</div>
+                    <div><small><span class="author">Vincent Cavez</span></small></div>
+
+                    <div class="btn-list vgap">
+                        <a href="https://fuseclash.com/"><i class="fa fa-link"></i> Website</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="box publication" style="padding: 0;">
+                <div class="publication-thumbnail">
+                    <img src="img/thumbnails/barline.webp" alt="Barline thumbnail">
+                </div>
+                <div style="padding: var(--sm-gap); padding-top: 0; margin-top: 12px;">
+                    <div>Barline</div>
+                    <div><small><span class="author">Vincent Cavez</span></small></div>
+
+                    <div class="btn-list vgap">
+                        <a href="https://barline-app.com/"><i class="fa fa-link"></i> Website</a>
+                    </div>
+
+                </div>
+            </div>
 
             <div class="box publication" style="padding: 0;">
                 <div class="publication-thumbnail">
@@ -678,16 +729,11 @@
                 </div>
             </div>
 
-            
         </div>
 
-        
-
-        
-        
+        </div>
 
     </div>
-
 </section>
 
 <!-- Footer -->
@@ -697,6 +743,40 @@
 
 <!-- BibTeX Collapse Script -->
 <script>
+// Publications / Projects tabs
+(function () {
+    var tabs = document.querySelectorAll('.tabs .tab');
+    function select(tab) {
+        tabs.forEach(function (t) {
+            var on = t === tab;
+            t.classList.toggle('active', on);
+            t.setAttribute('aria-selected', on);
+            t.tabIndex = on ? 0 : -1;
+            document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+        });
+    }
+    tabs.forEach(function (tab, i) {
+        tab.addEventListener('click', function () { select(tab); });
+        tab.addEventListener('keydown', function (e) {
+            if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+            var next = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+            select(next);
+            next.focus();
+        });
+    });
+    // The nav "Projects" link (and #projects in the URL) opens the Projects tab
+    function fromHash() {
+        if (location.hash === '#projects') {
+            select(document.getElementById('tab-projects'));
+            document.getElementById('publications').scrollIntoView();
+        } else if (location.hash === '#publications') {
+            select(document.getElementById('tab-publications'));
+        }
+    }
+    window.addEventListener('hashchange', fromHash);
+    fromHash();
+})();
+
 window.addEventListener('load', function () {
     var coll = document.getElementsByClassName("collapser");
     for (var i = 0; i < coll.length; i++) {

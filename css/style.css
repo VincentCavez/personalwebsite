@@ -584,3 +584,39 @@ nav {
         width: 100%;
     }
 }
+
+/* Publications / Projects tabs */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--md-gap);
+    margin-bottom: var(--md-gap);
+}
+
+.tab {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--muted-color);
+    padding: 0 0 6px 0;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.tab:hover {
+    color: var(--font-color);
+}
+
+.tab.active {
+    color: var(--title-font-color);
+    border-bottom-color: var(--primary-color);
+}
+
+.tab:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 4px;
+}
+
